@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<!-- saved from url=(0036)https://swissmodel.expasy.org/qmean/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><!-- Global site tag (gtag.js) - Google Analytics --><script type="text/javascript" async="" src="../static/js/analytics.js"></script><script async="" src="../static/js/js"></script><script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-8667194-4');
+    </script><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="ROBOTS" content="ALL"><title>QMEAN</title><meta name="description" content="QMEAN, the Qualitative Model Energy ANalysis, is a composite scoring function assessing the major geometrical aspects of protein structures. Estimates of structure quality are provided for full structures as well as on a local per residue scale.
+"><link rel="stylesheet" type="text/css" href="../static/css/bootstrap-3.3.7.min.css" media="screen,print"><link rel="stylesheet" type="text/css" href="../static/css/bootstrap-theme-3.3.7.min.css" media="screen,print"><link rel="stylesheet" type="text/css" href="../static/css/master.css" media="all"><link rel="stylesheet" type="text/css" href="../static/css/jquery.fancybox.css"><link rel="stylesheet" type="text/css" href="../static/css/jquery-ui.min.css"><link rel="shortcut icon" href="https://swissmodel.expasy.org/static/images/favicon.png" type="image/png"><link rel="apple-touch-icon" href="https://swissmodel.expasy.org/static/images/apple-touch-57.png"><link rel="apple-touch-icon" sizes="72x72" href="https://swissmodel.expasy.org/static/images/apple-touch-72.png"><link rel="apple-touch-icon" sizes="114x114" href="https://swissmodel.expasy.org/static/images/apple-touch-114.png"><link href="../static/css/style.css" rel="stylesheet"><link href="../static/css/jquery.fileupload-ui.css" rel="stylesheet"></head><body><nav class="navbar navbar-default"><div class="container-fluid"><div class="navbar-header"><button aria-controls="navbar" aria-expanded="false" data-target=".collapseThis" data-toggle="collapse" class="navbar-toggle collapsed" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="hidden-xs hidden-sm navbar-brand" style="margin-left:0px;padding:8px 4px 0px 0px;" title="SIB Swiss Institute of Bioinformatics" href="https://www.sib.swiss/" target="_blank"><img src="../static/img/sib_logo_small.png" alt="SIB logo" style="max-height:50px"></a><a class="hidden-xs hidden-sm navbar-brand" style="margin-left:0px; padding:8px 0px 0px 4px;" title="Biozentrum | University of Basel | The Center for Molecular Life Sciences" href="http://www.biozentrum.unibas.ch/" target="_blank"><img src="../static/img/biozentrum_en.png" alt="Biozentrum logo" style="max-height:36px"></a><a class="hidden-xs hidden-sm navbar-brand" href="https://swissmodel.expasy.org/" style="margin-left:0px;padding-left:0px;padding-right:0px;font-size:28px;">SWISS-MODEL</a><a id="navbar-brand" class="hidden-md hidden-lg navbar-brand" href="https://swissmodel.expasy.org/" style="margin-left:0px;font-size:20px;">SWISS-MODEL</a></div><div id="navbar" class="collapseThis navbar-collapse collapse"><!-- Collect the nav links, forms, and other content for toggling --><ul class="nav navbar-nav navbar-right"><li class="dropdown "><a href="https://swissmodel.expasy.org/interactive" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Modelling</a><ul class="dropdown-menu" role="menu"><li><a class="text-left" href="https://swissmodel.expasy.org/interactive">myWorkspace</a></li><li><a class="text-left" href="https://swissmodel.expasy.org/interactive#alignment">Alignment Mode</a></li><li><a class="text-left" href="https://swissmodel.expasy.org/interactive#structure">User Template Mode</a></li><li><a class="text-left" href="https://swissmodel.expasy.org/interactive#deepview">DeepView Project Mode</a></li><li class="divider"></li><li><a class="text-left" href="https://swissmodel.expasy.org/templates/">Template Library</a></li></ul></li><li id="smrLink" class="dropdown "><a href="https://swissmodel.expasy.org/repository" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Repository</a><ul class="dropdown-menu" role="menu"><li><a href="https://swissmodel.expasy.org/repository">SWISS-MODEL Repository</a></li><li><a href="https://swissmodel.expasy.org/repository/user_annotation_upload">Annotation Projects</a></li></ul></li><li class="dropdown active"><a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Tools</a><ul class="dropdown-menu" role="menu"><li><a href="https://swissmodel.expasy.org/qmean/" tabindex="-1">QMEAN</a></li><li><a href="https://swissmodel.expasy.org/lddt" tabindex="-1">lDDT</a></li><li><a href="https://swissmodel.expasy.org/assess">Structure Assessment</a></li><li><a href="https://swissmodel.expasy.org/comparison/">Structure Comparison</a></li></ul></li><li class="dropdown "><a href="https://swissmodel.expasy.org/qmean/#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Documentation</a><ul class="dropdown-menu" role="menu"><li><a href="https://swissmodel.expasy.org/docs/help" tabindex="-1">SWISS-MODEL</a></li><li><a href="https://swissmodel.expasy.org/docs/examples" tabindex="-1">Examples</a></li><li><a href="https://swissmodel.expasy.org/docs/tutorial" tabindex="-1">Video Tutorial</a></li><li><a href="https://swissmodel.expasy.org/docs/blog" tabindex="-1">New Features</a></li><li role="separator" class="divider"></li><li><a href="https://swissmodel.expasy.org/docs/repository_help" tabindex="-1">SWISS-MODEL Repository</a></li><li role="separator" class="divider"></li><li><a href="https://swissmodel.expasy.org/qmean/help" tabindex="-1">QMEAN</a></li><li><a href="https://swissmodel.expasy.org/lddt/help/" tabindex="-1">lDDT</a></li><li><a href="https://swissmodel.expasy.org/assess/help">Structure Assessment</a></li><li><a href="https://swissmodel.expasy.org/comparison/help">Structure Comparison</a></li><li role="separator" class="divider"></li><li><a href="https://swissmodel.expasy.org/course" tabindex="-1">Protein Structure Course</a></li><li role="separator" class="divider"></li><li><a href="https://swissmodel.expasy.org/docs/references" tabindex="-1">References</a></li></ul></li><li><a onclick="showLogin();">Log in</a></li><li><a onclick="createAccount();">Create Account</a></li></ul></div></div><!-- /container-fluid --></nav><div id="tools"></div><div id="main-content" style="padding-left:32px; margin-right:32px"><div class="well tools-well"><a href="https://swissmodel.expasy.org/qmean/"><h1>QMEAN
+        <small class="hidden-xs hidden-sm">Qualitative Model Energy ANalysis</small></h1></a><div class="btn-group pull-right"><a href="https://swissmodel.expasy.org/qmean/#" class="btn dropdown-toggle" data-toggle="dropdown" title="Examples" aria-expanded="false">Examples <span class="caret"></span></a><ul class="dropdown-menu pull-right"><li class="text-center"><a href="https://swissmodel.expasy.org/qmean/QMEAN">QMEAN example</a></li><li class="text-center"><a href="https://swissmodel.expasy.org/qmean/QMEANDisCo">QMEANDisCo example</a></li><li class="text-center"><a href="https://swissmodel.expasy.org/qmean/QMEANBrane">QMEANBrane example</a></li></ul></div><a class="btn pull-right" href="https://swissmodel.expasy.org/qmean/help">Help</a><a class="btn pull-right" style="color:white" id="cameo-link" href="https://cameo3d.org/qe/3-months">CAMEO evaluation</a></div><div id="main"><div class="jumbotron"><form method="POST" enctype="multipart/form-data" onsubmit="return validateForm();" autocomplete="off"><input type="hidden" name="csrfmiddlewaretoken" value="8QKQu1zhrGxwvX5mMxIcciVIcXVyhnG5vgARb97kf7j12QCOEmpOy6XzO9wGLOhV"><input type="hidden" name="whatsthis"><div class="row top-pad " style="padding-bottom:12px;border:1px dashed #AAA" id="structureDropZone"><div class="col-sm-3"><span class="btn btn-success fileinput-button"><i class="glyphicon glyphicon-plus"></i><span>Select Coordinate File...</span><input id="structureFile" multiple="" type="file" name="structureFile" accept=".pdb,.cif,.pdb.gz,.cif.gz,.tar"></span><input type="text" name="structureUploaded" class="form-control" required="" id="id_structureUploaded"></div><div class="col-sm-9"><div id="progress" class="progress" style="margin-bottom:4px;"><div id="progressBar" class="progress-bar progress-bar-success"></div></div><div id="files" class="files"></div></div></div><div class="row"><div class="col-sm-9 col-sm-offset-3"><div id="sequenceErrorMessage" class="alert alert-danger alert-dismissible" style="display:none;margin-bottom:0px"><strong>Sequence Upload Error!</strong></div><a style="color:#333" href="https://swissmodel.expasy.org/qmean/#" onclick="$(&#39;.seqToggle&#39;).toggle();$(&#39;#sequenceDropZone&#39;).slideToggle(&#39;medium&#39;);return false;"><i>For optimum performance, please add the SEQRES of your model here 
+            <i class="seqToggle glyphicon glyphicon-chevron-down"></i><i style="display:none" class="seqToggle glyphicon glyphicon-chevron-up"></i></i></a>
+            &nbsp;<a tabindex="0" role="button" data-toggle="popover" id="seqres_help_trigger" data-original-title="" title=""><i class="glyphicon glyphicon-question-sign"></i></a><div id="sequenceDropZone" style="display:none"><textarea name="sequence" cols="40" rows="8" id="id_sequence"></textarea><input style="display:none;" id="sequenceFile" type="file" name="sequenceFile"></div></div></div><div class="row top-pad"><div class="col-sm-3">Method</div><div class="col-sm-9"><ul id="method-choice"><li class="method-item"><label for="QMEAN_radio"><input id="QMEAN_radio" type="radio" name="method" value="qmean"> 
+                    QMEAN <a tabindex="0" role="button" data-toggle="popover" id="QMEAN_help_trigger" data-original-title="" title=""><i class="glyphicon glyphicon-question-sign"></i></a></label></li><li class="method-item"><label for="QMEANDisCo_radio"><input id="QMEANDisCo_radio" type="radio" name="method" value="qmeandisco" checked="checked"> 
+                    QMEANDisCo <a tabindex="0" role="button" data-toggle="popover" id="QMEANDisCo_help_trigger" data-original-title="" title=""><i class="glyphicon glyphicon-question-sign"></i></a></label></li><li class="method-item"><label for="QMEANBrane_radio"><input id="QMEANBrane_radio" type="radio" name="method" value="qmeanbrane"> 
+                    QMEANBrane <a tabindex="0" role="button" data-toggle="popover" id="QMEANBrane_help_trigger" data-original-title="" title=""><i class="glyphicon glyphicon-question-sign"></i></a></label></li></ul></div></div><div class="row form-horizontal top-pad"><div class="col-sm-3"><label class="control-label">Project Name (Optional)</label></div><div class="col-sm-9"><input type="text" name="project_name" maxlength="100" class="form-control" id="id_project_name"></div></div><div class="row form-horizontal top-pad"><div class="col-sm-3"><label class="control-label">Email (Optional)</label></div><div class="col-sm-9"><input type="email" name="email" maxlength="100" class="form-control" id="id_email"></div></div><div class="text-right top-pad"><button id="submitButton" type="submit" class="btn btn-lg btn-success" disabled="disabled">Submit</button></div></form></div></div><div class="row" style="margin-top:16px; font-size:.8em"><div class="col-sm-12" id="references"><p><i>Reference for the QMEAN scoring function:</i><br>
+		[1] Benkert, P., Biasini, M., Schwede, T. Toward the estimation of the
+		absolute quality of individual protein structure models.
+		Bioinformatics 27, 343-350 (2011).
+		<a href="https://pubmed.ncbi.nlm.nih.gov/21134891" target="_blank"><img src="../static/img/pubmed.png" width="17" height="16" align="absmiddle"></a><a href="https://dx.doi.org/10.1093/bioinformatics/btq662" target="_blank"><img src="../static/img/doi.jpg" width="30" height="16" align="absmiddle" style="padding-left:2px"></a></p><p><i>Reference for the QMEANDisCo scoring function:</i><br>
+		[2] Studer, G., Rempfer, C., Waterhouse, A.M., Gumienny, G., Haas, J., 
+        Schwede, T. QMEANDisCo - distance constraints applied on model quality 
+        estimation. Bioinformatics 36, 1765-1771 (2020).
+		<a href="https://pubmed.ncbi.nlm.nih.gov/31697312" target="_blank"><img src="../static/img/pubmed.png" width="17" height="16" align="absmiddle"></a><a href="https://doi.org/10.1093/bioinformatics/btz828" target="_blank"><img src="../static/img/doi.jpg" width="30" height="16" align="absmiddle" style="padding-left:2px"></a></p><p><i>Reference for the QMEANBrane scoring function:</i><br>
+		[3] Studer, G., Biasini, M., Schwede, T. Assessing the local
+		structural quality of transmembrane protein models using
+		statistical potentials (QMEANBrane). Bioinformatics 30,
+		i505-11 (2014).
+		<a href="https://pubmed.ncbi.nlm.nih.gov/25161240" target="_blank"><img src="../static/img/pubmed.png" width="17" height="16" align="absmiddle"></a><a href="https://dx.doi.org/10.1093/bioinformatics/btu457" target="_blank"><img src="../static/img/doi.jpg" width="30" height="16" align="absmiddle" style="padding-left:2px"></a></p></div></div><!-- Modal --><div id="delProjectDiv" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button><h3>Delete "Untitled Project"</h3></div><div class="modal-body"><p>Are you sure you want to delete this project?</p></div><div class="modal-footer"><button class="btn btn-default" data-dismiss="modal" aria-hidden="true">Close</button><button class="btn btn-danger" id="confirmDeleteButton">Delete Project</button></div></div></div></div><div style="display:none"><div id="QMEAN_help" title="QMEAN">
+    A single model method combining statistical potentials and agreement terms 
+    in a linear manner
+</div><div id="QMEANDisCo_help" title="QMEANDisCo">
+    A single model method combining statistical potentials and agreement terms 
+    with a distance constraints (DisCo) score. DisCo evaluates consistencies of 
+    pairwise CA-CA distances from a model with constraints extracted from 
+    homologous structures. All scores are combined using a neural network 
+    trained to predict per-residue lDDT scores.
+</div><div id="QMEANBrane_help" title="QMEANBrane">
+    QMEANBrane is a combination of statistical potentials targeted at local 
+    quality estimation of membrane protein models in their naturally occurring 
+    oligomeric state: after identifying the transmembrane region using an 
+    implicit solvation model, specifically trained statistical potentials get 
+    applied on the different regions of a protein model
+</div><div id="seqres_help" title="Protein sequence">
+    Reference sequence (SEQRES) of submitted protein model. This sequence is 
+    used for secondary structure and solvent accessibility predictions. 
+    If not provided, the sequence gets directly extracted from the model. 
+    See the help page for further input information.
+</div><div id="plot_description" title="Plot">
+    The plot relates the obtained global QMEAN4 value to scores calculated from 
+    a set of high-resolution X-ray structures.
+</div><div id="sequence_by_qmean" title="Sequence">
+    Local quality is either estimated using the raw QMEAN scoring function or 
+    one of the two specialized functions QMEANBrane and QMEANDisCo. 
+    They all provide scores in range [0,1] with one being good.
+</div><div id="qmean4_help" title="QMEAN4">
+    QMEAN4 is a linear combination of four statistical potential terms.
+    It is trained to predict global lDDT score in range [0,1]. The value displayed
+    here is transformed into a Z-score to relate it with what one would expect
+    from high resolution X-ray structures.
+</div><div id="qmean_disco_global_help" title="QMEANDisCo Global">
+    The QMEANDisCo global score is the average
+    per-residue score and the provided error estimate is based on global
+    QMEANDisCo scores estimated for a large set of models and represents
+    the root mean squared difference (<i>i.e.</i> standard deviation) between
+    QMEANDisCo global score and lDDT (the ground truth).
+    As the reliability of the prediction heavily depends on model size, the
+    provided error estimate is calculated based on models of similar size to
+    the input.
+</div></div></div><div id="loginForm" style="width:600px;display:none;padding-top:12px; text-align:center;"></div><footer class="footer hidden-print"><div id="sib_footer"><ul class="list-inline" style="margin-bottom:0px; padding-bottom:4px;padding-top:4px;"><li><a href="https://www.sib.swiss/">Swiss Institute of Bioinformatics</a></li><li><a href="https://www.biozentrum.unibas.ch/research/researchgroups/overview/unit/schwede/">Schwede Group</a></li><li><a href="mailto:mouseover@for.address" class="swissmodelContactRef">Contact Us</a></li><li><a href="https://swissmodel.expasy.org/docs/terms_of_use">Terms of use</a></li><li class="pull-right"><a id="sib_footer_gototop" onclick="window.scrollTo(0,0);"><i class="glyphicon glyphicon-arrow-up"></i> Back to the Top</a></li></ul><div class="clearfix"></div></div></footer><script src="../static/js/jquery-3.4.1.min.js"></script><script src="../static/js/jquery-ui.min.js"></script><script src="../static/js/bootstrap-3.3.7.min.js"></script><script src="../static/js/jquery.fancybox.pack.js"></script><script>
+$(document).ready(
+	function()
+	{
+		$(function (){  $('[data-toggle="popover"]').popover(
+			{
+				html:true,
+        placement:'auto',
+				content:function(){
+					var id = $(this).attr('id');
+					var src = id.substring(0,id.length-8);
+					$(this).attr('data-original-title',$('#'+src).attr('title'));
+					return $('#'+src).html();
+				}
+			});
+		});
+	});
+
+
+	$('#delProjectDiv').on('shown.bs.modal', function (e) {
+    	$('#confirmDeleteButton').focus();
+  	});
+
+	function confirmDeleteProject(id)
+	{
+        $('#delProjectDiv').modal('show');   
+            $('#confirmDeleteButton')
+                .off('click')
+                .on('click',function()
+                  {
+                      $('#delProjectDiv').modal('hide');  
+                      
+                      //This obfuscation is just to stop bots from following the link
+                      
+                      var url = ['x/delete','/qmean','/xxxxx'];
+                      $.post( (url[1]+url[2]+url[0]).replace('xxxxxx',id),
+                          { 
+                            csrfmiddlewaretoken:'8QKQu1zhrGxwvX5mMxIcciVIcXVyhnG5vgARb97kf7j12QCOEmpOy6XzO9wGLOhV' 
+                          },
+                          function(d,s)
+                          {   
+                              if(s=='success')
+                                  if(d.status=='DELETED')
+                                  {
+                                     $('#del_'+d['projectid']).remove();
+                                     window.location.href='/qmean/';
+                                  }
+                                  else
+                                      alert('Cannot delete, project is still '+d.status.toLowerCase())
+                          });       
+          });
+	}
+	
+</script><script src="../static/js/jquery.iframe-transport.js"></script><script src="../static/js/jquery.fileupload.js"></script><script>
+function csrfSafeMethod(method) {
+    // these HTTP methods do not require CSRF protection
+    return (/^(GET|HEAD|OPTIONS|TRACE)$/.test(method));
+}
+$.ajaxSetup({
+    crossDomain: false,
+    beforeSend: function(xhr, settings) {
+        if (!csrfSafeMethod(settings.type))
+            xhr.setRequestHeader("X-CSRFToken", "8QKQu1zhrGxwvX5mMxIcciVIcXVyhnG5vgARb97kf7j12QCOEmpOy6XzO9wGLOhV");
+    }
+});
+
+$('#id_sequence').bind('input propertychange', function(){enableSubmit(true);} );
+
+$('#sequenceFile').fileupload({
+        dropZone: $('#sequenceDropZone'),
+        url: '/qmean/validate/sequence/',
+        dataType: 'json',
+        done: function (e, data) {
+            $.each(data.result.files, function (index, file)
+            {
+                if(file.error)
+                {
+                  $('#sequenceErrorMessage').slideDown();
+		          setTimeout(function(){$('#sequenceErrorMessage').slideUp();},2500);
+                }
+                else
+                {
+                  $('#id_sequence').val(file.content);
+                  enableSubmit(true);
+                }
+            });
+        }
+    }).prop('disabled', !$.support.fileInput)
+        .parent().addClass($.support.fileInput ? undefined : 'disabled');
+
+function uploadStructure(e, data){
+    $.each(data.result.files, function (index, file)
+                {
+                    if($('.uploadSuccess').length>199)
+                    {                        
+                        $('.fileinput-button').attr('disabled','disabled').addClass("disabled");
+                        $('#structureFile').fileupload({ dropZone: null});
+                        $('#progress').parent().prepend("<h4 style='color:red'>You've reached the maximum upload limit!</h4>");
+                        $('#progress').remove();
+                    }
+                    else if(file.error)
+                    {
+                        $('#progressBar')
+                                .removeClass('progress-bar-success')
+                                .addClass('progress-bar-danger');
+                         $('<div style="padding:8px; margin-bottom: 0px;" class="alert alert-danger alert-dismissible" role="alert">'
+                            +'<button type="button" class="close" data-dismiss="alert" style="right:0px">'
+                            +'<span aria-hidden="true">&times;</span></button>'
+                            +'<strong>'+file.original_name+'</strong> '
+                            +(file.preprocess && !file.assignSecStruct?
+                                    '<a href="/qmean/help#help_project_data_processing" target="_blank">'
+                                    +'After removing atoms</a>, the remaining structure is unreadable'
+                                    :file.error)
+
+                            +'</div>')
+                                .appendTo('#files');
+                    }
+                    else
+                    {
+                        $('<div class="uploadSuccess">'+file.original_name
+                            +' <i class="glyphicon glyphicon-ok"></i>'
+                            +(file.preprocess 
+                                && file.preprocess.atomsRemoved>0?
+                                    ' <a href="/qmean/help#help_project_data_processing" target="_blank"><i class="glyphicon glyphicon-warning-sign"/> '
+                                        +file.preprocess.atomsRemoved+' atom'
+                                        +(file.preprocess.atomsRemoved==1?' was ':'s were ')
+                                        +'removed!</a>':'')
+                            +(file.preprocess 
+                                && file.preprocess.residuesRemoved>0?
+                                  ' <a href="/qmean/help#help_project_data_processing" target="_blank"><i class="glyphicon glyphicon-warning-sign"/> '
+                                   + file.preprocess.residuesRemoved+' residue'
+                                   +(file.preprocess.residuesRemoved==1?' was ':'s were ')
+                                   +'removed!</a>':'')
+                            +(file.preprocess 
+                                && file.preprocess.atomsRemoved>0?
+                               '<div style="max-height:120px; overflow: auto"><pre>'+file.preprocess.molck_log+'</pre></div> ':'')
+
+                            +'</div>').appendTo('#files');
+                        
+                        $('#id_structureUploaded').val(
+                                $('#id_structureUploaded').val()
+                                +($('#id_structureUploaded').val().length>0?',':'')
+                                +file.file_name );
+                        enableSubmit(true);
+                    }
+
+                    setTimeout(function()
+                    {
+                        $('#progressBar')
+                            .hide()
+                            .removeClass('progress-bar-danger')
+                            .addClass('progress-bar-success')
+                            .css('width','0%');
+                    },1500);
+                });
+};
+
+$('#structureFile').fileupload({
+        dropZone: $('#structureDropZone'),
+        url: '/qmean/validate/structure/',
+        dataType: 'json',
+        sequentialUploads: true,
+        drop: function(){
+	        enableSubmit(false);
+            $('#structureDropZone').removeClass('error');
+            $('#progressBar')
+                        .removeClass('progress-bar-danger')
+                        .addClass('progress-bar-success')
+                        .show();
+        },
+        done: uploadStructure,
+        progressall: function (e, data) {
+            var progress = parseInt(data.loaded / data.total * 100, 10);
+            $('#progressBar').css('width',progress + '%');
+        }
+    }).prop('disabled', !$.support.fileInput)
+        .parent().addClass($.support.fileInput ? undefined : 'disabled');
+
+function enableSubmit(enable)
+{
+if(enable && validateForm() )
+{
+	$('#submitButton').prop('disabled','');
+}
+else{
+	$('#submitButton').prop('disabled','disabled');
+}
+};
+
+function validateForm()
+{
+  return $('#id_structureUploaded').val().length>0 ;
+};
+
+</script><script>
+    $('a.smng-help').append('<icon class="glyphicon glyphicon-question-sign"></i>');
+    $(document).on('click','a.smng-help',function()
+    { 
+        window.open($(this).attr('href'),
+            'Help',
+            'width=920,height=600,left=20,top=100,directories=no,menubar=yes,toolbar=yes,'
+                +'status=no,scrollbars=yes,resizable=no');
+        return false;
+    });
+
+     $('a.swissmodelContactRef')
+        .on('mouseover',function()
+            {
+                $(this).attr('href',["ch", ".", "nibas", "l@u",
+             "mode", "-swiss",
+              ":help", "to", "ail", "m"].reverse().join(''));
+                $(this).off('mouseover');
+            });
+
+     function showLogin()
+     {
+        $('#loginForm')
+            .load('/login', { 'csrfmiddlewaretoken':'8QKQu1zhrGxwvX5mMxIcciVIcXVyhnG5vgARb97kf7j12QCOEmpOy6XzO9wGLOhV' },
+                function()
+                {
+                    $("<a href='#loginForm'/>'").fancybox().trigger('click');  
+                    $('#id_username').focus();
+                });
+        
+     } 
+     function createAccount()
+     {
+        $('#loginForm')
+            .load('/create_account',
+                function()
+                {
+                    $("<a href='#loginForm'/>'").fancybox().trigger('click'); 
+                    $('#id_username').focus();  
+                });
+     }
+     
+</script>
+</body></html>

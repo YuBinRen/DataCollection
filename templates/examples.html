@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<!-- saved from url=(0043)https://swissmodel.expasy.org/docs/examples -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><!-- Global site tag (gtag.js) - Google Analytics --><script type="text/javascript" async="" src="../static/js/analytics.js"></script><script async="" src="../static/js/js"></script><script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-8667194-2');
+    </script><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="ROBOTS" content="ALL"><title>Examples | SWISS-MODEL</title><meta name="description" content="SWISS-MODEL is a fully automated protein structure homology-modelling server. The purpose of this server is to make protein modelling accessible to all life science researchers worldwide."><link rel="stylesheet" type="text/css" href="../static/css/bootstrap-3.3.7.min.css" media="screen,print"><link rel="stylesheet" type="text/css" href="../static/css/bootstrap-theme-3.3.7.min.css" media="screen,print"><link rel="stylesheet" type="text/css" href="../static/css/master.css" media="all"><link rel="stylesheet" type="text/css" href="../static/css/jquery.fancybox.css"><link rel="stylesheet" type="text/css" href="../static/css/jquery-ui.min.css"><link rel="shortcut icon" href="https://swissmodel.expasy.org/static/images/favicon.png" type="image/png"><link rel="apple-touch-icon" href="https://swissmodel.expasy.org/static/images/apple-touch-57.png"><link rel="apple-touch-icon" sizes="72x72" href="https://swissmodel.expasy.org/static/images/apple-touch-72.png"><link rel="apple-touch-icon" sizes="114x114" href="https://swissmodel.expasy.org/static/images/apple-touch-114.png"></head><body><nav class="navbar navbar-default"><div class="container-fluid"><div class="navbar-header"><button aria-controls="navbar" aria-expanded="false" data-target=".collapseThis" data-toggle="collapse" class="navbar-toggle collapsed" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="hidden-xs hidden-sm navbar-brand" style="margin-left:0px;padding:8px 4px 0px 0px;" title="SIB Swiss Institute of Bioinformatics" href="https://www.sib.swiss/" target="_blank"><img src="../static/img/sib_logo_small.png" alt="SIB logo" style="max-height:50px"></a><a class="hidden-xs hidden-sm navbar-brand" style="margin-left:0px; padding:8px 0px 0px 4px;" title="Biozentrum | University of Basel | The Center for Molecular Life Sciences" href="http://www.biozentrum.unibas.ch/" target="_blank"><img src="../static/img/biozentrum_en.png" alt="Biozentrum logo" style="max-height:36px"></a><a class="hidden-xs hidden-sm navbar-brand" href="https://swissmodel.expasy.org/" style="margin-left:0px;padding-left:0px;padding-right:0px;font-size:28px;">SWISS-MODEL</a><a id="navbar-brand" class="hidden-md hidden-lg navbar-brand" href="https://swissmodel.expasy.org/" style="margin-left:0px;font-size:20px;">SWISS-MODEL</a></div><div id="navbar" class="collapseThis navbar-collapse collapse"><!-- Collect the nav links, forms, and other content for toggling --><ul class="nav navbar-nav navbar-right"><li class="dropdown "><a href="https://swissmodel.expasy.org/interactive" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Modelling</a><ul class="dropdown-menu" role="menu"><li><a class="text-left" href="https://swissmodel.expasy.org/interactive">myWorkspace</a></li><li><a class="text-left" href="https://swissmodel.expasy.org/interactive#alignment">Alignment Mode</a></li><li><a class="text-left" href="https://swissmodel.expasy.org/interactive#structure">User Template Mode</a></li><li><a class="text-left" href="https://swissmodel.expasy.org/interactive#deepview">DeepView Project Mode</a></li><li class="divider"></li><li><a class="text-left" href="https://swissmodel.expasy.org/templates/">Template Library</a></li></ul></li><li id="smrLink" class="dropdown "><a href="https://swissmodel.expasy.org/repository" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Repository</a><ul class="dropdown-menu" role="menu"><li><a href="https://swissmodel.expasy.org/repository">SWISS-MODEL Repository</a></li><li><a href="https://swissmodel.expasy.org/repository/user_annotation_upload">Annotation Projects</a></li></ul></li><li class="dropdown "><a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Tools</a><ul class="dropdown-menu" role="menu"><li><a href="https://swissmodel.expasy.org/qmean/" tabindex="-1">QMEAN</a></li><li><a href="https://swissmodel.expasy.org/lddt" tabindex="-1">lDDT</a></li><li><a href="https://swissmodel.expasy.org/assess">Structure Assessment</a></li><li><a href="https://swissmodel.expasy.org/comparison/">Structure Comparison</a></li></ul></li><li class="dropdown"><a href="https://swissmodel.expasy.org/docs/examples#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Documentation</a><ul class="dropdown-menu" role="menu"><li><a href="https://swissmodel.expasy.org/docs/help" tabindex="-1">SWISS-MODEL</a></li><li><a href="https://swissmodel.expasy.org/docs/examples" tabindex="-1">Examples</a></li><li><a href="https://swissmodel.expasy.org/docs/tutorial" tabindex="-1">Video Tutorial</a></li><li><a href="https://swissmodel.expasy.org/docs/blog" tabindex="-1">New Features</a></li><li role="separator" class="divider"></li><li><a href="https://swissmodel.expasy.org/docs/repository_help" tabindex="-1">SWISS-MODEL Repository</a></li><li role="separator" class="divider"></li><li><a href="https://swissmodel.expasy.org/qmean/help" tabindex="-1">QMEAN</a></li><li><a href="https://swissmodel.expasy.org/lddt/help/" tabindex="-1">lDDT</a></li><li><a href="https://swissmodel.expasy.org/assess/help">Structure Assessment</a></li><li><a href="https://swissmodel.expasy.org/comparison/help">Structure Comparison</a></li><li role="separator" class="divider"></li><li><a href="https://swissmodel.expasy.org/course" tabindex="-1">Protein Structure Course</a></li><li role="separator" class="divider"></li><li><a href="https://swissmodel.expasy.org/docs/references" tabindex="-1">References</a></li></ul></li><li><a onclick="showLogin();">Log in</a></li><li><a onclick="createAccount();">Create Account</a></li></ul></div></div><!-- /container-fluid --></nav><div id="tools"></div><div id="main-content" style="padding-left:32px; margin-right:32px"><style>
+img { border:0; max-width:100%; }
+</style><div class="row docu"><div class="col-sm-3 col-sm-push-9 docu-sm-fix col-md-3 col-md-push-9 docu-md-fix"><span id="message"></span><nav class="docu_nav"><ul class="nav"><li class=""><a href="https://swissmodel.expasy.org/docs/examples#example_sod" class="docu_link active">
+            How to build a homology model
+            <i>using superoxide dismutase</i></a></li><li><a href="https://swissmodel.expasy.org/docs/examples#example_otc" class="docu_link">
+            How to model the correct oligomeric state of a protein
+            <i>using ornithine carbamoyltransferase</i></a></li><li><a href="https://swissmodel.expasy.org/docs/examples#example_deepview" class="docu_link">How build a model using the DeepView Project Mode</a></li><li><a href="https://swissmodel.expasy.org/docs/examples#example_hem" class="docu_link">How to build a model for a hetero-oligomeric protein
+          <i>using hemoglobin</i></a></li></ul></nav></div><div class="col-sm-9 col-sm-pull-3 col-md-9 col-md-pull-3"><h1>SWISS-MODEL Examples</h1><div id="example_sod" style="margin-bottom:48px;"><h2>How to build a homology model
+        <small>using superoxide dismutase</small></h2><p>
+        Here, we provide a step-by-step example on how to build a homology model for the Superoxide Dismutase [Cu-Zn]
+        protein from <i>Drosophila melanogaster</i> (SOD, UniprotKB AC: P61851).
+        This protein destroys radicals which are normally produced within the cells
+        and which are toxic to biological systems. 
+        <br>In its native form, the protein is a homodimer with two metal-binding sites per subunit: one for Cu and one for Zn.
+      </p><p>
+        Click the "Start Modelling" button or select the option "myWorkspace" from the navigation bar (Modelling →
+        myWorkspace) to start a new modelling project.<br>
+        You can either paste the protein sequence or provide the UniprotKB AC (P61851) of your target sequence in the input form. <br>
+        Alternative input formats can be selected using the apposite drop-down menu.
+        A project title is automatically suggested from the information retrieved from SWISS-MODEL's own copy of the UniprotKB annotation, if a UniProtKB AC is used.
+      </p><p>
+       To search for available template structures, click on the “Search for Templates” button.<br>
+       Once the search is started, you can verify the status of the job, and optionally you can bookmark the page using the provided link
+       and come later to visualise the results. Otherwise you need to wait until the search finishes.
+      </p><p>
+        Note: By using the "Build Model" option, an automatic pipeline will run both the template search and the template selection steps (see more details in the <a target="_blank" href="https://swissmodel.expasy.org/docs/help#automated_mode">Automated Mode</a> section of the SWISS-MODEL Help page). <br> The automated mode selects templates that maximise the expected quality of the model. However, this does not garantee that the best template available is selected. <br> Depending on the intended application of a model, selecting a different template than the top-ranked one might be necessary. <br>If the aim is to build a model of a protein in complex with a ligand rather than its apo form, a template with a similar ligand or in a holo conformation should be preferred.
+      </p><p><img src="../static/img/sod_fig_1.png" style="padding:20px;"><br>
+      (See interactive <a href="https://swissmodel.expasy.org/interactive/sample/templates/">Sample output</a>)
+      </p><p>
+        When the template search is finished, the output page includes a main table showing the list of available templates ranked according to the expected
+        quality of the resulting models (see <a target="_blank" href="https://swissmodel.expasy.org/docs/help#template_ranking">here</a> for more details on template ranking).<br>
+        For each template, the following information is provided:
+      </p><ul><li>A checkbox to select and visualise the template in the 3D panel</li><li>The SMTL ID of the template and a link to the SWISS-MODEL Template Library page associated to that SMTL entry</li><li>The protein name of the template</li><li>The coverage to the target sequence (darker shades of blue refer to higher sequence identity)</li><li>The GMQE (Global Model Quality Estimation)</li><li>The QSQE (Quaternary Structure Quality Estimation)</li><li>The target–template sequence identity</li><li>The experimental method used to determine the structure (and resolution, if applicable)</li><li>The oligomeric state of the SMTL biounit</li><li>The ligands present in the experimental structure (if any)</li><li>A clickable icon to expand the box with the description of the template</li></ul><p>
+      As you can see from the table, there are multiple templates which cover the
+      complete sequence and share a considerable sequence identity with our target sequence.
+      Let's analyse them in more detail.
+      </p><img src="../static/img/sod_fig_2.png" style="padding:20px;"><p>
+        By clicking on the checkbox, different template structures can be visualised and compared to by structure superposition in the 3D viewer.<br>
+        Let's rank them according to their coverage to the target sequence, and let's select the four top-ranking templates. We can observe that they all share a high sequence identity to the target (Identity &gt; 67%).<br>
+        As expected, their structures also look very similar as they superimpose very well. Some local differences are present at the level of loop regions.
+      </p><p>
+        What can be the possible reason of this?
+      </p><p>
+        Typically, due to their higher variability in terms of sequence and structure compared to the rest of the protein, loops are the regions that are the most susceptible to modelling errors.<br>
+        On the other hand, they are often involved in protein function, hence accurately modelling their structure is of crucial importance.<br></p><p>
+        Are these loops important for the function of the protein?
+      </p><img src="../static/img/sod_fig_3.png" style="padding:20px;"><p>
+        To get an overview of the similarity between the selected templates click on the "Sequence Similarity" tab.
+      </p><p>  An interactive chart shows the relationship between the templates in the sequence similarity space and your target protein is represented as a filled red circle.<br>
+        Each template is displayed as a blue circle, where the thick blue arc indicates target coverage. The distance between different templates is proportional to the pairwise sequence similarity, i.e. evolutionarily closely related templates will be clustered together. <br>
+        By clicking on a circle you can look at available information on the specific template. You can also select and visualise a group of similar templates by hovering over the cluster.<br>
+        The superposed structures of the selected templates will be instantaneously displayed in 3D, where you can inspect their structural differences.
+      </p><p>
+      Would you expect large structural variations within a cluster?
+      </p><img src="../static/img/sod_fig_4.png" style="padding:20px;"><p>
+        By looking at the "Alignment" tab, you can notice that the sequences of the selected templates are very similar overall. <br>
+        Compared to the sequence of the target, they show some insertions and deletions as well as some amino acid substitution.<br>
+        By clicking on the cog icon, you can change the colouring scheme of the alignment by selecting one of the many available options.
+        Let's select the Clustal colouring scheme.
+      </p><p>
+        Based on the alignment you see, can you now explain the observed structural difference between the templates?
+      </p><img src="../static/img/sod_fig_5.png" style="padding:20px;"><p>As expected, the regions that show most of the structural differences correspond to positions in the alignment where amino acid substitutitons and indels are present.<br>
+        Even if these differences seem to have little or no impact on the overall structure of the protein, they can still play an important role for the function of the protein, i.e. ligand- and/or substrate-binding.
+      </p><p>
+        If we go back to the template table ("Templates" tab), we can see that not all of the selected templates have been solved in presence of the natural ligands (Cu and Zn).<br>
+        In particular, only the top-ranked template, after sorting by sequence identity, binds to the Zn ion, while the second-best template structure contains both the Zn and the Cu ion.</p><p>
+        Which template(s) would you select to build your model?
+      </p><p>
+        After you have selected the template(s), click the 'Build Model' button to run the modelling job.<br></p><img src="../static/img/sod_fig_6.png" style="padding:20px;"><p>
+       For each model generated based on the selected templates, the following information is provided:
+      </p><ul><li>A file containing the model coordinates along with relevant information on the modelling process</li><li>The oligomeric state of the model </li><li>The modelled ligands </li><li>QMEAN model quality estimation results</li><li>The target–template sequence alignment</li><li>The template name (SMTL ID)</li><li>The sequence identity to the target</li><li>The target sequence coverage </li></ul><p>
+       Models can be displayed interactively using the 3D viewer. By default, models are coloured by model quality estimates assigned by QMEAN to highlight regions of the model which are well- or poorly modelled. <br>If several alternative models have been built for a target sequence, they can be interactively superposed and visualised.
+      </p><p><img src="../static/img/sod_fig_7.png" style="padding:20px;"><br>
+      (See interactive <a href="https://swissmodel.expasy.org/interactive/sample/models/01">Model Output</a>)
+      </p><p>
+      Local estimates of the model quality based on the QMEAN scoring function are shown as a per-reside plot and as a global score in relation to a set of high-resolution PDB structures (Z-score).<br>
+      In the first plot below, a score is associated to each residue of the model (reported on the x-axis), reflecting the expected similarity to the native structure (y-axis). Typically, residues showing a score below 0.6 are expected to be of low quality. Different chains are shown in different colours. <br>
+      The second plot shows the quality of the model, as normalised QMEAN score (y-axis), in comparison to the scores obtained for high-resolution crystal structures. Higher values indicate that the model is of comparable quality to experimental structures of similar size.
+      </p><p>
+      Based on the results you obtained, can your homology model be considered a reliable model?
+      </p><img style="max-height:320px;padding:20px;" src="../static/img/sod_fig_8.png"><img style="max-height:320px;padding:20px;" src="../static/img/sod_fig_9.png"></div><div id="example_otc" style="margin-bottom:48px;"><h2>How to model the correct oligomeric state of a protein
+          <small>using ornithine carbamoyltransferase</small></h2>
+      In this example we show how to infer the quaternary structure of Ornithine Carbamoyltransferase
+      from <i>Thermus thermophilus </i>(OTC, UniProtKB AC P96134). OTC is involved in arginine
+      biosynthesis, where it catalyses the formation of citrulline and phosphate from
+      ornithine and carbamoyl phosphate.
+      <p>Please access the <a href="https://swissmodel.expasy.org/">
+        SWISS-MODEL website</a> and click "Start modelling" to start a new modelling
+        project. Now, please provide your target
+        protein. You can either paste the protein sequence or provide the UniprotKB AC
+        (P96134) of your target sequence in the input form. Alternative input formats
+        can be selected using the apposite drop-down menu. A project title is
+        automatically suggested if a UniProtKB AC is used.
+      </p><img src="../static/img/otc_fig_1.png" style="padding:20px;"><br><p>To search for available template structures, click on the “Search for Templates”
+        button. Once the search is started, you can wait and verify the status of the
+        job or you can bookmark the page using the provided link and visualise the
+        results later. When the template search is finished, the output page includes
+        a table showing the list of available templates ranked according to the expected
+        quality of the resulting models (see <a target="_blank" href="https://swissmodel.expasy.org/docs/help#template_ranking">here</a> for more details on template ranking).
+        For each template, the following information is provided:
+      </p><ul><li>A clickable icon to expand the box with the description of the template</li><li>A checkbox to select and visualise the template in the 3D panel</li><li>The SMTL ID of the template and a link to the SWISS-MODEL Template Library page associated to that SMTL entry</li><li>The protein name of the template</li><li>The coverage to the target sequence (darker shades of blue refer to higher sequence identity)</li><li>The GMQE (Global Model Quality Estimation)</li><li>The QSQE (Quaternary Structure Quality Estimation)</li><li>The target–template sequence identity</li><li>The experimental method used to determine the structure (and resolution, if applicable)</li><li>The oligomeric state of the SMTL biounit</li><li>The ligands present in the experimental structure (if any)</li></ul><p>As you can see from the table, the best template according to GMQE shares a
+        sequence identity of 99.34% and is the only template annotated as monomeric,
+        followed by homo-12-mers, homo-trimers and homo-hexamers with sequence
+        identities ranging from 40 to 50%.
+        It is hence very difficult to decide which template with which quaternary
+        structure should be selected, if we only consider GMQE and sequence identity.
+      </p><img src="../static/img/otc_fig_2.png" style="padding:20px;"><br><p>
+        A more indicative view can be obtained by selecting the “Quaternary Structure”
+        tab. Here, the result of structural template clustering is reported as a decision tree.
+        <br>
+        Each leaf is a template labelled with the
+        <a target="_blank" href="https://swissmodel.expasy.org/docs/help#SMTL">SMTL</a> ID and a bar indicating
+        sequence identity and coverage.
+        <br>
+        The <a target="_blank" href="https://swissmodel.expasy.org/docs/help#qs_view">decision tree</a>
+        follows the levels of clustering based on oligomeric state, stoichiometry,
+        the topology of the complexes, and interface similarity.
+        <br>
+        The first clustering level shows two groups of templates,
+        monomeric and homomeric respectively. At the stoichiometry level,
+        templates are grouped according to the number of different subunits.
+        At the topology level, templates are grouped according to the arrangement
+        of the different subunits. At the last level of clustering,
+        templates are grouped according to their interface similarity.
+        <br>
+        In this example, we see that interfaces are coherent between templates,
+        as there is a single cluster for each topology level group.
+      </p><p>Different template structures can be visualised and compared to by structure
+        superposition in the 3D viewer by clicking on their name. A check mark near
+        the sequence identity and coverage bar indicates the selected template.
+      </p><img src="../static/img/otc_fig_3.png" style="padding:20px;"><br><p>According to the clustering level, which can be selected using the radio
+        button provided at the top of the page, a PPI Fingerprint curve is shown
+        for the different groups of templates.
+        <br>
+        The latter curve offers an indication of how interface conservation
+        (shown on the y-axis) varies as a function of the evolutionary distance
+        within a protein family (expressed as sequence identity on the x-axis) and
+        thus provides an additional criterion for quaternary structure prediction.
+        More specifically, the degree of conservation of an interface is expressed as
+        the log-ratio of the variability of interface residues over surface residues,
+        as calculated from a MSA. Hence, values below zero indicate that surface
+        residues are less prone to mutate when compared to surface residues.
+        <br>
+        The PPI Fingerprint curves follow a characteristic pattern:
+        when only very similar sequences are considered (80-90% sequence identity
+        thresholds), the ratio is close to zero and there is no difference among
+        different oligomeric states. When more remote homologs are included, the
+        interface conservation becomes stronger and eventually reaches a minimum
+        (sequence identity below 40%) supporting the evidence that the trimeric form
+        is the more conserved among the other possible options.
+      </p><p>This evidence, along with other features of the templates, is used to
+        estimate the accuracy of the predicted interchain contacts for a model
+        given a specific template. This value of accuracy, defined as quaternary
+        structure quality estimation (QSQE) score,  is a number between 0 and 1 and
+        is used to sort templates in each interface similarity level cluster. The
+        QSQE score associated to each template can be visualised by mouse over. A
+        value close to 1 indicates a high confidence that this template is representing
+        the correct quaternary structure of our model.
+        Templates showing a QSQE above 0.7, most likely leading to a model with the
+        correct quaternary structure (4nf2.1.A in our example), are highlighted with green lines.
+      </p><p>Even in absence of direct structural evidence, the quaternary structure
+        analysis indicates that the trimeric interface is subject to greater evolutionary
+        constraints than the rest of the protein surface, exactly as would be
+        expected of a true trimeric interface.
+        <br>
+        This is in contrast to the template with the highest sequence
+        identity (~99%) and the highest GMQE score (2ef0.1.A). However, it is worth
+        noting that the latter template was wrongly annotated as monomeric upon
+        deposition of the structure. Instead, experimental data are available
+        supporting the evidence that OTC is in fact a trimeric protein (<a target="_blank" href="https://dx.doi.org/10.1111/j.1432-1033.1997.00466.x">Sanchez et al.</a>).
+      </p><p>For more information on the PPI Fingerprint and Quaternary Structure Prediction, please see the article by <a href="https://swissmodel.expasy.org/docs/references#qsqe">Bertoni et al.</a>.
+      </p></div><div id="example_deepview" style="margin-bottom:48px;"><h2>How build a model using the DeepView Project Mode</h2><p>
+      In order to demonstrate how to use DeepView to build oligomeric assemblies, we are going to build a model of the protease of murine leukemia virus based on the PDB file <a href="http://www.rcsb.org/structure/3s43" target="_blank">3S43</a>.<br>
+         (Please keep in mind that this is just an example to illustrate the workflow; presumably, there would be much better templates available.)</p><ol><li><b>Get the template in the correct quaternary state<br></b>First, check the correct biological assembly of your template protein. Copies of the asymmetric unit of the PDB files
+      can be generated by applying the correct crystallographic symmetry operators. If you are unsure how to do this, PDB will most likely have the correctly
+      assembled coordinate file ("Biological Assembly") for you. In our example, it is <a href="https://files.rcsb.org/download/3S43.pdb.gz" target="_blank">Biological Assembly coordinate file for 3S43</a>. <br>
+      Download and save the template coordinates as a PDB file to your local disk.
+      <br></li><li><b>Remove all non-amino acid residues</b><br>
+        Open the file in DeepView and remove all non-amino acid groups such
+            as ions, ligands, OXT, etc. from the template (unless they are
+             at the very end of the file). You can do this by selecting the
+             groups in the control panel of DeepView and remove the selected
+             residues ("Build" menu) [<a href="https://swissmodel.expasy.org/static/deepview/3s43_dimer.pdb" target="_blank">3s43_dimer.pdb</a>].
+      </li><li><b>Ensure unique chain IDs</b><br>
+        Make sure each chain has a unique
+          name, e.g. "A","B",
+           etc. Colouring the molecule by chain helps to check.<br></li><li><b>Target sequence</b><br>
+          In our example, we will model the protease domain of
+          murine leukemia virus     (UniProtKB AC: <a href="https://swissmodel.expasy.org/repository/uniprot/P03356" target="_blank">P03356</a>). As
+          you can see, the virus-encoded polyprotein consists of several
+          domains. Before modelling, it makes things easier to focus on the
+          interesting segment. For example, you could use the IprScan (<a href="https://swissmodel.expasy.org/docs/references#iprscan">Jones et al.</a>) utility to identify
+          the individual domains.  In our case, we will use residue 3-100. <br>
+          Create a FASTA file with your target sequences for each chain in
+            the SAME order as in the template, i.e. "A", then "B"
+        etc. separated by semicolons. [<a href="https://swissmodel.expasy.org/static/deepview/target.txt" target="_blank">target.txt</a>] 
+      </li><li><div align="left"><b>Adjust target–template alignment in DeepView</b><br>
+            - Load the FASTA file containing the target sequence into DeepView (Menu: Swissmodel → Load raw sequence ...), <br>
+            - Open the template file with the correct biological assembly (Menu: File → Open PDB File)
+            - generate a preliminary target–template alignment (Menu: Fit - Fit raw sequence)<br>
+            - Open the alignment window and adjust alignment. Make sure NOT to align residues of different chains. Do not align
+            to "non-amino acid residues" like HET groups or OXT. Make sure all insertions &amp; deletions are correctly positioned in the structural context.<br><br><img src="../static/img/deepview.jpg" style="padding:20px; max-width:100%500px"><br></div></li><li><b>SWISS-MODEL submission</b><br>
+        Save the project to your local disk [e.g. <a href="https://swissmodel.expasy.org/static/deepview/dimer_3s43_prj.pdb" target="_blank">dimer_3s43_project.pdb</a>]
+        and submit the file to the project mode of SWISS-MODEL workspace for
+        model-building. A new work unit will be created containing the modelling
+        results, including log file, quality evaluation, and model project file
+        of the modelled dimer.</li></ol><p class="text-center"><img src="../static/img/dimer.png" border="1" style="padding:20px;"><br>Model of the dimeric protease.
+      </p></div><div id="example_hem" style="margin-bottom:48px;"><h2>How to build a model for a hetero-oligomeric protein
+        <small>using hemoglobin</small></h2><p>In this example, we are going to build a model of the hemoglobin from <i>Physeter macrocephalus</i>
+        (Sperm whale). Hemoglobin is the oxygen-carrying protein of red blood cells.
+        It is made up of four protein chains (globulins) connected together to form a heterotetramer.
+        The normal adult hemoglobin contains two alpha-globulin (UniprotKB AC: P09904) and two beta-globulin (UniprotKB AC: P09905) chains.
+      </p><p>Go to the <a href="https://swissmodel.expasy.org/">SWISS-MODEL main page</a>
+        and click "Start modelling" to start a new modelling project.
+        Now, please provide your target protein.
+        First, enter the UniprotKB AC (P09904) of the alpha-subunit in the target sequence input form.
+      </p><img src="../static/img/hem_fig_1.png" style="padding:20px;"><br><p>Then, click the "Add Hetero Target" button and enter the UniprotKB AC (P09905) for the beta subunit.
+      </p><img src="../static/img/hem_fig_2.png" style="padding:20px;"><br><p>To search for available template structures, click on the “Search for Templates” button.</p><p>
+      Once the search is started, you can verify the status of the job, and optionally you can bookmark the page using the provided link and come later to visualise the results. Otherwise, you need to wait until the search finishes. </p><p>
+       Once the template search is finished, available templates are listed together with information of their oligomeric state.
+      </p><p>As you can see most templates are as expected hetero-tetramers (hetero-2-2-mers, indicating
+        that both subunits are each twice in the template) and cover the full
+        target sequence. The sequence identity is mostly above 80%.
+      </p><img src="../static/img/hem_fig_3.png" style="padding:20px;"><br><p>
+        We now select the Quaternary Structure view to better compare the different
+        oligomeric states of the templates.
+      </p><img src="../static/img/hem_fig_4.png" style="padding:20px;"><br><p>Here, the templates are clustered according to oligomeric state, stoichiometry, and QSQE-score (Quaternary Structure Quality Estimate), and the results are shown as a decision tree.
+      Each leaf of the tree is a template labelled with the <a target="_blank" href="https://swissmodel.expasy.org/docs/help#SMTL">SMTL</a> ID and a bar indicating sequence identity and coverage (darker shades of blue refer to higher sequence identity).
+       According to the stoichiometry, two clusters are formed: we have 2-2-mers and 1-1-mers.
+       <br>Different template structures can be visualised and compared to by structure superposition in the 3D viewer by clicking on their name.
+      </p><p>
+      The PPI Fingerprint plot shows the sequence identity of templates to the target sequence on the x-axis. On the y-axis the difference in sequence similarity between the protein surface and the protein interface is reported expressed as "Interface Conservation" score. Values below zero indicate a higher mutation rate of surface residues compared to those at the interface, confirming the interface conservation of the protein family.<br>
+      It can be observed that the tetrameric interface (hetero-2-2-mers) is the more conserved.</p><p>
+      For more information on the PPI Fingerprint and Quaternary Structure Prediction, please see the article by <a href="https://swissmodel.expasy.org/docs/references#qsqe">Bertoni et al.</a>.
+      </p><p>
+      We can now select templates with the correct oligomeric state.
+      From the list of template structures, select the one most suitable for your application on the basis of the annotation provided. For example, it may be worth considering that some of the available template structures (e.g. 3cy5.1) contain the important iron-containing porphyrin compound, namely the heme group (HEM).
+      </p><p>
+        Upon inspection, we observe that the built model is of
+        high quality (high GMQE, QMEAN and local quality estimates). To see the
+        local quality estimates on the model, change the colouring scheme to QMEAN (click on the cog
+        symbol next to the alignment to the left).
+      </p><img src="../static/img/hem_fig_5.png" style="padding:20px;"></div></div></div></div><div id="loginForm" style="width:600px;display:none;padding-top:12px; text-align:center;"></div><footer class="footer hidden-print"><div id="sib_footer"><ul class="list-inline" style="margin-bottom:0px; padding-bottom:4px;padding-top:4px;"><li><a href="https://www.sib.swiss/">Swiss Institute of Bioinformatics</a></li><li><a href="https://www.biozentrum.unibas.ch/research/researchgroups/overview/unit/schwede/">Schwede Group</a></li><li><a href="mailto:mouseover@for.address" class="swissmodelContactRef">Contact Us</a></li><li><a href="https://swissmodel.expasy.org/docs/terms_of_use">Terms of use</a></li><li class="pull-right"><a id="sib_footer_gototop" onclick="window.scrollTo(0,0);"><i class="glyphicon glyphicon-arrow-up"></i> Back to the Top</a></li></ul><div class="clearfix"></div></div></footer><script src="../static/js/jquery-3.4.1.min.js"></script><script src="../static/js/jquery-ui.min.js"></script><script src="../static/js/bootstrap-3.3.7.min.js"></script><script src="../static/js/jquery.fancybox.pack.js"></script><script>
+function highlight(item)
+{
+	$('.active').removeClass('active');
+	do  
+	{
+		item.addClass('active');
+		item = item.parent()
+			.parents('li:eq(0)')
+			.find('a.docu_link:eq(0)');
+	}
+	while(item.length>0)
+}
+
+$(document).on('click','a.docu_link',function(event)
+	{ 
+	    $('html, body').animate(
+	    	{ scrollTop: $( $.attr(this, 'href') ).offset().top }, 400,
+	    	function(){ highlight( $(event.target) ); }
+	    );
+	});
+
+$(document).on("scroll", function()
+	{
+		if($('html:animated').length>0)
+			return;
+		
+		var scrollPos = $(document).scrollTop();
+	    $('#main-content div[id]').each( function()
+	    { 
+	    	if($(this).offset().top>=scrollPos ) 
+			{ 
+				highlight( $('nav a.docu_link[href="#'+$(this).attr('id')+'"]') );
+				return false 
+			}
+	    });
+	});
+</script><script>
+    $('a.smng-help').append('<icon class="glyphicon glyphicon-question-sign"></i>');
+    $(document).on('click','a.smng-help',function()
+    { 
+        window.open($(this).attr('href'),
+            'Help',
+            'width=920,height=600,left=20,top=100,directories=no,menubar=yes,toolbar=yes,'
+                +'status=no,scrollbars=yes,resizable=no');
+        return false;
+    });
+
+     $('a.swissmodelContactRef')
+        .on('mouseover',function()
+            {
+                $(this).attr('href',["ch", ".", "nibas", "l@u",
+             "mode", "-swiss",
+              ":help", "to", "ail", "m"].reverse().join(''));
+                $(this).off('mouseover');
+            });
+
+     function showLogin()
+     {
+        $('#loginForm')
+            .load('/login', { 'csrfmiddlewaretoken':'8m2yVwaeImKV4nZQdVaF0s9SOhWECtETvMSzCEIhwNwqBgwi5KRhmgbJqtxM6UfJ' },
+                function()
+                {
+                    $("<a href='#loginForm'/>'").fancybox().trigger('click');  
+                    $('#id_username').focus();
+                });
+        
+     } 
+     function createAccount()
+     {
+        $('#loginForm')
+            .load('/create_account',
+                function()
+                {
+                    $("<a href='#loginForm'/>'").fancybox().trigger('click'); 
+                    $('#id_username').focus();  
+                });
+     }
+     
+</script>
+</body></html>

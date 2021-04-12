@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<!-- saved from url=(0039)https://swissmodel.expasy.org/docs/help -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><!-- Global site tag (gtag.js) - Google Analytics --><script type="text/javascript" async="" src="../static/js/analytics.js"></script><script async="" src="../static/js/js"></script><script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-8667194-2');
+    </script><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="ROBOTS" content="ALL"><title>Documentation | SWISS-MODEL</title><meta name="description" content="SWISS-MODEL is a fully automated protein structure homology-modelling server. The purpose of this server is to make protein modelling accessible to all life science researchers worldwide."><link rel="stylesheet" type="text/css" href="../static/css/bootstrap-3.3.7.min.css" media="screen,print"><link rel="stylesheet" type="text/css" href="../static/css/bootstrap-theme-3.3.7.min.css" media="screen,print"><link rel="stylesheet" type="text/css" href="../static/css/master.css" media="all"><link rel="stylesheet" type="text/css" href="../static/css/jquery.fancybox.css"><link rel="stylesheet" type="text/css" href="../static/css/jquery-ui.min.css"><link rel="shortcut icon" href="https://swissmodel.expasy.org/static/images/favicon.png" type="image/png"><link rel="apple-touch-icon" href="https://swissmodel.expasy.org/static/images/apple-touch-57.png"><link rel="apple-touch-icon" sizes="72x72" href="https://swissmodel.expasy.org/static/images/apple-touch-72.png"><link rel="apple-touch-icon" sizes="114x114" href="https://swissmodel.expasy.org/static/images/apple-touch-114.png"><style>
+  .seq{
+    font-family:Courier;
+  }
+  a{
+    color: #337ab7;
+  }
+  #main-content img{
+    max-width:100%;
+    max-height:100%;
+  }
+</style></head><body><nav class="navbar navbar-default"><div class="container-fluid"><div class="navbar-header"><button aria-controls="navbar" aria-expanded="false" data-target=".collapseThis" data-toggle="collapse" class="navbar-toggle collapsed" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="hidden-xs hidden-sm navbar-brand" style="margin-left:0px;padding:8px 4px 0px 0px;" title="SIB Swiss Institute of Bioinformatics" href="https://www.sib.swiss/" target="_blank"><img src="../static/img/sib_logo_small.png" alt="SIB logo" style="max-height:50px"></a><a class="hidden-xs hidden-sm navbar-brand" style="margin-left:0px; padding:8px 0px 0px 4px;" title="Biozentrum | University of Basel | The Center for Molecular Life Sciences" href="http://www.biozentrum.unibas.ch/" target="_blank"><img src="../static/img/biozentrum_en.png" alt="Biozentrum logo" style="max-height:36px"></a><a class="hidden-xs hidden-sm navbar-brand" href="https://swissmodel.expasy.org/" style="margin-left:0px;padding-left:0px;padding-right:0px;font-size:28px;">SWISS-MODEL</a><a id="navbar-brand" class="hidden-md hidden-lg navbar-brand" href="https://swissmodel.expasy.org/" style="margin-left:0px;font-size:20px;">SWISS-MODEL</a></div><div id="navbar" class="collapseThis navbar-collapse collapse"><!-- Collect the nav links, forms, and other content for toggling --><ul class="nav navbar-nav navbar-right"><li class="dropdown "><a href="https://swissmodel.expasy.org/interactive" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Modelling</a><ul class="dropdown-menu" role="menu"><li><a class="text-left" href="https://swissmodel.expasy.org/interactive">myWorkspace</a></li><li><a class="text-left" href="https://swissmodel.expasy.org/interactive#alignment">Alignment Mode</a></li><li><a class="text-left" href="https://swissmodel.expasy.org/interactive#structure">User Template Mode</a></li><li><a class="text-left" href="https://swissmodel.expasy.org/interactive#deepview">DeepView Project Mode</a></li><li class="divider"></li><li><a class="text-left" href="https://swissmodel.expasy.org/templates/">Template Library</a></li></ul></li><li id="smrLink" class="dropdown "><a href="https://swissmodel.expasy.org/repository" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Repository</a><ul class="dropdown-menu" role="menu"><li><a href="https://swissmodel.expasy.org/repository">SWISS-MODEL Repository</a></li><li><a href="https://swissmodel.expasy.org/repository/user_annotation_upload">Annotation Projects</a></li></ul></li><li class="dropdown "><a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Tools</a><ul class="dropdown-menu" role="menu"><li><a href="https://swissmodel.expasy.org/qmean/" tabindex="-1">QMEAN</a></li><li><a href="https://swissmodel.expasy.org/lddt" tabindex="-1">lDDT</a></li><li><a href="https://swissmodel.expasy.org/assess">Structure Assessment</a></li><li><a href="https://swissmodel.expasy.org/comparison/">Structure Comparison</a></li></ul></li><li class="dropdown"><a href="https://swissmodel.expasy.org/docs/help#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Documentation</a><ul class="dropdown-menu" role="menu"><li><a href="https://swissmodel.expasy.org/docs/help" tabindex="-1">SWISS-MODEL</a></li><li><a href="https://swissmodel.expasy.org/docs/examples" tabindex="-1">Examples</a></li><li><a href="https://swissmodel.expasy.org/docs/tutorial" tabindex="-1">Video Tutorial</a></li><li><a href="https://swissmodel.expasy.org/docs/blog" tabindex="-1">New Features</a></li><li role="separator" class="divider"></li><li><a href="https://swissmodel.expasy.org/docs/repository_help" tabindex="-1">SWISS-MODEL Repository</a></li><li role="separator" class="divider"></li><li><a href="https://swissmodel.expasy.org/qmean/help" tabindex="-1">QMEAN</a></li><li><a href="https://swissmodel.expasy.org/lddt/help/" tabindex="-1">lDDT</a></li><li><a href="https://swissmodel.expasy.org/assess/help">Structure Assessment</a></li><li><a href="https://swissmodel.expasy.org/comparison/help">Structure Comparison</a></li><li role="separator" class="divider"></li><li><a href="https://swissmodel.expasy.org/course" tabindex="-1">Protein Structure Course</a></li><li role="separator" class="divider"></li><li><a href="https://swissmodel.expasy.org/docs/references" tabindex="-1">References</a></li></ul></li><li><a onclick="showLogin();">Log in</a></li><li><a onclick="createAccount();">Create Account</a></li></ul></div></div><!-- /container-fluid --></nav><div id="tools"></div><div id="main-content" style="padding-left:32px; margin-right:32px"><div class="row docu"><div class="col-sm-3 col-sm-push-9 docu-sm-fix col-md-3 col-md-push-9 docu-md-fix"><span id="message"></span><nav class="docu_nav"><ul class="nav"><li class=""><a href="https://swissmodel.expasy.org/docs/help#intro_smng" class="docu_link active">Introduction to SWISS-MODEL</a></li><li><a href="https://swissmodel.expasy.org/docs/help#intro_smw" class="docu_link">The SWISS-MODEL Workspace</a></li><li><a href="https://swissmodel.expasy.org/docs/help#new_project" class="docu_link">Model building</a><ul class="nav"><li><a class="docu_link" href="https://swissmodel.expasy.org/docs/help#modelling_modes">Modelling modes</a><ul class="nav"><li><a class="docu_link" href="https://swissmodel.expasy.org/docs/help#automated_mode">Automated Mode</a></li><li><a class="docu_link" href="https://swissmodel.expasy.org/docs/help#alignment_mode">Alignment Mode</a></li><li><a class="docu_link" href="https://swissmodel.expasy.org/docs/help#deepview_project">Project Mode</a></li></ul></li><li><a class="docu_link" href="https://swissmodel.expasy.org/docs/help#ligand_modelling">Ligand Modelling</a></li><li><a class="docu_link" href="https://swissmodel.expasy.org/docs/help#oligomeric_modelling">Oligomeric Modelling</a></li></ul></li><li><a class="docu_link" href="https://swissmodel.expasy.org/docs/help#SMTL">The SWISS-MODEL Template Library (SMTL)</a><ul class="nav"><li><a class="docu_link" href="https://swissmodel.expasy.org/docs/help#bio_unit">Biological Assemblies (Biounit) of Templates</a></li></ul></li><li><a class="docu_link" href="https://swissmodel.expasy.org/docs/help#input_data">Input Data</a><ul class="nav"><li><a class="docu_link" href="https://swissmodel.expasy.org/docs/help#input_aa_sec">Protein amino acid sequence or UniProtKB identifier</a></li><li><a class="docu_link" href="https://swissmodel.expasy.org/docs/help#input_alignment">Target–template alignment</a></li><li><a class="docu_link" href="https://swissmodel.expasy.org/docs/help#user_template">User Template</a></li><li><a class="docu_link" href="https://swissmodel.expasy.org/docs/help#DV">DeepView Project</a></li><li><a class="docu_link" href="https://swissmodel.expasy.org/docs/help#antibody_prescreening">Immunoglobulin sequence input</a></li></ul></li><li><a class="docu_link" href="https://swissmodel.expasy.org/docs/help#template_search">Template search</a><ul class="nav"><li><a class="docu_link" href="https://swissmodel.expasy.org/docs/help#template_ranking">Ranking of template results</a></li><li><a class="docu_link" href="https://swissmodel.expasy.org/docs/help#template_results">Display of template identification results</a></li><li><a class="docu_link" href="https://swissmodel.expasy.org/docs/help#colour_schemes">Colour Schemes</a></li></ul></li><li><a class="docu_link" href="https://swissmodel.expasy.org/docs/help#model_results">Display of modelling results</a><ul class="nav"><li><a class="docu_link" href="https://swissmodel.expasy.org/docs/help#model_details">Model details</a></li><li><a class="docu_link" href="https://swissmodel.expasy.org/docs/help#model_evaluation">Model evaluation</a><ul class="nav"><li><a class="docu_link" href="https://swissmodel.expasy.org/docs/help#GMQE">GMQE</a></li><li><a class="docu_link" href="https://swissmodel.expasy.org/docs/help#qmean">QMEAN</a></li></ul></li><li><a class="docu_link" href="https://swissmodel.expasy.org/docs/help#modelling_report">Modelling report</a></li></ul></li><li><a class="docu_link" href="https://swissmodel.expasy.org/docs/help#membrane">Membrane Prediction</a></li></ul></nav></div><div class="col-sm-9 col-sm-pull-3 col-md-9 col-md-pull-3"><h1>SWISS-MODEL Help</h1><div id="intro_smng"><h2>Introduction to SWISS-MODEL</h2><p>
+        SWISS-MODEL is a web-based integrated service dedicated to protein
+        structure homology modelling. It guides the user in building protein
+        homology models at different levels of complexity.
+       </p><p>
+        Building a homology model comprises four main steps: (i) identification
+        of structural template(s), (ii) alignment of target sequence and template
+        structure(s), (iii) model-building, and (iv) model quality evaluation. These
+        steps require specialised software and integrate up-to-date protein sequence
+        and structure databases. Each of the above steps can be repeated
+        interactively until a satisfying modelling result is achieved. </p></div><div id="intro_smw"><h2>The SWISS-MODEL Workspace</h2><p>The SWISS-MODEL Workspace (<a href="https://swissmodel.expasy.org/docs/references#swissmodel"><i>Waterhouse et al.</i></a>) is a personal
+        web-based working environment, where several modelling projects can be
+        carried out in parallel. Protein sequence and structure databases
+        necessary for modelling are accessible from the workspace and are
+        updated in regular intervals. Tools for <i>template selection</i>,
+        <i>model building</i>, and structure <i>quality evaluation</i> can be
+        invoked from within the workspace directly or via the web page menu.
+      </p><p>
+        From the workspace, the user accesses the current modelling projects,
+        inspects their status and visualises the results upon job completion.
+        Project names can be changed retroactively by clicking on the symbol next to the project title.
+        Alternatively, the project title can also be changed by double-clicking
+        on the title when the project results are displayed.
+        By default, projects are stored for two weeks on the server with an option
+        to extend the project lifetime. The remaining time until a given project
+        is deleted from the server is displayed accordingly.
+      </p><p>
+        If you have built a model which you would like to maintain indefinitely and
+        the model will be cited in a journal, you may consider depositing your model at
+        the <a href="https://modelarchive.org/" target="_blank">ModelArchive</a>
+        where it will receive a DOI once the journal citation is available. 
+      </p></div><div id="new_project"><a name="promod3"></a><h2>Model Building</h2><p>
+        Models are computed by the SWISS-MODEL server homology modelling pipeline
+        (<a href="https://swissmodel.expasy.org/docs/references#swissmodel"><i>Waterhouse et al.</i></a>) which relies on ProMod3 
+        (<a href="https://swissmodel.expasy.org/docs/references#promod3"><i>Studer et al.</i></a>), an in-house comparative
+        modelling engine based on OpenStructure 
+        (<a href="https://swissmodel.expasy.org/docs/references#ost"><i>Biasini et al.</i></a>).
+      </p><p>
+        ProMod3 extracts initial structural information from the template 
+        structure. Insertions and deletions, as defined by the sequence 
+        alignment, are resolved by first searching for viable candidates in a 
+        structural&nbsp;database. Final candidates are then selected using 
+        statistical potentials of mean force scoring methods. If no candidates 
+        can be found, a conformational space search is performed using Monte 
+        Carlo techniques. Non-conserved side chains are modelled using an 
+        in-house backbone-dependent rotamer library.
+        The optimal configuration of rotamers&nbsp;is estimated using the graph-based TreePack 
+        algorithm 
+        (<a href="https://swissmodel.expasy.org/docs/references#treepack_ref"><i>Xu et al.</i></a>) 
+        by minimising the&nbsp;SCWRL4 energy function 
+        (<a href="https://swissmodel.expasy.org/docs/references#scrwl4"><i>Krivov et al.</i></a>).
+        As a final step, small structural distortions, unfavourable interactions or clashes 
+        introduced during the modelling process are resolved by energy&nbsp;minimisation. 
+        ProMod3 uses the OpenMM library
+        (<a href="https://swissmodel.expasy.org/docs/references#openmm"><i>Eastman et al.</i></a>) 
+        to perform the computations and the CHARMM22/CMAP force field 
+        (<a href="https://swissmodel.expasy.org/docs/references#charmm22cmap_ref"><i>Mackerell et al.</i></a>) for 
+        parameterisation.
+      </p><div id="modelling_modes"><h3>Modelling Modes</h3><p>
+          Depending on the difficulty of the modelling task, three different types
+          of modelling modes are provided, which differ in the amount of user
+          intervention: automated mode, alignment mode, and project mode.
+        </p><div id="automated_mode"><h4>Automated Mode</h4><p>
+            The Automated Mode only requires the amino acid sequence or the UniProtKB
+            accession code of the target protein as input.
+          </p><p>
+            The automatic pipeline identifies suitable templates based on BLAST
+            (<i><a href="https://swissmodel.expasy.org/docs/references#blastp">Camacho et al.</a></i>), and HHblits
+            (<i><a href="https://swissmodel.expasy.org/docs/references#hhblits">Steinegger et al.</a></i>).
+            The resulting templates are ranked according to the expected quality
+            of the resulting models (see the
+            <a href="https://swissmodel.expasy.org/docs/help#template_ranking">Template Ranking</a> section for more details).
+            Top-ranked templates and alignments are compared to verify whether
+            they represent alternative conformational states or cover different
+            regions of the target protein. In this case, multiple templates are
+            selected automatically and different models are built accordingly.
+          </p><p>
+            This mode is subject to continuous evaluation within the
+            Continuous Automated Model Evaluation (<a target="_blank" href="https://www.cameo3d.org/">CAMEO</a>) platform
+            (<i><a href="https://swissmodel.expasy.org/docs/references#cameo">Haas et al.</a></i>).
+          </p><p>
+            Please note that it is unnecessary to run automated mode by pressing
+            "Build Model" and afterwards start the project again and
+            "Search for Templates" only. Both options start the
+            same <a class="docu_link" href="https://swissmodel.expasy.org/docs/help#template_search">template search</a>,
+            which is also accessible in the first case, once the models are built.
+          </p></div><div id="alignment_mode"><h4>Alignment Mode</h4><p>
+            If the desired template for modelling is known and available in the SWISS-MODEL
+            Template Library (SMTL), a target–template alignment in either FASTA or Clustal
+            format may be used to start the modelling process, thereby skipping the template search.
+          </p><p>
+             The template sequence(s) should be named using the PDB ID format (i.e.
+             “1CNR” or “1CNR_A”). The user will be asked to specify which sequence in
+             the alignment corresponds to the target and/or the template protein from a
+             drop-down list.
+           </p><p>
+            The Alignment mode allows the advanced user to invoke the modelling step
+            starting from alternative alignments and to evaluate the quality of these alternative models.
+          </p><pre>&gt;THN_DENCL
+KSCCPTTAARNQYNICRLPGTPRPVCAALSGCKIISGTGCPPGYRH-
+&gt;1crnA
+TTCCPSIVARSNFNVCRLPGTPEALCATYTGCIIIPGATCPGDYAN-</pre><br><br><p>It is possible to edit your alignment further in the input window,by clicking on the edit icon to the left of the 
+            validated input alignment. This will start edit mode, a cursor will appear in first row of the alignment. 
+            Use the arrow keys to move the cursor, then press spacebar to insert a gap and del key to delete a character. The sequence 
+            identity of the new alignment is displayed, and non-identical residues in a column will be faded to light gray. Use control-z to undo any editing, or just click the reset button to go back to the start. 
+            Click the edit icon to exit alignment editing mode. </p><img src="../static/img/aln_edit.png"></div><div id="deepview_project"><h4>Project Mode</h4><p>
+            In difficult modelling situations, where the correct alignment between
+            target and template cannot be clearly determined by sequence-based methods,
+            visual inspection and manual manipulation of the alignment can
+            help improving the quality of the resulting model significantly.
+          </p><p>
+            The program DeepView - Swiss-PdbViewer (<i><a href="https://swissmodel.expasy.org/docs/references#deepview">Guex et al.</a></i>)
+            can be used to generate, display, analyse, and manipulate modelling project
+            files in the SWISS-MODEL workspace. Project files contain the superposed
+            template structures and the alignment between the target and the template.
+            In this mode, the user has full control over essential modelling parameters,
+            i.e. the choice of template structures, the correct alignment, and the
+            placement of insertions and deletions in the context of the 3D structure.
+            Project files can also be generated by the workspace template selection
+            tools.
+          </p><p>
+           The program DeepView can be downloaded for free from the <a target="_blank" href="http://www.expasy.org/spdbv/">Expasy</a> web site.
+           SWISS-MODEL supports DeepView legacy projects by relying on the previous
+           version of the PROMOD modelling pipeline.
+         </p></div></div></div><div id="ligand_modelling"><h3>Ligand Modelling</h3><p>
+        Biologically relevant ligands and cofactors are modelled using a
+        conservative homology transfer approach from the templates identified in
+        the SMTL. Ligands in the SMTL are annotated either as: (i) relevant,
+        non-covalently
+        bound ligand, (ii) covalent modifications, or (iii) non-functional binders (e.g.
+        buffer or solvent). A non-covalently bound ligand is considered for the model if
+        it has at least three coordinating residues in the protein and
+        those residues are conserved in the target–template alignment. The
+        relative coordinates of the ligand(s) are transferred from the template, if
+        the resulting atomic interactions in the model are within the expected range
+        for van der Waals interactions and water-mediated contacts.
+      </p><p>
+        If the homology transfer approach described above is too restrictive,
+        the user needs to use an appropriate ligand docking tool. To simplify
+        this process, a model can be sent directly to <a target="_blank" href="http://www.swissdock.ch/">SwissDock</a>
+        (<a href="https://swissmodel.expasy.org/docs/references#swissdock_refs"><i>Grosdidier et al.</i></a>) by choosing the appropriate entry in the
+        drop-down menu next to the model preview image. The user can then use
+        SwissDock to predict molecular interactions between the model and a
+        ligand.
+      </p><h4>Protein-ligand interactions</h4><p>
+        When ligands are present in the model, non-covalent protein–ligand interactions are
+        annotated with <a target="_blank" href="https://projects.biotec.tu-dresden.de/plip-web/plip">PLIP</a>
+        (<a href="https://swissmodel.expasy.org/docs/references#plip_refs"><i>Salentin et al.</i></a>). Seven types of interactions are covered:
+        hydrogen bonds, hydrophobic contacts, pi-stacking, pi-cation interactions,
+        salt bridges, water bridges and halogen bonds.
+      </p></div><div id="oligomeric_modelling"><h3><a name="oligo-state"></a>Oligomeric Modelling</h3><p>
+          In SWISS-MODEL, the quaternary structure annotation of the template is
+          used to model the target sequence in its oligomeric form. The method
+          (<a href="https://swissmodel.expasy.org/docs/references#qsqe">Bertoni et al.</a>) is based on a supervised machine
+          learning algorithm, Support Vector Machines (SVM), which combines
+          interface conservation, structural clustering, and other template
+          features to provide a quaternary structure quality estimate
+          (<b>QSQE</b>). The QSQE score is a number between 0 and 1, reflecting
+          the expected accuracy of the interchain contacts for a model built
+          based a given alignment and template. In general a higher QSQE is
+          "better", while a value above 0.7 can be considered reliable to
+          follow the predicted quaternary structure in the modelling process.
+          This complements the <a href="https://swissmodel.expasy.org/docs/help#GMQE">GMQE</a> score which
+          estimates the accuracy of the tertiary structure of the resulting
+          model.
+          QSQE is only computed if it is possible to build an oligomer and only for the top ranked templates.
+      </p></div><div id="SMTL"><h2>The SWISS-MODEL Template Library (SMTL)</h2><p>
+        The SWISS-MODEL template library is a large structural database of
+        experimentally determined protein structures derived from the Protein Data Bank
+        (<i><a href="https://swissmodel.expasy.org/docs/references#pdb">Berman et al</a></i>).
+      </p><p>
+        It serves as the main repository of structural information for the modelling
+        pipeline and provides atomic coordinates of protein structures as well as maintains
+        sequence and profile databases which can be searched by BLAST and HHblits.
+        Alignment-independent properties of the templates are precalculated and
+        stored in the database, e.g. a mapping between residues resolved in the
+        experiment and corresponding residues in the full protein sequence,
+        predicted solvent accessibility and secondary structure information.
+      </p><p> Individual entries of the SMTL can be inspected using the <a target="_blank" href="https://swissmodel.expasy.org/templates/">web interface</a>.
+        The sequence features are linked to a 3D structure viewer and can be interactively explored.
+        SMTL IDs consist of the PDB ID, an integer representing the
+        <a class="docu_link" href="https://swissmodel.expasy.org/docs/help#bio_unit">biounit</a> and a capital letter
+        for the chain ID. The SMTL chain ID is not necessary, the same as the
+        PDB chain ID. The mapping is shown in "SMTL:PDB".
+
+      </p><p>Ligands can be marked as synthetic, natural or
+        part of crystallisation buffer. This information is used by the
+        modelling pipeline to determine whether a ligand is considered for inclusion
+        into the final model.
+      </p><p><img src="../static/img/help_smtl.png" alt="SMTL"></p><div id="bio_unit"><h3>Biological Assemblies (Biounit) of Templates</h3><p>
+          The biological assembly (biounit) describes the oligomeric state,
+          or quaternary assembly, which is thought of as the biologically most
+          relevant form of the molecule. For a detailed description see
+          <a target="_blank" href="http://pdb101.rcsb.org/learn/guide-to-understanding-pdb-data/biological-assemblies#Anchor-BioUnit">Biological Assemblies</a>
+          on PDB-101.
+        </p><p>
+          The biological assembly reported in the SMTL is retrieved from the PDB entry.
+        </p><p>
+          SMTL entries are organised (if more than one assembly is available) by
+          likely quaternary structure assemblies which are created according to the
+          author and software-annotated oligomeric states listed in the PDB deposition.
+          If not all chains of the asymmetric unit are included by any biounit of
+          a PDB entry, the asymmetric unit is included as a template.
+        </p></div></div><div id="input_data"><h2>Input Data</h2><div id="input_aa_sec"><h3>Protein amino acid sequence or UniProtKB identifier</h3><p>
+          The amino acid sequence of the target protein can be submitted either as plain text, or in FASTA format.
+        </p><p>
+          Example of plain text sequence:
+        </p><pre>MVEIVYWSGTGNTEAMANEIEAAVKAAGADVESVRFEDTNVDDVASKDVILLGCPAMGSE
+ELEDSVVEPFFTDLAPKLKGKKVGLFGSYGWGSGEWMDAWKQRTEDTGATVIGTAIVNEM
+PDNAPECKELGEAAAKA</pre><p>
+          Example of FASTA sequence:
+        </p><pre>&gt;sp|P00321|FLAV_MEGEL Flavodoxin - Megasphaera elsdenii.
+MVEIVYWSGTGNTEAMANEIEAAVKAAGADVESVRFEDTNVDDVASKDVILLGCPAMGSE
+ELEDSVVEPFFTDLAPKLKGKKVGLFGSYGWGSGEWMDAWKQRTEDTGATVIGTAIVNEM
+PDNAPECKELGEAAAKA</pre><p>
+          If the protein sequence is deposited in the <a target="_blank" href="http://www.uniprot.org/">UniProtKB</a>
+          (<a href="https://swissmodel.expasy.org/docs/references#uniprot"><i>The UniProt Consortium</i></a>) database, the UniProtKB identifier of the entry
+          can be provided as input (i.e. P00321). In this case, the identifier is
+          immediately validated and replaced with the corresponding sequence.
+        </p><p>
+          The "Add Hetero Target" button is provided to input multiple target
+          sequences representing different subunits of a hetero-oligomer.
+          The target sequences must be unique and can be submitted as plain
+          text, FASTA sequences, or UniProtKB ACs.
+          If a hetero-oligomer is requested, we only look for biounits of
+          templates that contain connected chains with all desired subunits.
+        </p></div><div id="input_alignment"><h3>Target–template alignment</h3><p>
+          The following formats are currently supported: FASTA and Clustal.
+        </p><p>
+          Example for FASTA:
+        </p><pre>&gt;THN_DENCL
+KSCCPTTAARNQYNICRLPGTPRPVCAALSGCKIISGTGCPPGYRH-
+&gt;1crnA
+TTCCPSIVARSNFNVCRLPGTPEALCATYTGCIIIPGATCPGDYAN-</pre><p>
+            Example for Clustal:
+          </p><pre>CLUSTAL W (1.82) multiple sequence alignment
+THN_DENCL       KSCCPTTAARNQYNICRLPGTPRPVCAALSGCKIISGTGCPPGYRH- 46
+1crnA           TTCCPSIVARSNFNVCRLPGTPEAICATYTGCIIIPGATCPGDYAN- 46
+                .:***  ..*  :  **: * .. :**  :** **..: **  *   </pre></div><div id="user_template"><h3>User Template</h3><p>
+          If the user knows the structure of the template to use for modelling,
+          the coordinates can be uploaded in PDB format(*) together with the target
+          protein sequence.
+          Oligomeric templates are accepted, and it is also possible to build heteromers 
+          by adding multiple target sequences to the input.
+          To start a modelling job with your own template:
+        </p><ol><li>Press the "User Template" button</li><li>Enter the target sequence as normal.
+          <ul><li>Optional : to start a hetero project, you can now click "Add Hetero Target" to add another target sequence</li></ul></li><li>Click the "Add Template File..." button</li><li>Click "Build Model"</li></ol><p>
+          Important: Make sure that there are no
+            chemically modified amino acids!</p><p>
+          If the file is not accepted, you may first try removing non-standard residues (HETATMS).
+        </p><p>
+          (*) A PDB-like file containing the coordinates of the template structure.
+          For more information about PDB file format please see this
+          <a href="https://www.wwpdb.org/documentation/file-format">link</a>.
+        </p><p>
+          Please notice that the mmCIF format is currently not supported.
+        </p></div><div id="DV"><h3>DeepView Project</h3><p>
+          Project files containing the superposed template structures,
+          and the alignment between the target and template can be directly
+          uploaded into the SWISS-MODEL Workspace. See the <a href="https://swissmodel.expasy.org/docs/help#deepview_project">“Project Mode”</a>
+          section for further details.
+          An example of DeepView Project and its application in modelling of Oligomeric proteins can be found
+          <a href="https://swissmodel.expasy.org/docs/examples#example_deepview">here</a>.
+        </p></div><div id="antibody_prescreening"><h3>Immunoglobulin sequence input</h3><p>
+          If an antibody sequence is present in the input, the user is
+          presented with a notice as well as a link to a dedicated server for
+          antibody modelling (<a href="http://biocomputing.it/pigspro/">PIGSPro</a>).
+          By clicking on the link, the user is redirected to the
+          <a href="http://biocomputing.it/pigspro/">PIGSPro</a> server
+          home page where the input form is pre-filled with the detected antibody
+          variable domains. The link is displayed while the SWISS-MODEL pipeline
+          continues running and thus, the user still has the option to use SWISS-MODEL
+          for the modelling.
+          An “Antibody detected” label is also shown on the different pages of the project.
+          Antibody sequences are identified by aligning the sequence against
+          Hidden Markov Models developed on purpose for immunoglobulins.
+        </p></div></div><div id="template_search"><h2>Template search</h2><p>
+        The degree of difficulty in identifying a suitable template for a target
+        sequence can range from "trivial" for well-characterised protein families
+        to "impossible" for proteins with an unknown fold. The SWISS-MODEL server
+        provides access to a set of increasingly sophisticated methods to search
+        for templates.
+      </p><p>
+        The SWISS-MODEL Template Library is searched in parallel both with BLAST
+        and HHblits to identify templates and to obtain target–template alignments.
+        The combined usage of these two approaches guarantees good alignments at high
+        and low sequence identity levels.
+      </p><p>
+        By using the “Template Search” option, templates are searched using BLAST
+        (<i><a href="https://swissmodel.expasy.org/docs/references#blastp">Camacho et al.</a></i>) and HHblits
+        (<i><a href="https://swissmodel.expasy.org/docs/references#hhblits">Steinegger et al.</a></i>).
+        For the latter we build a profile for the target sequence as outlined in
+        (<i><a href="https://swissmodel.expasy.org/docs/references#hhblits">Steinegger et al.</a></i>) 
+        using 1 iteration of HHblits against Uniclust30 
+        (<i><a href="https://swissmodel.expasy.org/docs/references#uniclust">Mirdita et al.</a></i>) and
+        use it to search all profiles of the SMTL.
+        The found templates are listed together with relevant structural information that can
+        be readily used to rank the templates and select the best one according
+        to user-defined criteria.
+      </p><div id="template_ranking"><h3>Ranking of template results</h3><p>
+          When the template search is complete, templates and alignments are
+          first filtered to remove redundancy.
+          A set of maximally 50 top-ranked templates is then chosen from the
+          full list of templates according to a simple score which combines
+          sequence coverage and sequence similarity.
+          The top-ranked templates and alignments are further analysed and
+          sorted according to the expected quality of the resulting models, as
+          estimated by <a href="https://swissmodel.expasy.org/docs/help#GMQE">GMQE</a> and, if the target model is
+          predicted to be an oligomer, <a href="https://swissmodel.expasy.org/docs/help#oligo-state">QSQE</a>.
+          In detail, the default template ranking is according to the descending
+          lexicographic order of (<i>is_full_biounit</i>, <i>bin</i>,
+          <i>gmqe</i> + <i>qs_value</i>), where:
+          <i>is_full_biounit</i> is only used for heteromers and is set to 1,
+          if all chains from the template biounit are included for modelling,
+          or 0 otherwise;
+          <i>bin</i> is computed as ceil((<i>gmqe</i> - <i>max_gmqe</i>) / 0.1),
+          where <i>max_gmqe</i> is the best <i>gmqe</i> observed in the
+          templates;
+          <i>gmqe</i> is the <a href="https://swissmodel.expasy.org/docs/help#GMQE">GMQE</a> of the template;
+          <i>qs_value</i> is set to <a href="https://swissmodel.expasy.org/docs/help#oligo-state">QSQE</a> of the
+          template, if the target model is predicted to be an oligomer, or 0
+          otherwise.
+        </p></div><div id="template_results"><h3>Display of template identification results</h3><p>
+          The <i>Template Results</i> page serves both as an overview of available
+          templates as well as an interactive template selection tool. The top
+          part of the screen contains a summary of the top-ranking templates
+          identified by the template search methods.
+          The identified templates and the default template ranking correspond
+          to the ones used in the <a href="https://swissmodel.expasy.org/docs/help#automated_mode">Automated Mode</a>.
+          Please note that in the <a href="https://swissmodel.expasy.org/docs/help#automated_mode">Automated Mode</a>,
+          additional templates, apart from the top-ranked one, may be chosen for
+          modelling if they represent alternative conformational states or cover
+          different regions of the target protein.
+        </p><p>
+          Four types of views can be available (based on the data input): (i) a
+          <i>Templates</i> summary table, listing all templates in tabular form
+          and providing an overview of relevant attributes of each template,
+          (ii) the <i>Quaternary Structure</i>, (iii) an interactive chart
+          showing the templates in relation to each other in <i>Sequence
+          Similarity</i> space, and (iv) the sequence <i>Alignment of Selected
+          Templates</i>.
+        </p><p>
+          Templates can be selected in any of these views for the
+          subsequent modelling step. Selected templates are automatically
+          shown in the 3D viewer. If multiple templates are selected, their
+          structural superposition is shown, allowing instant visualisation
+          of structural differences between them.
+        </p><p>
+          The complete list of all identified templates can be accessed at
+          the bottom of the Template Results page.
+        </p><p>
+          In the Templates, a summary table, template annotations, and target–template
+          alignments can be retrieved by clicking on the arrows at the left
+          end of the table rows to expand the box with the description of the
+          individual templates.
+        </p><img src="../static/img/help_templateoverview.png" alt="templates"><br><p>
+          For each template, the following information is provided: the SMTL ID,
+          the title of the structure, the target sequence coverage, <a href="https://swissmodel.expasy.org/docs/help#GMQE">GMQE</a>, <a href="https://swissmodel.expasy.org/docs/help#oligo-state">QSQE</a>, the sequence
+          identity to the target, the experimental method used to obtain the structure (and the resolution, if applicable), the oligomeric state, the ligands (if any), the sequence similarity to the target, and the template search method used.
+        </p><p>
+          For each template, the oligomeric state of the model is predicted. If
+          the predicted oligomeric state of the model differs from the one of
+          the template biounit or not all chains from the biounit are included,
+          a warning symbol is shown (exclamation mark in a triangle). Whenever
+          possible, the user can choose the oligomeric state manually by
+          expanding the template view under the point "Target Prediction".
+        </p><p><a name="exp_method"></a>
+          Several <a target="_blank" href="http://pdb101.rcsb.org/learn/guide-to-understanding-pdb-data/methods-for-determining-structure"><b>methods</b></a> are currently used to determine the structure
+          of a protein. In homology modelling, it is generally preferrable to use structures
+          determined by X-ray crystallography with a <a target="_blank" href="http://pdb101.rcsb.org/learn/guide-to-understanding-pdb-data/resolution">
+          resolution</a> higher than 2.2<span>Å</span> as templates. Here, it is crucial to
+          strike a trade-off between high sequence similarity and experimental <a target="_blank" href="http://pdb101.rcsb.org/learn/guide-to-understanding-pdb-data/resolution">
+          resolution</a>. We generally discourage the use of averaged NMR
+          structures and structures determined with electron microscopy, as the latter
+          determines the overall shape of the molecule not individual atoms locations.
+          In individual cases, taking into account the ensemble of structures determined
+         by NMR spectroscopy, might provide useful insights.
+
+        </p><p><a name="sequence_similarity"></a>
+          Target–template <b>sequence similarity</b> is calculated from a normalised
+          BLOSUM62 (<i><a href="https://swissmodel.expasy.org/docs/references#blosum62">Henikoff et al.</a></i>) substitution matrix (i.e. the largest and smallest
+          values
+          in the BLOSUM62 are 1 and 0, respectively). The sequence similarity
+          of the alignment is calculated as the sum of the substitution scores
+          divided by the number of aligned residue pairs. Gaps are not
+          taken into account.
+        </p><p><a name="qs_view"></a>
+        The <i>Quaternary Structure</i> view provides information on the
+        quaternary structure analysis. Templates are clustered and displayed
+        in a decision tree according to their oligomeric state, stoichiometry,
+        topology and interface similarity. On the level of the oligomeric state, the
+        templates are grouped in either monomeric, homomeric or heteromeric clusters.
+        Stoichiometry considers only the number of chains in the structure while
+        on the topology level the templates are grouped according to the
+        interactions between the subunits. The interface similarity quantifies
+        the similarity between interfaces as a function of shared interfacial
+        contacts between the chains and thus allows to distinguish between
+        different quaternary structures and binding modes. Each leaf of the tree
+        corresponds to a template labelled with the PDB code and a bar indicating
+        sequence identity to the target and coverage.
+        </p><p><a name="PPI"></a>
+          Protein–protein interaction (<b>PPI</b>) Fingerprint curves inform about the
+          conservation of template interfaces. Residues participating in
+          interfaces are subject to different evolutionary constraints than
+          residues at the protein surface, e.g. interacting with the solvent.
+          A value of interface conservation (y-axis) below 0 indicates that
+          interface residues are less prone to mutate when compared to surface residues.
+          An estimate of conservation is typically derived from a multiple sequence
+          alignment (MSA) of homologous proteins. The alignment is sliced using
+          different sequence identity cut-offs (x-axis) to filter the MSA of the
+          target protein (e.g. with a sequence identity cut-off at 50% only
+          sequences with &gt; 50% sequence identity to the target are retained).
+          In this way it can be observed how the various template interfaces
+          "adapt" to the target protein family. Considering the full set of
+          homologues, the alternative quaternary structure can have similar interface
+          conservation, making the selection of template harder. Considering closer
+          homologues, the PPI fingerprints of the various templates will diverge,
+          allowing an easier selection, as better-adapted interfaces will reach
+          lower values of interface conservation.
+        </p><p>
+          In the <i>Sequence Similarity</i> chart each template is shown as
+          a circle. The distances between the templates in the plot is
+          proportional to the sequence identity between them. Thus, similar
+          sequences cluster together.
+        </p><p>
+          In the <i>Alignment of Selected Templates</i> view the alignments
+          of the selected templates to the target are visualised.
+        </p><p>
+          DeepView project files can be accessed from the drop-down menu,
+          using the '<i>More</i>' button. This allows the user to visualise different
+          alignments in the structural context of the template, helping to correct
+          misplaced insertions and deletions, and manually adjust misaligned
+          regions. The modified project can then be saved to disk and submitted
+          as "Project mode" to the workspace for model building by the SWISS-MODEL pipeline.
+        </p></div><div id="colour_schemes"><h3>Colour Schemes</h3><h4>Score Schemes</h4><table><tbody><tr><td width="80">SOA (Solvent Accessibility)</td><td><span style="background-color:rgb(255,0,0)" class="seq">&nbsp;</span><span style="background-color:rgb(246,0,9)" class="seq">&nbsp;</span><span style="background-color:rgb(238,0,17)" class="seq">&nbsp;</span><span style="background-color:rgb(229,0,26)" class="seq">&nbsp;</span><span style="background-color:rgb(221,0,34)" class="seq">&nbsp;</span><span style="background-color:rgb(212,0,43)" class="seq">&nbsp;</span><span style="background-color:rgb(204,0,51)" class="seq">&nbsp;</span><span style="background-color:rgb(195,0,60)" class="seq">&nbsp;</span><span style="background-color:rgb(187,0,68)" class="seq">&nbsp;</span><span style="background-color:rgb(178,0,77)" class="seq">&nbsp;</span><span style="background-color:rgb(170,0,85)" class="seq">&nbsp;</span><span style="background-color:rgb(161,0,94)" class="seq">&nbsp;</span><span style="background-color:rgb(153,0,102)" class="seq">&nbsp;</span><span style="background-color:rgb(144,0,111)" class="seq">&nbsp;</span><span style="background-color:rgb(136,0,119)" class="seq">&nbsp;</span><span style="background-color:rgb(127,0,128)" class="seq">&nbsp;</span><span style="background-color:rgb(119,0,136)" class="seq">&nbsp;</span><span style="background-color:rgb(110,0,145)" class="seq">&nbsp;</span><span style="background-color:rgb(102,0,153)" class="seq">&nbsp;</span><span style="background-color:rgb(93,0,162)" class="seq">&nbsp;</span><span style="background-color:rgb(85,0,170)" class="seq">&nbsp;</span><span style="background-color:rgb(76,0,179)" class="seq">&nbsp;</span><span style="background-color:rgb(68,0,187)" class="seq">&nbsp;</span><span style="background-color:rgb(59,0,196)" class="seq">&nbsp;</span><span style="background-color:rgb(51,0,204)" class="seq">&nbsp;</span><span style="background-color:rgb(42,0,213)" class="seq">&nbsp;</span><span style="background-color:rgb(34,0,221)" class="seq">&nbsp;</span><span style="background-color:rgb(25,0,230)" class="seq">&nbsp;</span><span style="background-color:rgb(17,0,238)" class="seq">&nbsp;</span><span style="background-color:rgb(8,0,247)" class="seq">&nbsp;</span></td><td>Low SOA -&gt; High SOA</td></tr><tr><td>b-Factor</td><td nowrap="nowrap"><span style="background-color:rgb(0,0,255)" class="seq">&nbsp;</span>&lt;10&lt;<span style="background-color:rgb(115,115,255)" class="seq">&nbsp;</span>&lt;15&lt;<span style="background-color:rgb(170,170,255)" class="seq">&nbsp;</span>&lt;20&lt;<span style="background-color:rgb(215,215,255)" class="seq">&nbsp;</span>&lt;25&lt;<span style="background-color:rgb(255,215,215)" class="seq">&nbsp;</span>&lt;30&lt;<span style="background-color:rgb(255,170,170)" class="seq">&nbsp;</span>&lt;35&lt;<span style="background-color:rgb(255,115,115)" class="seq">&nbsp;</span>&lt;40</td><td>Low disorder -&gt; High Disorder</td></tr><tr><td>b-Factor Range</td><td><span style="background-color:rgb(0,0,255)" class="seq">&nbsp;</span><span style="background-color:rgb(11,11,255)" class="seq">&nbsp;</span><span style="background-color:rgb(33,33,255)" class="seq">&nbsp;</span><span style="background-color:rgb(44,44,255)" class="seq">&nbsp;</span><span style="background-color:rgb(66,66,255)" class="seq">&nbsp;</span><span style="background-color:rgb(77,77,255)" class="seq">&nbsp;</span><span style="background-color:rgb(100,100,255)" class="seq">&nbsp;</span><span style="background-color:rgb(111,111,255)" class="seq">&nbsp;</span><span style="background-color:rgb(133,133,255)" class="seq">&nbsp;</span><span style="background-color:rgb(144,144,255)" class="seq">&nbsp;</span><span style="background-color:rgb(166,166,255)" class="seq">&nbsp;</span><span style="background-color:rgb(178,178,255)" class="seq">&nbsp;</span><span style="background-color:rgb(200,200,255)" class="seq">&nbsp;</span><span style="background-color:rgb(211,211,255)" class="seq">&nbsp;</span><span style="background-color:rgb(233,233,255)" class="seq">&nbsp;</span><span style="background-color:rgb(244,244,255)" class="seq">&nbsp;</span><span style="background-color:rgb(255,245,245)" class="seq">&nbsp;</span><span style="background-color:rgb(255,234,234)" class="seq">&nbsp;</span><span style="background-color:rgb(255,212,212)" class="seq">&nbsp;</span><span style="background-color:rgb(255,201,201)" class="seq">&nbsp;</span><span style="background-color:rgb(255,179,179)" class="seq">&nbsp;</span><span style="background-color:rgb(255,167,167)" class="seq">&nbsp;</span><span style="background-color:rgb(255,145,145)" class="seq">&nbsp;</span><span style="background-color:rgb(255,134,134)" class="seq">&nbsp;</span><span style="background-color:rgb(255,112,112)" class="seq">&nbsp;</span><span style="background-color:rgb(255,101,101)" class="seq">&nbsp;</span><span style="background-color:rgb(255,78,78)" class="seq">&nbsp;</span><span style="background-color:rgb(255,67,67)" class="seq">&nbsp;</span><span style="background-color:rgb(255,45,45)" class="seq">&nbsp;</span><span style="background-color:rgb(255,34,34)" class="seq">&nbsp;</span><span style="background-color:rgb(255,12,12)" class="seq">&nbsp;</span></td><td>Low disorder -&gt; High Disorder</td></tr><tr><td>Entropy</td><td><span style="background-color:rgb(0,0,255)" class="seq">&nbsp;</span><span style="background-color:rgb(11,11,255)" class="seq">&nbsp;</span><span style="background-color:rgb(33,33,255)" class="seq">&nbsp;</span><span style="background-color:rgb(44,44,255)" class="seq">&nbsp;</span><span style="background-color:rgb(66,66,255)" class="seq">&nbsp;</span><span style="background-color:rgb(77,77,255)" class="seq">&nbsp;</span><span style="background-color:rgb(100,100,255)" class="seq">&nbsp;</span><span style="background-color:rgb(111,111,255)" class="seq">&nbsp;</span><span style="background-color:rgb(133,133,255)" class="seq">&nbsp;</span><span style="background-color:rgb(144,144,255)" class="seq">&nbsp;</span><span style="background-color:rgb(166,166,255)" class="seq">&nbsp;</span><span style="background-color:rgb(178,178,255)" class="seq">&nbsp;</span><span style="background-color:rgb(200,200,255)" class="seq">&nbsp;</span><span style="background-color:rgb(211,211,255)" class="seq">&nbsp;</span><span style="background-color:rgb(233,233,255)" class="seq">&nbsp;</span><span style="background-color:rgb(244,244,255)" class="seq">&nbsp;</span><span style="background-color:rgb(255,245,245)" class="seq">&nbsp;</span><span style="background-color:rgb(255,234,234)" class="seq">&nbsp;</span><span style="background-color:rgb(255,212,212)" class="seq">&nbsp;</span><span style="background-color:rgb(255,201,201)" class="seq">&nbsp;</span><span style="background-color:rgb(255,179,179)" class="seq">&nbsp;</span><span style="background-color:rgb(255,167,167)" class="seq">&nbsp;</span><span style="background-color:rgb(255,145,145)" class="seq">&nbsp;</span><span style="background-color:rgb(255,134,134)" class="seq">&nbsp;</span><span style="background-color:rgb(255,112,112)" class="seq">&nbsp;</span><span style="background-color:rgb(255,101,101)" class="seq">&nbsp;</span><span style="background-color:rgb(255,78,78)" class="seq">&nbsp;</span><span style="background-color:rgb(255,67,67)" class="seq">&nbsp;</span><span style="background-color:rgb(255,45,45)" class="seq">&nbsp;</span><span style="background-color:rgb(255,34,34)" class="seq">&nbsp;</span><span style="background-color:rgb(255,12,12)" class="seq">&nbsp;</span></td><td>Low Entropy -&gt; High Entropy;<br>
+                High Conservation -&gt; Low Conservation</td></tr></tbody></table><br><h4>Model Schemes</h4><table><tbody><tr><td width="80">QMEAN</td><td nowrap="nowrap"><span style="background-color: rgba(255, 80, 0, 0.6);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="background-color: rgba(255, 80, 0, 0.6);" title="GLN : 22">&nbsp;</span><span style="background-color: rgba(255, 80, 0, 0.6);" title="GLU : 24">&nbsp;</span><span style="background-color: rgba(255, 80, 0, 0.6);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="background-color: rgba(255, 90, 0, 0.6);">&nbsp;</span><span style="background-color: rgba(242, 90, 13, 0.6);">&nbsp;</span><span style="background-color: rgba(229, 90, 26, 0.6);">&nbsp;</span><span style="background-color: rgba(217, 90, 38, 0.6);">&nbsp;</span><span style="background-color: rgba(204, 90, 51, 0.6);">&nbsp;</span><span style="background-color: rgba(191, 90, 64, 0.6);">&nbsp;</span><span style="background-color: rgba(179, 90, 77, 0.6);">&nbsp;</span><span style="background-color: rgba(166, 90, 89, 0.6);">&nbsp;</span><span style="background-color: rgba(153, 90, 102, 0.6);">&nbsp;</span><span style="background-color: rgba(140, 90, 115, 0.6);">&nbsp;</span><span style="background-color: rgba(128, 90, 127, 0.6);">&nbsp;</span><span style="background-color: rgba(115, 90, 140, 0.6);">&nbsp;</span><span style="background-color: rgba(102, 90, 153, 0.6);">&nbsp;</span><span style="background-color: rgba(89, 90, 166, 0.6);">&nbsp;</span><span style="background-color: rgba(76, 90, 179, 0.6);">&nbsp;</span><span style="background-color: rgba(64, 90, 191, 0.6);">&nbsp;</span><span style="background-color: rgba(51, 90, 204, 0.6);">&nbsp;</span><span style="background-color: rgba(38, 90, 217, 0.6);">&nbsp;</span><span style="background-color: rgba(26, 90, 229, 0.6);">&nbsp;</span><span style="background-color: rgba(13, 90, 242, 0.6);">&nbsp;</span><span style="background-color: rgba(0, 90, 255, 0.6);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>Low Quality -&gt; High Quality</td></tr><tr><td>Indels </td><td nowrap="nowrap"><span class="seq">MODEL&nbsp;&nbsp;&nbsp;&nbsp;XX<span style="background-color:rgba(0,255,0,0.6)">XXXX</span>XXXX<span style="background-color:rgba(0,0,255,0.6)">X</span>---<span style="background-color:rgba(0,0,255,0.6)">X</span>XX</span><br><span class="seq">TEMPLATE XXXXXXXXXXX----XX</span></td><td>Highlights insertions/deletions in model </td></tr></tbody></table><br><h4>Alignment Index Schemes</h4><table><tbody><tr><td width="80">Chain </td><td><span style="background-color:rgb(0,255,0)" class="seq">&nbsp;</span><span style="background-color:rgb(255,255,0)" class="seq">&nbsp;</span><span style="background-color:rgb(255,165,0)" class="seq">&nbsp;</span><span style="background-color:rgb(0,0,255)" class="seq">&nbsp;</span><span style="background-color:rgb(255,0,0)" class="seq">&nbsp;</span></td><td>Cycle of 5 colours</td></tr><tr><td>Rainbow</td><td><span class="seq"><span style="background-color: rgba(0, 0, 255, 0.6);">&nbsp;</span><span style="background-color: rgba(1, 27, 254, 0.6);">&nbsp;</span><span style="background-color: rgba(3, 53, 252, 0.6);">&nbsp;</span><span style="background-color: rgba(6, 79, 249, 0.6);">&nbsp;</span><span style="background-color: rgba(11, 104, 244, 0.6);">&nbsp;</span><span style="background-color: rgba(17, 127, 238, 0.6);">&nbsp;</span><span style="background-color: rgba(24, 150, 231, 0.6);">&nbsp;</span><span style="background-color: rgba(33, 171, 222, 0.6);">&nbsp;</span><span style="background-color: rgba(42, 190, 213, 0.6);">&nbsp;</span><span style="background-color: rgba(53, 206, 202, 0.6);">&nbsp;</span><span style="background-color: rgba(64, 221, 191, 0.6);">&nbsp;</span><span style="background-color: rgba(76, 233, 179, 0.6);">&nbsp;</span><span style="background-color: rgba(88, 243, 167, 0.6);">&nbsp;</span><span style="background-color: rgba(101, 249, 154, 0.6);">&nbsp;</span><span style="background-color: rgba(114, 254, 141, 0.6);">&nbsp;</span><span style="background-color: rgba(127, 255, 128, 0.6);">&nbsp;</span><span style="background-color: rgba(141, 254, 114, 0.6);">&nbsp;</span><span style="background-color: rgba(154, 249, 101, 0.6);">&nbsp;</span><span style="background-color: rgba(167, 243, 88, 0.6);">&nbsp;</span><span style="background-color: rgba(179, 233, 76, 0.6);">&nbsp;</span><span style="background-color: rgba(191, 221, 64, 0.6);">&nbsp;</span><span style="background-color: rgba(202, 206, 53, 0.6);">&nbsp;</span><span style="background-color: rgba(213, 190, 42, 0.6);">&nbsp;</span><span style="background-color: rgba(222, 171, 33, 0.6);">&nbsp;</span><span style="background-color: rgba(231, 150, 24, 0.6);">&nbsp;</span><span style="background-color: rgba(238, 127, 17, 0.6);">&nbsp;</span><span style="background-color: rgba(244, 104, 11, 0.6);">&nbsp;</span><span style="background-color: rgba(249, 79, 6, 0.6);">&nbsp;</span><span style="background-color: rgba(252, 53, 3, 0.6);">&nbsp;</span><span style="background-color: rgba(254, 27, 1, 0.6);">&nbsp;</span></span></td><td>N-teminus -&gt; C-terminus</td></tr></tbody></table><br><h4>Residue Schemes</h4><table><tbody><tr><td width="80">Hydrophobic</td><td><span class="seq"><span style="background-color: rgba(0, 0, 255, 0.4);">R</span><span style="background-color: rgba(18, 0, 237, 0.4);">K</span><span style="background-color: rgba(28, 0, 227, 0.4);">DENQ</span><span style="background-color: rgba(36, 0, 219, 0.4);">H</span><span style="background-color: rgba(82, 0, 173, 0.4);">P</span><span style="background-color: rgba(92, 0, 163, 0.4);">Y</span><span style="background-color: rgba(102, 0, 153, 0.4);">W</span><span style="background-color: rgba(105, 0, 150, 0.4);">S</span><span style="background-color: rgba(107, 0, 148, 0.4);">T</span><span style="background-color: rgba(117, 0, 138, 0.4);">G</span><span style="background-color: rgba(179, 0, 76, 0.4);">A</span><span style="background-color: rgba(181, 0, 74, 0.4);">M</span><span style="background-color: rgba(199, 0, 56, 0.4);">C</span><span style="background-color: rgba(207, 0, 48, 0.4);">F</span><span style="background-color: rgba(235, 0, 20, 0.4);">L</span><span style="background-color: rgba(247, 0, 8, 0.4);">V</span><span style="background-color: rgba(255, 0, 0, 0.4);">I</span></span></td><td>Least hydrophobic -&gt; Most hydrophobic</td></tr><tr><td>Size</td><td><span class="seq"><span style="background-color: rgba(0, 255, 0, 0.4);">G</span><span style="background-color: rgba(28, 227, 0, 0.4);">A</span><span style="background-color: rgba(59, 196, 0, 0.4);">S</span><span style="background-color: rgba(79, 176, 0, 0.4);">P</span><span style="background-color: rgba(82, 173, 0, 0.4);">V</span><span style="background-color: rgba(87, 168, 0, 0.4);">T</span><span style="background-color: rgba(89, 166, 0, 0.4);">C</span><span style="background-color: rgba(110, 145, 0, 0.4);">LI</span><span style="background-color: rgba(112, 143, 0, 0.4);">N</span><span style="background-color: rgba(115, 140, 0, 0.4);">D</span><span style="background-color: rgba(140, 115, 0, 0.4);">KQ</span><span style="background-color: rgba(143, 112, 0, 0.4);">E</span><span style="background-color: rgba(145, 110, 0, 0.4);">M</span><span style="background-color: rgba(158, 97, 0, 0.4);">H</span><span style="background-color: rgba(179, 76, 0, 0.4);">F</span><span style="background-color: rgba(196, 59, 0, 0.4);">R</span><span style="background-color: rgba(209, 46, 0, 0.4);">Y</span><span style="background-color: rgba(255, 0, 0, 0.4);">W</span></span></td><td>Smallest -&gt; Largest</td></tr><tr><td>Charged</td><td><span class="seq"><span style="background-color: rgba(255, 100, 100, 0.4);">ED <small>(Negative)</small></span>&nbsp;<span style="background-color: rgba(100, 100, 255, 0.4);">HKR <small>(Positive)</small></span></span></td></tr><tr><td>Polar</td><td><span class="seq"><span style="background-color:rgba(100,100,255,.4)">RKDENQ</span></span></td><td>&nbsp;</td></tr><tr><td>Proline</td><td><span class="seq"><span style="background-color:rgba(100,100,255,.4)">P</span></span></td><td>&nbsp;</td></tr><tr><td>Ser/Thr </td><td><span class="seq"><span style="background-color:rgba(100,100,255,.4)">ST</span></span></td><td>&nbsp;</td></tr><tr><td>Cysteine</td><td><span class="seq"><span style="background-color:rgba(100,100,255,.4)">C</span></span></td><td>&nbsp;</td></tr><tr><td>Aliphatic</td><td><span class="seq"><span style="background-color:rgba(100,100,255,.4)">ILV</span></span></td><td>&nbsp;</td></tr><tr><td>Aromatic</td><td><span class="seq"><span style="background-color:rgba(100,100,255,.4)">FYWH</span></span></td><td>&nbsp;</td></tr></tbody></table><br><h4>Clustal Scheme</h4><p> Rules are specified in this way:
+          (A,C,D): {50%, p,q,rstv}{85%, w,y}
+          The column residue is given first in the round brackets; more than one may be specified, in which case the rules apply to each of these residues. Next, the rule or rules are given in curly braces; only one rule has to be met for the colour to be applied. The minimum percentage is given first, followed by the residue or residues which must meet or exceed this percentage within the column. If a group of residues is concatenated together, such as 'rstv', then any combination of these residues in total must meet or exceed the given percentage for the colour to be applied. For residues or residue groups separated by commas, at least one of these must by itself exceed the percentage. </p><table><tbody><tr><td style="background-color:rgb(17,119,238);" width="24">&nbsp;</td><td><span class="seq">(WLVIMF)</span>: {50%, p}{60%, wlvimafcyhp}<br><span class="seq">(A)</span>: {50%, p}{60%, wlvimafcyhp}{85%, t,s,g}<br><span class="seq">(C)</span>: {50%, p}{60%, wlvimafcyhp}{85%, s} </td></tr><tr><td style="background-color:rgb(238,51,17);">&nbsp;</td><td><span class="seq">(KR)</span>: {60%, kr}{85%, q}</td></tr><tr><td style="background-color:rgb(17,204,17);">&nbsp;</td><td><span class="seq">(T)</span>: {50%, ts}{60%, wlvimafcyhp}<br><span class="seq">(S)</span>: {50%, ts}{80%, wlvimafcyhp}<br><span class="seq">(N</span>): {50%, n}{85%, d}<br><span class="seq">(Q)</span>: {50%, qe}{60%, kr}</td></tr><tr><td style="background-color:rgb(204,68,204);">&nbsp;</td><td><span class="seq">(C</span>) {85%, c}</td></tr><tr><td style="background-color:rgb(17,187,187);">&nbsp;</td><td><span class="seq">(D)</span>: {50%, de,n}<br><span class="seq">(E)</span>: {50%, de,qe}</td></tr><tr><td style="background-color:rgb(255,102,0);">&nbsp;</td><td><span class="seq">(G)</span>: {always}</td></tr><tr><td style="background-color:rgb(238,119,119);">&nbsp;</td><td><span class="seq">(HY)</span>: {50%, p}{60%, wlvimafcyhp}</td></tr><tr><td style="background-color:rgb(204,204,0);">&nbsp;</td><td><span class="seq">(P)</span>: {always}</td></tr></tbody></table></div></div><div id="model_results"><h2>Display of modelling results</h2><p>
+        Coordinates of the model, the corresponding alignment and quality
+        evaluations can be accessed and downloaded via web browser from the workspace.
+      </p><div id="model_details"><h3>Model details</h3><p>
+          This section allows to display the 3D structure of models and their
+          target–template sequence alignment as well as to download the
+          model coordinates.
+          For better assistance, many sequence features/scoring schemes are
+          synchronised with the 3D molecular view.
+        </p><p>
+          The colouring of the alignment can be changed by clicking on the "Options"
+          button (cog icon) and selecting the desired colouring scheme.
+        </p><p>
+          Model coordinates are available in two different formats:
+        </p><ul><li><a href="https://swissmodel.expasy.org/docs/help#DV">DeepView</a> project files</li><li>PDB format</li></ul><p>
+          If the model has been build using the
+          <a href="https://swissmodel.expasy.org/docs/help#automated_mode">Automated Mode</a>, the information
+          about the selected template(s) is provided with cross-references to
+          structural databases via the link to the <a href="https://swissmodel.expasy.org/docs/help#SMTL">SWISS MODEL Template library</a>.
+        </p><p>
+          By default, the final model is presented in colours based on the QMEAN model
+          quality. This allows instant visualisation of regions of the model that are
+          well or poorly modelled. Information about the oligomeric state, as well as
+          bound ligands and cofactors are provided. The user can alternatively choose
+          to see the results in a well formatted report page which shows all the
+          results in a readable format that can be copied and pasted to other
+          documents. The user can download an archive file containing all the models
+          and reports for the given target sequence.
+        </p><p>
+          There are very rare cases where modelling fails because the template
+          structure does not contain enough backbone atoms in the aligned region
+          (we need at least N-CA-C to be available and we skip d-peptides). In
+          such a case, we do not return any model structure.
+        </p><p>
+          Currently, there are three very rare cases where major modelling
+          issues appear. These issues are displayed with a prominent warning
+          sign and a potentially sub-optimal model is displayed. The models may
+          locally still be valid and useful. We suggest to carefully look at the
+          local <a href="https://swissmodel.expasy.org/docs/help#qmean">QMEAN</a> scores to judge the model. The three
+          issues are:
+        </p><ul><li>
+            If the target–template alignment contains very large
+            deletions mixed with small aligned patches, we may return an
+            incomplete model as we are unable to cleanly resolve the deletion.
+            Apart from the unresolved deletion, these could still be high
+            quality models.
+          </li><li>
+            A "ring punch" is defined by a bond passing through the carbon
+            ring of another amino acid (His, Pro, Phe, Tyr, Trp). This is an
+            unfortunate and unpredictable effect of the final energy
+            minimisation in the modelling process. Apart from the residues
+            involved in the "ring punch", these could still be high quality
+            models.
+          </li><li>
+            If a very bad template structure is used (so far we have only seen
+            this with user-uploaded structures), the energy minimization may
+            fail. This is usually caused by coordinates of different atoms
+            occupying almost the same position. In such a case, we return the
+            model without any energy minimization applied on it. Unless the
+            failure was caused by a local problem in the template structure,
+            this is expected to lead to very low quality models.
+          </li></ul><p>
+          Future versions of ProMod3 may resolve the issues above.
+        </p><p><img src="../static/img/help_model.png" alt="model"></p></div></div><div id="model_evaluation"><h3>Model evaluation</h3><div id="GMQE"><h4>GMQE</h4><p>
+          GMQE (Global Model Quality Estimation) is a quality estimation which
+          combines properties from the target–template alignment and 
+          the template structure. They are combined using a multilayer 
+          perceptron. The resulting GMQE score is expressed as a number between 
+          0 and 1, reflecting the expected accuracy of a model built with that 
+          alignment and template, normalized by the coverage of the target 
+          sequence. Higher numbers indicate higher reliability.
+          Once a model is built, the GMQE ((1) in the figure above)
+          gets updated for this specific case by also taking into account the
+          QMEAN score of the obtained model in order to increase reliability of
+          the quality estimation.
+        </p></div></div><div id="qmean"><h4>QMEAN</h4><p>
+        QMEAN 
+        (<a target="_blank" href="https://swissmodel.expasy.org/docs/references#qmean"><i>Studer et al.</i></a>)
+        is a composite estimator based on different geometrical properties
+        and provides both global (i.e. for the entire structure) and local
+        (i.e. per residue) absolute quality estimates on the basis of <i>one single
+        model</i>.
+      </p><p>
+        The QMEAN Z-score ((2) in the figure above) provides an estimate of the
+        "degree of nativeness" of the structural features observed in the model
+        on a global scale and is described in 
+        <a target="_blank" href="https://swissmodel.expasy.org/docs/references#qmeanzscore"><i>Benkert et al.</i></a>. 
+        It indicates whether the QMEAN score of the model is 
+        comparable to what one would expect from experimental structures of 
+        similar size.
+        QMEAN Z-scores around zero indicate good agreement between the
+        model structure and experimental structures of similar size. Scores of 
+        -4.0 or below are an indication of models with low quality. This is also
+        highlighted by a change of the "thumbs-up" symbol to a "thumbs-down" 
+        symbol next to the score.
+      </p><p>
+        QMEAN consists of four individual terms. The four individual terms of
+        the global QMEAN quality scores are also listed ((3) in the figure 
+        above).
+        The white area in the bar plots (numerical values close to zero) 
+        indicates that the property is similar to what one would expect from 
+        experimental structures of similar size.
+        Positive values indicate that the model scores higher than experimental
+        structures on average. Negative numbers indicate that the model scores
+        lower than experimental structures on average. The QMEAN Z-score itself
+        is shown on top. The individual Z-scores compare the interaction potential
+        between Cβ atoms only, all atoms, the solvation potential and the
+        torsion angle potential. For details, please refer to the 
+        <a target="_blank" href="https://swissmodel.expasy.org/docs/references#qmean">publication</a>.
+      </p><p>
+        Besides using the terms as for global scoring, the accuracy of the QMEAN 
+        local scores is enhanced by QMEANDisCo
+        (<a target="_blank" href="https://swissmodel.expasy.org/docs/references#qmean"><i>Studer et al.</i></a>). 
+        QMEANDisCo assesses the 
+        consistency of observed interatomic distances in the model with ensemble 
+        information extracted from experimentally determined protein structures 
+        that are homologues to the target sequence. 
+        The “Local Quality” plot ((4) in the figure above) shows, for each 
+        residue of the model (reported on the x-axis), the expected similarity 
+        to the native structure (y-axis). 
+        Typically, residues showing a score below 0.6 are expected to be of low 
+        quality. Different model chains are shown in different colours. If the
+        model is downloaded, the local score is reported in the B-factor column 
+        of the PDB file. The local quality can also be visualised by choosing the 
+        <a href="https://swissmodel.expasy.org/docs/help#colour_schemes">colour scheme</a> "QMEAN".
+      </p><p>
+        In the "Comparison" plot ((5) in the figure above), model quality scores
+        of individual models are related to scores obtained for experimental 
+        structures of similar size. The x-axis shows protein length (number of 
+        residues). The y-axis is the normalized QMEAN score. 
+        Every dot represents one experimental protein structure.
+        Black dots are experimental structures with a normalized QMEAN score 
+        within 1 standard devation of the mean (|Z-score| between 0 and 1), 
+        experimental structures with a |Z-score| between 1 and 2 are grey.
+        Experimental structure that are even further from the mean are light
+        grey. The actual model is represented as a red star. 
+        The mean and standard deviation of the experimental structures around
+        the x-location of the star are the basis to calculate the 
+        QMEAN Z-score of the model ((2) in the figure above), i.e. how many 
+        standard deviations from the mean scores my model.
+      </p></div><div id="modelling_report"><h3>Modelling report</h3><p>
+        The SWISS-MODEL Homology Modelling Report offers a summary of all Models
+        built in the project.
+      </p><p>
+        Note: The report is accessible (i) per model via a drop-down menu,
+        next to the model in the Models view or (ii) for all models in report.html
+        in the downloaded file when choosing to download the project by pressing
+        the download button below the project title.
+      </p><p>
+        It is structured in the following sections:
+      </p><ul><li>Model building Report: Contains project name, project date and references.
+        The target sequence is in Table T1 of the Report.</li><li>Results: Version of the SWISS-MODEL template library and PDB release.
+           All identified templates are listed in Table T2.</li><li>Models: Models are listed sequentially with each entry showing a picture of
+          the model, a link to the PDB file, the version of the modelling engine,
+          the oligomeric state, the ligands (if any), the global model quality
+          estimate, and the QMEAN score.
+          <br>
+          A graphical representation of the QMEAN score and its four terms separately,
+          the local quality estimate plot, and the comparison with non-redundant
+          set of PDB structures are also provided. For the template, a link to
+          the template itself is provided together with the following information:
+          the title of the structure, the target sequence coverage, the sequence
+          identity to the target, the experimental method used to obtain the
+          structure (and the resolution, if applicable), the oligomeric state,
+          the ligands (if any), the sequence similarity to the target, the
+          template search method used.</li><li>Save Project Locally: Allows to download the project as a zip file.
+          <br>
+          The main folder contains the Model report (report.html), images folder
+          (banner for the Report), and the model folder. Each model has its own
+          subfolder.</li></ul></div><div id="membrane"><h2>Membrane Prediction</h2><div class="row"><div class="col-xs-8"><p>Biounits of transmembrane proteins are identified in the SMTL solely based on structural information. An implicit solvation model implemented in OpenStructure <a href="https://openstructure.org/docs/dev/mol/alg/molalg/?highlight=findmembrane#ost.mol.alg.FindMembrane">(mol.alg.FindMembrane)</a> estimates the optimal membrane location for each biounit and performs a classification based on energetic and geometric criteria.</p><p>
+            The original algorithm and the used energy function are described by <a href="https://swissmodel.expasy.org/docs/references#proteinsInMembranes">Lomize et al.</a></p><p>
+            The membrane annotation is transferred to a model if at least 80% of all biounit transmembrane residues are aligned with the
+            target sequence(s).
+          </p></div><div class="col-xs-4"><a href="https://swissmodel.expasy.org/templates/3eml.1"><img src="../static/img/3eml.1.membrane.png"></a></div></div></div></div></div></div><div id="loginForm" style="width:600px;display:none;padding-top:12px; text-align:center;"></div><footer class="footer hidden-print"><div id="sib_footer"><ul class="list-inline" style="margin-bottom:0px; padding-bottom:4px;padding-top:4px;"><li><a href="https://www.sib.swiss/">Swiss Institute of Bioinformatics</a></li><li><a href="https://www.biozentrum.unibas.ch/research/researchgroups/overview/unit/schwede/">Schwede Group</a></li><li><a href="mailto:mouseover@for.address" class="swissmodelContactRef">Contact Us</a></li><li><a href="https://swissmodel.expasy.org/docs/terms_of_use">Terms of use</a></li><li class="pull-right"><a id="sib_footer_gototop" onclick="window.scrollTo(0,0);"><i class="glyphicon glyphicon-arrow-up"></i> Back to the Top</a></li></ul><div class="clearfix"></div></div></footer><script src="../static/js/jquery-3.4.1.min.js"></script><script src="../static/js/jquery-ui.min.js"></script><script src="../static/js/bootstrap-3.3.7.min.js"></script><script src="../static/js/jquery.fancybox.pack.js"></script><script>
+function highlight(item)
+{
+	$('.active').removeClass('active');
+	do  
+	{
+		item.addClass('active');
+		item = item.parent()
+			.parents('li:eq(0)')
+			.find('a.docu_link:eq(0)');
+	}
+	while(item.length>0)
+}
+
+$(document).on('click','a.docu_link',function(event)
+	{ 
+	    $('html, body').animate(
+	    	{ scrollTop: $( $.attr(this, 'href') ).offset().top }, 400,
+	    	function(){ highlight( $(event.target) ); }
+	    );
+	});
+
+$(document).on("scroll", function()
+	{
+		if($('html:animated').length>0)
+			return;
+		
+		var scrollPos = $(document).scrollTop();
+	    $('#main-content div[id]').each( function()
+	    { 
+	    	if($(this).offset().top>=scrollPos ) 
+			{ 
+				highlight( $('nav a.docu_link[href="#'+$(this).attr('id')+'"]') );
+				return false 
+			}
+	    });
+	});
+</script><script>
+    $('a.smng-help').append('<icon class="glyphicon glyphicon-question-sign"></i>');
+    $(document).on('click','a.smng-help',function()
+    { 
+        window.open($(this).attr('href'),
+            'Help',
+            'width=920,height=600,left=20,top=100,directories=no,menubar=yes,toolbar=yes,'
+                +'status=no,scrollbars=yes,resizable=no');
+        return false;
+    });
+
+     $('a.swissmodelContactRef')
+        .on('mouseover',function()
+            {
+                $(this).attr('href',["ch", ".", "nibas", "l@u",
+             "mode", "-swiss",
+              ":help", "to", "ail", "m"].reverse().join(''));
+                $(this).off('mouseover');
+            });
+
+     function showLogin()
+     {
+        $('#loginForm')
+            .load('/login', { 'csrfmiddlewaretoken':'8xNfZZXU2I73YG8UNECxq1liFNGXId3dvXDgG7vXQ9TyvzFmFtj9MPn9hZh5cEE3' },
+                function()
+                {
+                    $("<a href='#loginForm'/>'").fancybox().trigger('click');  
+                    $('#id_username').focus();
+                });
+        
+     } 
+     function createAccount()
+     {
+        $('#loginForm')
+            .load('/create_account',
+                function()
+                {
+                    $("<a href='#loginForm'/>'").fancybox().trigger('click'); 
+                    $('#id_username').focus();  
+                });
+     }
+     
+</script>
+</body></html>

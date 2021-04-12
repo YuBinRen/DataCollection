@@ -1,0 +1,1146 @@
+<!DOCTYPE html>
+<!-- saved from url=(0040)https://swissmodel.expasy.org/templates/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><!-- Global site tag (gtag.js) - Google Analytics --><script type="text/javascript" async="" src="../static/js/analytics.js"></script><script async="" src="../static/js/js"></script><script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-8667194-2');
+    </script><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="ROBOTS" content="ALL"><title>SWISS-MODEL Template Library</title><meta name="description" content="The SWISS-MODEL Template Library (SMTL) is a large structural database of experimentally determined protein structures derived from the Protein Data Bank (Westbrook et al.)"><link rel="stylesheet" type="text/css" href="../static/css/bootstrap-3.3.7.min.css" media="screen,print"><link rel="stylesheet" type="text/css" href="../static/css/bootstrap-theme-3.3.7.min.css" media="screen,print"><link rel="stylesheet" type="text/css" href="../static/css/master.css" media="all"><link rel="stylesheet" type="text/css" href="../static/css/jquery.fancybox.css"><link rel="stylesheet" type="text/css" href="../static/css/jquery-ui.min.css"><link rel="shortcut icon" href="https://swissmodel.expasy.org/static/images/favicon.png" type="image/png"><link rel="apple-touch-icon" href="https://swissmodel.expasy.org/static/images/apple-touch-57.png"><link rel="apple-touch-icon" sizes="72x72" href="https://swissmodel.expasy.org/static/images/apple-touch-72.png"><link rel="apple-touch-icon" sizes="114x114" href="https://swissmodel.expasy.org/static/images/apple-touch-114.png"></head><body><nav class="navbar navbar-default"><div class="container-fluid"><div class="navbar-header"><button aria-controls="navbar" aria-expanded="false" data-target=".collapseThis" data-toggle="collapse" class="navbar-toggle collapsed" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="hidden-xs hidden-sm navbar-brand" style="margin-left:0px;padding:8px 4px 0px 0px;" title="SIB Swiss Institute of Bioinformatics" href="https://www.sib.swiss/" target="_blank"><img src="../static/img/sib_logo_small.png" alt="SIB logo" style="max-height:50px"></a><a class="hidden-xs hidden-sm navbar-brand" style="margin-left:0px; padding:8px 0px 0px 4px;" title="Biozentrum | University of Basel | The Center for Molecular Life Sciences" href="http://www.biozentrum.unibas.ch/" target="_blank"><img src="../static/img/biozentrum_en.png" alt="Biozentrum logo" style="max-height:36px"></a><a class="hidden-xs hidden-sm navbar-brand" href="https://swissmodel.expasy.org/" style="margin-left:0px;padding-left:0px;padding-right:0px;font-size:28px;">SWISS-MODEL</a><a id="navbar-brand" class="hidden-md hidden-lg navbar-brand" href="https://swissmodel.expasy.org/" style="margin-left:0px;font-size:20px;">SWISS-MODEL</a></div><div id="navbar" class="collapseThis navbar-collapse collapse"><!-- Collect the nav links, forms, and other content for toggling --><ul class="nav navbar-nav navbar-right"><li class="dropdown active"><a href="https://swissmodel.expasy.org/interactive" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Modelling</a><ul class="dropdown-menu" role="menu"><li><a class="text-left" href="https://swissmodel.expasy.org/interactive">myWorkspace</a></li><li><a class="text-left" href="https://swissmodel.expasy.org/interactive#alignment">Alignment Mode</a></li><li><a class="text-left" href="https://swissmodel.expasy.org/interactive#structure">User Template Mode</a></li><li><a class="text-left" href="https://swissmodel.expasy.org/interactive#deepview">DeepView Project Mode</a></li><li class="divider"></li><li><a class="text-left" href="https://swissmodel.expasy.org/templates/">Template Library</a></li></ul></li><li id="smrLink" class="dropdown "><a href="https://swissmodel.expasy.org/repository" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Repository</a><ul class="dropdown-menu" role="menu"><li><a href="https://swissmodel.expasy.org/repository">SWISS-MODEL Repository</a></li><li><a href="https://swissmodel.expasy.org/repository/user_annotation_upload">Annotation Projects</a></li></ul></li><li class="dropdown "><a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Tools</a><ul class="dropdown-menu" role="menu"><li><a href="https://swissmodel.expasy.org/qmean/" tabindex="-1">QMEAN</a></li><li><a href="https://swissmodel.expasy.org/lddt" tabindex="-1">lDDT</a></li><li><a href="https://swissmodel.expasy.org/assess">Structure Assessment</a></li><li><a href="https://swissmodel.expasy.org/comparison/">Structure Comparison</a></li></ul></li><li class="dropdown "><a href="https://swissmodel.expasy.org/templates/#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Documentation</a><ul class="dropdown-menu" role="menu"><li><a href="https://swissmodel.expasy.org/docs/help" tabindex="-1">SWISS-MODEL</a></li><li><a href="https://swissmodel.expasy.org/docs/examples" tabindex="-1">Examples</a></li><li><a href="https://swissmodel.expasy.org/docs/tutorial" tabindex="-1">Video Tutorial</a></li><li><a href="https://swissmodel.expasy.org/docs/blog" tabindex="-1">New Features</a></li><li role="separator" class="divider"></li><li><a href="https://swissmodel.expasy.org/docs/repository_help" tabindex="-1">SWISS-MODEL Repository</a></li><li role="separator" class="divider"></li><li><a href="https://swissmodel.expasy.org/qmean/help" tabindex="-1">QMEAN</a></li><li><a href="https://swissmodel.expasy.org/lddt/help/" tabindex="-1">lDDT</a></li><li><a href="https://swissmodel.expasy.org/assess/help">Structure Assessment</a></li><li><a href="https://swissmodel.expasy.org/comparison/help">Structure Comparison</a></li><li role="separator" class="divider"></li><li><a href="https://swissmodel.expasy.org/course" tabindex="-1">Protein Structure Course</a></li><li role="separator" class="divider"></li><li><a href="https://swissmodel.expasy.org/docs/references" tabindex="-1">References</a></li></ul></li><li><a onclick="showLogin();">Log in</a></li><li><a onclick="createAccount();">Create Account</a></li></ul></div></div><!-- /container-fluid --></nav><div id="tools"></div><div id="main-content" style="padding-left:32px; margin-right:32px"><h3>SWISS-MODEL Template Library (SMTL) <a class="smng-help" href="https://swissmodel.expasy.org/docs/help#SMTL"><icon class="glyphicon glyphicon-question-sign"></icon></a></h3><p>SMTL aggregates information of experimental structures from the Protein Data Bank (Westbrook et al.) and augments it with derived information. When a new structure is released by the PDB, the coordinates and accompanying information are processed and imported into the template library. SMTL entries are organized by likely quaternary structure assemblies, termed 'biounits', which are created according to the author and software annotated oligomeric states listed in the PDB deposition.</p><p>The current SMTL contains:</p><ul style="margin-top:0px"><li>A total of 738368 chains</li><li>119698 unique SEQRES sequences</li><li>295900 biounits</li></ul><p>
+Examples:
+<span><a href="https://swissmodel.expasy.org/templates/6lqr.18">6lqr.18</a>, <a href="https://swissmodel.expasy.org/templates/1ot2.1">1ot2.1</a>, <a href="https://swissmodel.expasy.org/templates/5z0x.2">5z0x.2</a>, <a href="https://swissmodel.expasy.org/templates/4ibq.3">4ibq.3</a>, <a href="https://swissmodel.expasy.org/templates/7aii.2">7aii.2</a>, <a href="https://swissmodel.expasy.org/templates/4clr.1">4clr.1</a>, <a href="https://swissmodel.expasy.org/templates/3tju.1">3tju.1</a>, <a href="https://swissmodel.expasy.org/templates/2hv7.2">2hv7.2</a>, <a href="https://swissmodel.expasy.org/templates/6n7x.1">6n7x.1</a>, <a href="https://swissmodel.expasy.org/templates/2l7s.1">2l7s.1</a>, <a href="https://swissmodel.expasy.org/templates/4d85.1">4d85.1</a>, <a href="https://swissmodel.expasy.org/templates/1nhp.2">1nhp.2</a></span></p><div style="padding:4px 0px 16px 0px"><form class="form form-inline" action="https://swissmodel.expasy.org/templates/" method="post"><input type="hidden" name="csrfmiddlewaretoken" value="0KjZBPvZQRlF0aqtF63KVJCXyPhfFJmwna90iX32Ei7ax3XVxVKmhxEOa1Sn9aXm">
+Enter PDB ID or SMTL ID:
+<input type="text" name="pdbid" size="10" class="form-control" maxlength="7" required="" id="id_pdbid"><button class="btn btn-primary">Submit</button></form><script language="javascript">document.getElementById('id_pdbid').focus()</script></div><p class="form-inline">SMTL Update: <select style="width:250px" class="form-control" onchange="fetchUpdate($(this).find(&#39;:selected&#39;).val());"><option>2021-02-24</option><option>2021-02-17</option><option>2021-02-10</option><option>2021-02-03</option><option>2021-01-27</option><option>2021-01-20</option><option>2021-01-13</option><option>2021-01-06</option><option>2020-12-30</option><option>2020-12-23</option><option>2020-12-16</option><option>2020-12-09</option><option>2020-12-02</option><option>2020-11-25</option><option>2020-11-18</option><option>2020-11-11</option><option>2020-11-04</option><option>2020-11-03</option><option>2020-11-02</option><option>2020-11-01</option><option>2020-10-28</option><option>2020-10-27</option><option>2020-10-26</option><option>2020-10-25</option><option>2020-10-22</option><option>2020-10-19</option><option>2020-10-21</option><option>2020-10-16</option><option>2020-10-14</option><option>2020-10-13</option><option>2020-10-12</option><option>2020-09-23</option><option>2020-09-16</option><option>2020-09-09</option><option>2020-09-08</option><option>2020-09-07</option><option>2020-09-03</option><option>2020-08-27</option><option>2020-08-26</option><option>2020-08-24</option><option>2020-08-21</option><option>2020-08-19</option><option>2020-08-17</option><option>2020-08-15</option><option>2020-08-12</option><option>2020-08-05</option><option>2020-08-04</option><option>2020-07-29</option><option>2020-07-22</option><option>2020-07-15</option><option>2020-07-08</option><option>2020-07-01</option><option>2020-06-24</option><option>2020-06-17</option><option>2020-06-10</option><option>2020-06-03</option><option>2020-05-27</option><option>2020-05-20</option><option>2020-05-13</option><option>2020-05-06</option><option>2020-04-29</option><option>2020-04-22</option><option>2020-04-15</option><option>2020-04-08</option><option>2020-04-01</option><option>2020-03-25</option><option>2020-03-18</option><option>2020-03-11</option><option>2020-03-04</option><option>2020-02-27</option><option>2020-02-19</option><option>2020-02-12</option><option>2020-02-05</option><option>2020-01-29</option><option>2020-01-23</option><option>2020-01-15</option><option>2020-01-09</option><option>2020-01-02</option><option>2019-12-26</option><option>2019-12-20</option><option>2019-12-12</option><option>2019-12-06</option><option>2019-12-03</option><option>2019-11-29</option><option>2019-11-25</option><option>2019-11-21</option><option>2019-11-19</option><option>2019-10-17</option><option>2019-10-09</option><option>2019-10-02</option><option>2019-09-25</option><option>2019-09-18</option><option>2019-09-12</option><option>2019-09-04</option><option>2019-08-28</option><option>2019-08-21</option><option>2019-08-14</option><option>2019-08-07</option><option>2019-07-31</option><option>2019-07-26</option><option>2019-07-18</option><option>2019-07-11</option><option>2019-07-06</option><option>2019-06-27</option><option>2019-06-20</option><option>2019-06-12</option><option>2019-06-05</option><option>2019-05-29</option><option>2019-05-29</option><option>2019-05-22</option><option>2019-05-15</option><option>2019-05-08</option><option>2019-05-03</option><option>2019-04-24</option><option>2019-04-17</option><option>2019-04-11</option><option>2019-04-03</option><option>2019-03-27</option><option>2019-03-20</option><option>2019-03-13</option><option>2019-03-06</option><option>2019-02-28</option><option>2019-02-22</option><option>2019-02-13</option><option>2019-02-06</option><option>2019-01-31</option><option>2019-01-23</option><option>2019-01-16</option><option>2019-01-09</option><option>2019-01-02</option><option>2018-12-28</option><option>2018-12-26</option><option>2018-12-25</option><option>2018-12-24</option><option>2018-12-17</option><option>2018-12-13</option><option>2018-12-10</option><option>2018-11-14</option><option>2018-11-09</option><option>2018-11-08</option><option>2018-11-06</option><option>2018-10-31</option><option>2018-10-11</option><option>2018-10-03</option><option>2018-10-01</option><option>2018-09-19</option><option>2018-09-12</option><option>2018-09-08</option><option>2018-09-05</option><option>2018-09-03</option><option>2018-08-29</option><option>2018-08-23</option><option>2018-08-02</option><option>2018-07-26</option><option>2018-07-22</option><option>2018-07-12</option><option>2018-07-04</option><option>2018-06-29</option><option>2018-06-26</option><option>2018-06-13</option><option>2018-06-07</option><option>2018-06-06</option><option>2018-05-23</option><option>2018-05-18</option><option>2018-05-17</option><option>2018-05-02</option><option>2018-04-25</option><option>2018-04-18</option><option>2018-04-12</option><option>2018-04-04</option><option>2018-03-28</option><option>2018-03-21</option><option>2018-03-14</option><option>2018-03-07</option><option>2018-02-28</option><option>2018-02-21</option><option>2018-02-14</option><option>2018-02-07</option><option>2018-01-31</option><option>2018-01-24</option><option>2018-01-22</option><option>2018-01-17</option><option>2018-01-11</option><option>2018-01-10</option><option>2018-01-08</option><option>2018-01-03</option><option>2017-12-27</option><option>2017-12-21</option><option>2017-12-13</option><option>2017-12-06</option><option>2017-11-29</option><option>2017-11-27</option><option>2017-11-17</option><option>2017-11-15</option><option>2017-11-09</option><option>2017-11-06</option><option>2017-11-02</option><option>2017-10-31</option><option>2017-10-27</option><option>2017-10-26</option><option>2017-10-25</option><option>2017-10-24</option><option>2017-10-23</option><option>2017-10-11</option><option>2017-10-10</option><option>2017-09-21</option><option>2017-09-14</option><option>2017-09-07</option><option>2017-08-31</option><option>2017-08-23</option><option>2017-08-17</option><option>2017-08-09</option><option>2017-08-05</option><option>2017-07-26</option><option>2017-07-19</option><option>2017-07-12</option><option>2017-07-06</option><option>2017-06-28</option><option>2017-06-24</option><option>2017-06-14</option><option>2017-06-07</option><option>2017-05-31</option><option>2017-05-24</option><option>2017-05-17</option><option>2017-05-11</option><option>2017-05-03</option><option>2017-04-26</option><option>2017-04-19</option><option>2017-04-12</option><option>2017-04-05</option><option>2017-03-29</option><option>2017-03-22</option><option>2017-03-15</option><option>2017-03-08</option><option>2017-03-01</option><option>2017-02-28</option><option>2017-02-17</option><option>2017-02-08</option><option>2017-02-01</option><option>2017-01-25</option><option>2017-01-20</option><option>2017-01-13</option><option>2017-01-06</option><option>2016-12-31</option><option>2016-12-21</option><option>2016-12-14</option><option>2016-12-08</option><option>2016-12-01</option><option>2016-11-23</option><option>2016-11-23</option><option>2016-11-09</option><option>2016-10-19</option><option>2016-10-12</option><option>2016-10-10</option><option>2016-10-10</option><option>2016-10-07</option><option>2016-09-21</option><option>2016-09-14</option><option>2016-09-07</option><option>2016-08-31</option><option>2016-08-25</option><option>2016-08-24</option><option>2016-08-23</option><option>2016-08-11</option><option>2016-08-03</option><option>2016-07-27</option><option>2016-07-20</option><option>2016-07-14</option><option>2016-07-06</option><option>2016-06-29</option><option>2016-06-22</option><option>2016-06-15</option><option>2016-06-08</option><option>2016-06-02</option><option>2016-05-26</option><option>2016-05-18</option><option>2016-05-11</option><option>2016-05-26</option><option>2016-04-27</option><option>2016-04-20</option><option>2016-04-13</option><option>2016-04-06</option><option>2016-03-30</option><option>2016-03-23</option><option>2016-03-16</option><option>2016-03-12</option><option>2016-03-02</option><option>2016-02-24</option><option>2016-02-17</option><option>2016-02-12</option><option>2016-02-11</option><option>2016-02-10</option><option>2016-01-20</option><option>2016-01-13</option><option>2016-01-06</option><option>2015-12-30</option><option>2015-12-23</option><option>2015-12-16</option><option>2015-12-15</option><option>2015-12-14</option><option>2015-12-03</option><option>2015-12-02</option><option>2015-12-02</option><option>2015-11-05</option><option>2015-10-28</option><option>2015-10-23</option><option>2015-10-22</option><option>2015-10-08</option><option>2015-10-02</option><option>2015-09-23</option><option>2015-09-16</option><option>2015-09-09</option><option>2015-09-02</option><option>2015-08-26</option><option>2015-08-25</option><option>2015-08-25</option><option>2015-08-07</option><option>2015-07-30</option><option>2015-07-22</option><option>2015-07-15</option><option>2015-07-08</option><option>2015-07-01</option><option>2015-06-24</option><option>2015-06-17</option><option>2015-06-10</option><option>2015-06-04</option><option>2015-05-29</option><option>2015-05-20</option><option>2015-05-13</option><option>2015-05-07</option><option>2015-05-06</option><option>2015-04-29</option><option>2015-04-22</option><option>2015-04-15</option><option>2015-04-08</option><option>2015-04-01</option><option>2015-03-25</option><option>2015-03-18</option><option>2015-03-11</option><option>2015-03-04</option><option>2015-02-25</option><option>2015-02-18</option><option>2015-02-11</option><option>2015-02-04</option><option>2015-01-28</option><option>2015-01-28</option><option>2015-01-27</option><option>2015-01-21</option><option>2015-01-14</option><option>2015-01-07</option><option>2015-01-02</option><option>2014-12-24</option><option>2014-12-17</option><option>2014-12-12</option><option>2014-12-03</option><option>2014-11-26</option><option>2014-11-19</option><option>2014-11-12</option><option>2014-11-05</option><option>2014-10-29</option><option>2014-10-22</option><option>2014-10-15</option><option>2014-10-08</option><option>2014-10-01</option><option>2014-09-24</option><option>2014-09-17</option><option>2014-09-10</option><option>2014-09-03</option><option>2014-08-27</option><option>2014-08-20</option><option>2014-08-13</option><option>2014-08-06</option><option>2014-07-30</option><option>2014-07-23</option><option>2014-07-16</option><option>2014-07-09</option><option>2014-07-02</option><option>2014-06-25</option><option>2014-06-18</option><option>2014-06-11</option><option>2014-06-04</option><option>2014-05-28</option><option>2014-05-21</option><option>2014-05-15</option><option>2014-05-13</option><option>2014-05-05</option><option>2014-05-02</option><option>2014-05-02</option><option>2014-04-09</option><option>2014-04-03</option><option>2014-03-31</option><option>2014-03-25</option><option>2014-03-15</option><option>2014-03-07</option><option>2014-03-03</option><option>2014-02-21</option><option>2014-02-17</option><option>2014-02-10</option><option>2014-02-03</option><option>2014-01-28</option><option>2014-01-27</option><option>2014-01-13</option><option>2014-01-07</option><option>2014-01-06</option><option>2014-01-06</option><option>2013-12-16</option><option>2013-12-09</option><option>2013-12-02</option><option>2013-11-27</option><option>2013-11-27</option><option>2013-11-12</option><option>2013-11-05</option><option>2013-11-04</option><option>2013-10-21</option><option>2013-10-08</option><option>2013-10-07</option><option>2013-10-14</option><option>2013-09-30</option><option>2013-09-23</option><option>2013-09-16</option><option>2013-09-09</option><option>2013-09-03</option><option>2013-08-27</option><option>2013-08-27</option><option>2013-08-22</option><option>2013-08-21</option><option>2013-07-29</option><option>2013-07-27</option><option>2013-07-26</option><option>2013-07-26</option><option>2013-07-26</option><option>2013-07-25</option><option>2013-07-25</option><option>2013-07-19</option><option>2013-07-19</option><option>2013-07-15</option><option>2013-07-15</option><option>2013-07-14</option><option>2013-07-12</option><option>2013-07-12</option><option>2013-07-10</option><option>2013-07-10</option><option>2013-07-07</option><option>2013-07-07</option><option>2013-07-06</option><option>2013-07-05</option><option>2013-07-04</option><option>2013-07-04</option><option>2013-07-03</option><option>2013-07-02</option><option>2013-07-02</option><option>2013-07-01</option><option>2013-07-01</option><option>2013-07-01</option><option>2013-06-30</option><option>2013-06-27</option><option>2013-06-26</option><option>2013-06-25</option><option>2013-06-28</option><option>2013-01-07</option><option>2012-12-31</option><option>2012-12-25</option><option>2012-12-25</option><option>2012-12-10</option><option>2012-12-10</option><option>2012-11-26</option><option>2012-11-20</option><option>2012-11-20</option><option>2012-11-14</option><option>2012-10-31</option><option>2012-10-23</option><option>2012-10-16</option></select></p><div id="updateDiv" style="margin-top:15px;"><ul style="margin-top:0px">
+<li>New Entries <i class="glyphicon glyphicon-chevron-up" style="cursor:pointer;opacity:.6" onclick="$(&#39;#newEntryDiv&#39;).toggle();"></i><div class="entryDiv" id="newEntryDiv">
+<table class="table table-striped" border="0" cellspacing="1" cellpadding="1">
+
+<tbody><tr><td width="80%">AL amyloid fibril from a lambda 3 light chain in conformation A</td><td><a href="https://swissmodel.expasy.org/templates/6z1o">6z1o</a></td></tr>
+
+<tr><td width="80%">AL amyloid fibril from a lambda 3 light chain in conformation B</td><td><a href="https://swissmodel.expasy.org/templates/6z1i">6z1i</a></td></tr>
+
+<tr><td width="80%">Arabidopsis thaliana dihydrodipicolinate synthase isoform 1 (DHDPS1)</td><td><a href="https://swissmodel.expasy.org/templates/6vvi">6vvi</a></td></tr>
+
+<tr><td width="80%">Arabidopsis thaliana dihydrodipicolinate synthase isoform 1 (DHDPS1) in complex with lysine</td><td><a href="https://swissmodel.expasy.org/templates/6vvh">6vvh</a></td></tr>
+
+<tr><td width="80%">BRD2-BD2 in complex with the cyclic peptide 4.2_3</td><td><a href="https://swissmodel.expasy.org/templates/6ult">6ult</a></td></tr>
+
+<tr><td width="80%">BRD4-BD1 Compound6 (methyl 4-(3,5-difluoropyridin-2-yl)-10-methyl-7-((methylsulfonyl)methyl)-11-oxo-3,4,10,11-tetrahydro-1H-1,4,10-triazadibenzo[cd,f]azulene-6-carboxylate)</td><td><a href="https://swissmodel.expasy.org/templates/7khl">7khl</a></td></tr>
+
+<tr><td width="80%">CD146 D4-D5/AA98 Fab</td><td><a href="https://swissmodel.expasy.org/templates/6lyn">6lyn</a></td></tr>
+
+<tr><td width="80%">CRTC1 pSer151 peptide in complex with 14-3-3 zeta</td><td><a href="https://swissmodel.expasy.org/templates/7d8p">7d8p</a></td></tr>
+
+<tr><td width="80%">CRTC1 pSer245 peptide in complex with 14-3-3 zeta</td><td><a href="https://swissmodel.expasy.org/templates/7d9v">7d9v</a></td></tr>
+
+<tr><td width="80%">CRTC1 pSer64 peptide in complex with 14-3-3 zeta</td><td><a href="https://swissmodel.expasy.org/templates/7d8h">7d8h</a></td></tr>
+
+<tr><td width="80%">CRYSTAL STRUCTURE OF BCL-XL IN COMPLEX WITH COMPOUND 1620116, CRYSTAL FORM 2</td><td><a href="https://swissmodel.expasy.org/templates/7jgv">7jgv</a></td></tr>
+
+<tr><td width="80%">CRYSTAL STRUCTURE OF RAR-RELATED ORPHAN RECEPTOR C (NHIS-RORGT(244-487)-L6-SRC1(678-692) IN COMPLEX WITH A NOVEL TRICYCLIC-CARBOCYLIC RORGT INVERSE AGONIST</td><td><a href="https://swissmodel.expasy.org/templates/7kqj">7kqj</a></td></tr>
+
+<tr><td width="80%">Chitin-specific solute binding protein from Vibrio harveyi co-crystalized with chitotetraose.</td><td><a href="https://swissmodel.expasy.org/templates/6lzr">6lzr</a></td></tr>
+
+<tr><td width="80%">Chitin-specific solute binding protein from Vibrio harveyi in complex with chitotriose.</td><td><a href="https://swissmodel.expasy.org/templates/6lzq">6lzq</a></td></tr>
+
+<tr><td width="80%">Complex of human GDAP1 with hexadecanedioic acid</td><td><a href="https://swissmodel.expasy.org/templates/7aia">7aia</a></td></tr>
+
+<tr><td width="80%">Cryo-EM structure of Bromocriptine-bound dopamine receptor 2 in complex with Gi protein</td><td><a href="https://swissmodel.expasy.org/templates/7jvr">7jvr</a></td></tr>
+
+<tr><td width="80%">Cryo-EM structure of EBV BFLF1</td><td><a href="https://swissmodel.expasy.org/templates/6xfa">6xfa</a></td></tr>
+
+<tr><td width="80%">Cryo-EM structure of SKF-81297-bound dopamine receptor 1 in complex with Gs protein</td><td><a href="https://swissmodel.expasy.org/templates/7jv5">7jv5</a></td></tr>
+
+<tr><td width="80%">Cryo-EM structure of SKF-83959-bound dopamine receptor 1 in complex with Gs protein</td><td><a href="https://swissmodel.expasy.org/templates/7jvp">7jvp</a></td></tr>
+
+<tr><td width="80%">Cryo-EM structure of a BcsB pentamer in the context of an assembled Bcs macrocomplex</td><td><a href="https://swissmodel.expasy.org/templates/6yg8">6yg8</a></td></tr>
+
+<tr><td width="80%">Cryo-EM structure of apomorphine-bound dopamine receptor 1 in complex with Gs protein</td><td><a href="https://swissmodel.expasy.org/templates/7jvq">7jvq</a></td></tr>
+
+<tr><td width="80%">Cryo-EM structure of human ACE2 receptor bound to protein encoded by vaccine candidate BNT162b1</td><td><a href="https://swissmodel.expasy.org/templates/7l7f">7l7f</a></td></tr>
+
+<tr><td width="80%">Cryo-EM structure of protein encoded by vaccine candidate BNT162b2</td><td><a href="https://swissmodel.expasy.org/templates/7l7k">7l7k</a></td></tr>
+
+<tr><td width="80%">CryoEM structure of the CGRP receptor with bound CGRP peptide in a detergent micelle</td><td><a href="https://swissmodel.expasy.org/templates/7knu">7knu</a></td></tr>
+
+<tr><td width="80%">CryoEM structure of the apo-CGRP receptor in a detergent micelle</td><td><a href="https://swissmodel.expasy.org/templates/7knt">7knt</a></td></tr>
+
+<tr><td width="80%">Crystal Structure of Adeno-Associated Virus Porcine Origin capsid protein in complex with Importin-alpha 2</td><td><a href="https://swissmodel.expasy.org/templates/7l04">7l04</a></td></tr>
+
+<tr><td width="80%">Crystal Structure of Nonribosomal peptide synthetases (NRPS), FmoA3 (S1046A)</td><td><a href="https://swissmodel.expasy.org/templates/6lta">6lta</a></td></tr>
+
+<tr><td width="80%">Crystal Structure of Nonribosomal peptide synthetases (NRPS), FmoA3 (S1046A)-AMPPNP bound form</td><td><a href="https://swissmodel.expasy.org/templates/6ltb">6ltb</a></td></tr>
+
+<tr><td width="80%">Crystal Structure of Recombinant Human Acetylcholinesterase Inhibited by GB</td><td><a href="https://swissmodel.expasy.org/templates/6wuz">6wuz</a></td></tr>
+
+<tr><td width="80%">Crystal Structure of Small Molecule Inhibitor TM5484 Bound to Stabilized Active Plasminogen Activator Inhibitor-1 (PAI-1-W175F)</td><td><a href="https://swissmodel.expasy.org/templates/7aqg">7aqg</a></td></tr>
+
+<tr><td width="80%">Crystal Structure of the BARD1 BRCT Mutant</td><td><a href="https://swissmodel.expasy.org/templates/6m14">6m14</a></td></tr>
+
+<tr><td width="80%">Crystal structure of Amuc_1102 from Akkermansia muciniphila</td><td><a href="https://swissmodel.expasy.org/templates/7dsz">7dsz</a></td></tr>
+
+<tr><td width="80%">Crystal structure of BCL-XL in complex with COMPOUND 1620116, CRYSTAL FORM 1</td><td><a href="https://swissmodel.expasy.org/templates/7jgw">7jgw</a></td></tr>
+
+<tr><td width="80%">Crystal structure of Human serum albumin in complex with myristic acid at 2.27 Angstrom Resolution</td><td><a href="https://swissmodel.expasy.org/templates/7aae">7aae</a></td></tr>
+
+<tr><td width="80%">Crystal structure of Human serum albumin in complex with perfluorooctanoic acid (PFOA) at 2.10 Angstrom Resolution</td><td><a href="https://swissmodel.expasy.org/templates/7aai">7aai</a></td></tr>
+
+<tr><td width="80%">Crystal structure of KPC-2 with hydrolyzed faropenem (ring-open form)</td><td><a href="https://swissmodel.expasy.org/templates/7a61">7a61</a></td></tr>
+
+<tr><td width="80%">Crystal structure of KSHV ORF68</td><td><a href="https://swissmodel.expasy.org/templates/6xf9">6xf9</a></td></tr>
+
+<tr><td width="80%">Crystal structure of Karyopherin-beta2 in complex with FUS PY-NLS(P525L)</td><td><a href="https://swissmodel.expasy.org/templates/7cyl">7cyl</a></td></tr>
+
+<tr><td width="80%">Crystal structure of L1 with hydrolyzed faropenem (imine, ring-closed form)</td><td><a href="https://swissmodel.expasy.org/templates/7a63">7a63</a></td></tr>
+
+<tr><td width="80%">Crystal structure of MERS-CoV N-NTD complexed with ligand P4-3</td><td><a href="https://swissmodel.expasy.org/templates/6lz6">6lz6</a></td></tr>
+
+<tr><td width="80%">Crystal structure of MERS-CoV N-NTD complexed with ligand P4-4</td><td><a href="https://swissmodel.expasy.org/templates/6lz8">6lz8</a></td></tr>
+
+<tr><td width="80%">Crystal structure of MtCNNM CBS-pair domain in complex with Mg2+-ATP</td><td><a href="https://swissmodel.expasy.org/templates/7lj6">7lj6</a></td></tr>
+
+<tr><td width="80%">Crystal structure of MtCNNM R235L mutant with C-terminal deletion</td><td><a href="https://swissmodel.expasy.org/templates/7lj8">7lj8</a></td></tr>
+
+<tr><td width="80%">Crystal structure of MtCNNM with C-terminal deletion in complex with Mg2+-ATP</td><td><a href="https://swissmodel.expasy.org/templates/7lj7">7lj7</a></td></tr>
+
+<tr><td width="80%">Crystal structure of Rsu1/PINCH1_LIM45C complex</td><td><a href="https://swissmodel.expasy.org/templates/7d2t">7d2t</a>, <a href="https://swissmodel.expasy.org/templates/7d2u">7d2u</a></td></tr>
+
+<tr><td width="80%">Crystal structure of Rsu1/PINCH1_LIM5C complex</td><td><a href="https://swissmodel.expasy.org/templates/7d2s">7d2s</a></td></tr>
+
+<tr><td width="80%">Crystal structure of VIM-2 with hydrolyzed faropenem (ring-open form)</td><td><a href="https://swissmodel.expasy.org/templates/7a60">7a60</a></td></tr>
+
+<tr><td width="80%">Crystal structure of a Selenium-derivatized complex of the bacterial cellulose secretion regulators BcsR and BcsQ, crystallized in the presence of ADP</td><td><a href="https://swissmodel.expasy.org/templates/6yay">6yay</a></td></tr>
+
+<tr><td width="80%">Crystal structure of a Selenium-derivatized complex of the bacterial cellulose secretion regulators BcsR and BcsQ, crystallized in the presence of AppCp</td><td><a href="https://swissmodel.expasy.org/templates/6yar">6yar</a></td></tr>
+
+<tr><td width="80%">Crystal structure of a native BcsE (217-523) - BcsR-BcsQ (R156E mutant) complex with c-di-GMP and ATP bound</td><td><a href="https://swissmodel.expasy.org/templates/6ybb">6ybb</a></td></tr>
+
+<tr><td width="80%">Crystal structure of a native BcsE (349-523) RQ complex with c-di-GMP and ATP bound</td><td><a href="https://swissmodel.expasy.org/templates/6ybu">6ybu</a></td></tr>
+
+<tr><td width="80%">Crystal structure of a native BcsRQ complex purified and crystallized in the absence of nucleotide</td><td><a href="https://swissmodel.expasy.org/templates/6yb3">6yb3</a></td></tr>
+
+<tr><td width="80%">Crystal structure of human EED</td><td><a href="https://swissmodel.expasy.org/templates/7kxt">7kxt</a></td></tr>
+
+<tr><td width="80%">Crystal structure of human GDAP1 at 2.8 Angstrom resolution.</td><td><a href="https://swissmodel.expasy.org/templates/7alm">7alm</a></td></tr>
+
+<tr><td width="80%">Crystal structure of human SIRT6</td><td><a href="https://swissmodel.expasy.org/templates/7cl0">7cl0</a></td></tr>
+
+<tr><td width="80%">Crystal structure of mouse neuroligin-3</td><td><a href="https://swissmodel.expasy.org/templates/7cee">7cee</a></td></tr>
+
+<tr><td width="80%">Crystal structure of schizorhodopsin 4</td><td><a href="https://swissmodel.expasy.org/templates/7e4g">7e4g</a></td></tr>
+
+<tr><td width="80%">Crystal structure of the KDEL receptor bound to RDEL peptide at pH 6.0</td><td><a href="https://swissmodel.expasy.org/templates/6zxr">6zxr</a></td></tr>
+
+<tr><td width="80%">Crystal structure of the PDE9 catalytic domain in complex with inhibitor 4a</td><td><a href="https://swissmodel.expasy.org/templates/6lzz">6lzz</a></td></tr>
+
+<tr><td width="80%">Crystal structure of the complex between mouse PTP delta and neuroligin-3</td><td><a href="https://swissmodel.expasy.org/templates/7ceg">7ceg</a></td></tr>
+
+<tr><td width="80%">Cystathionine Beta-synthase from Toxoplasma gondii with PLP-Cystathionine</td><td><a href="https://swissmodel.expasy.org/templates/6y21">6y21</a></td></tr>
+
+<tr><td width="80%">DNA binding domain of human DNA Ligase IV - Wild type</td><td><a href="https://swissmodel.expasy.org/templates/7d9k">7d9k</a></td></tr>
+
+<tr><td width="80%">DNA binding domain of human DNA Ligase IV mutant - A3V</td><td><a href="https://swissmodel.expasy.org/templates/7d9y">7d9y</a></td></tr>
+
+<tr><td width="80%">Density-fitted Model Structure of Antibody Variable Domains of TyTx11 in Complex with Typhoid Toxin</td><td><a href="https://swissmodel.expasy.org/templates/6vx4">6vx4</a></td></tr>
+
+<tr><td width="80%">F411A mutant of chitin-specific solute binding protein from Vibrio harveyi co-crystalized with chitobiose.</td><td><a href="https://swissmodel.expasy.org/templates/6lzu">6lzu</a></td></tr>
+
+<tr><td width="80%">F437A mutant of chitin-specific solute binding protein from Vibrio harveyi co-crystalized with chitobiose.</td><td><a href="https://swissmodel.expasy.org/templates/6lzv">6lzv</a></td></tr>
+
+<tr><td width="80%">Fucosylated Bicyclic peptide bp102 bound to the fucose binding lectin LecB PA-IIL from Pseudomonas aeruginosa at 1.5 Angstrom resolution</td><td><a href="https://swissmodel.expasy.org/templates/6y0u">6y0u</a></td></tr>
+
+<tr><td width="80%">Fucosylated bicyclic peptide bp102 bound to the fucose binding lectin LecB PA-IIL from Pseudomonas aeruginosa at 1.7 Angstrom resolution</td><td><a href="https://swissmodel.expasy.org/templates/6y0v">6y0v</a></td></tr>
+
+<tr><td width="80%">HIV Integrase core domain in complex with inhibitor (5-methyl-1-benzofuran-3-yl)acetic acid</td><td><a href="https://swissmodel.expasy.org/templates/6vx2">6vx2</a></td></tr>
+
+<tr><td width="80%">High resolution cryo EM analysis of HPV16 identifies minor structural protein L2 and describes capsid flexibility</td><td><a href="https://swissmodel.expasy.org/templates/7kzf">7kzf</a></td></tr>
+
+<tr><td width="80%">Human Aldose Reductase Mutant L300/301A in Complex with a Ligand with an IDD Structure (3-({[2-(carboxymethoxy)-4-fluorobenzoyl]amino}methyl)benzoic acid)</td><td><a href="https://swissmodel.expasy.org/templates/6y1p">6y1p</a></td></tr>
+
+<tr><td width="80%">Human PPAR Gamma LBD in Complex with Tetrazole Compound N-{3-[(4-methylbenzyl)oxy]benzyl}-2H-tetrazol-5-amine.</td><td><a href="https://swissmodel.expasy.org/templates/7lot">7lot</a></td></tr>
+
+<tr><td width="80%">Human SIRT6 in complex with allosteric activator MDL-801 (3.2A)</td><td><a href="https://swissmodel.expasy.org/templates/7cl1">7cl1</a></td></tr>
+
+<tr><td width="80%">Human UHRF1 TTD domain</td><td><a href="https://swissmodel.expasy.org/templates/6w92">6w92</a></td></tr>
+
+<tr><td width="80%">Human mitochondrial LONP1 in complex with Bortezomib</td><td><a href="https://swissmodel.expasy.org/templates/7krz">7krz</a></td></tr>
+
+<tr><td width="80%">Human serine palmitoyltransferase complex SPTLC1/SPLTC2/ssSPTa</td><td><a href="https://swissmodel.expasy.org/templates/7k0i">7k0i</a></td></tr>
+
+<tr><td width="80%">Human serine palmitoyltransferase complex SPTLC1/SPLTC2/ssSPTa protomer</td><td><a href="https://swissmodel.expasy.org/templates/7k0j">7k0j</a></td></tr>
+
+<tr><td width="80%">Human serine palmitoyltransferase complex SPTLC1/SPLTC2/ssSPTa, 3KS-bound</td><td><a href="https://swissmodel.expasy.org/templates/7k0k">7k0k</a></td></tr>
+
+<tr><td width="80%">Human serine palmitoyltransferase complex SPTLC1/SPLTC2/ssSPTa, myriocin-bound</td><td><a href="https://swissmodel.expasy.org/templates/7k0l">7k0l</a></td></tr>
+
+<tr><td width="80%">Human serine palmitoyltransferase complex SPTLC1/SPLTC2/ssSPTa/ORMDL3, class 1</td><td><a href="https://swissmodel.expasy.org/templates/7k0m">7k0m</a></td></tr>
+
+<tr><td width="80%">Human serine palmitoyltransferase complex SPTLC1/SPLTC2/ssSPTa/ORMDL3, class 2</td><td><a href="https://swissmodel.expasy.org/templates/7k0n">7k0n</a></td></tr>
+
+<tr><td width="80%">Human serine palmitoyltransferase complex SPTLC1/SPLTC2/ssSPTa/ORMDL3, class 3</td><td><a href="https://swissmodel.expasy.org/templates/7k0o">7k0o</a></td></tr>
+
+<tr><td width="80%">Human serine palmitoyltransferase complex SPTLC1/SPLTC2/ssSPTa/ORMDL3, class 4</td><td><a href="https://swissmodel.expasy.org/templates/7k0p">7k0p</a></td></tr>
+
+<tr><td width="80%">Human serine palmitoyltransferase complex SPTLC1/SPLTC2/ssSPTa/ORMDL3, myriocin-bound</td><td><a href="https://swissmodel.expasy.org/templates/7k0q">7k0q</a></td></tr>
+
+<tr><td width="80%">IL23/IL23R/IL12Rb1 signaling complex</td><td><a href="https://swissmodel.expasy.org/templates/6wdq">6wdq</a></td></tr>
+
+<tr><td width="80%">IleRS in complex with a tRNA site inhibitor</td><td><a href="https://swissmodel.expasy.org/templates/7d5c">7d5c</a></td></tr>
+
+<tr><td width="80%">Influenza A PB2 (F404Y mutation) in complex with VX-787</td><td><a href="https://swissmodel.expasy.org/templates/7as1">7as1</a></td></tr>
+
+<tr><td width="80%">Influenza A PB2 (H357N mutation) in complex with VX-787</td><td><a href="https://swissmodel.expasy.org/templates/7as3">7as3</a></td></tr>
+
+<tr><td width="80%">Influenza A PB2 (M431 mutation) in complex with VX-787</td><td><a href="https://swissmodel.expasy.org/templates/7as2">7as2</a></td></tr>
+
+<tr><td width="80%">Influenza A PB2 in complex with VX-787</td><td><a href="https://swissmodel.expasy.org/templates/7as0">7as0</a></td></tr>
+
+<tr><td width="80%">Interleukin 12 receptor subunit beta-1</td><td><a href="https://swissmodel.expasy.org/templates/6wdp">6wdp</a></td></tr>
+
+<tr><td width="80%">LH2 complex from Marichromatium purpuratum</td><td><a href="https://swissmodel.expasy.org/templates/6zxa">6zxa</a></td></tr>
+
+<tr><td width="80%">Lamin A coil2 dimer stabilized by N-terminal capping</td><td><a href="https://swissmodel.expasy.org/templates/6yjd">6yjd</a></td></tr>
+
+<tr><td width="80%">LecA from Pseudomonas aeruginosa in complex with a catechol CAS no. 61445-50-9</td><td><a href="https://swissmodel.expasy.org/templates/6yoh">6yoh</a></td></tr>
+
+<tr><td width="80%">N-Acetylmannosamine-6-phosphate 2-epimerase from Staphylococcus aureus (strain MRSA USA300)</td><td><a href="https://swissmodel.expasy.org/templates/6vva">6vva</a></td></tr>
+
+<tr><td width="80%">N409A mutant of chitin-specific solute binding protein from Vibrio harveyi co-crystalized with chitobiose</td><td><a href="https://swissmodel.expasy.org/templates/6lzt">6lzt</a></td></tr>
+
+<tr><td width="80%">NMR Solution Structure of Acyclotide ribe 31</td><td><a href="https://swissmodel.expasy.org/templates/7kpd">7kpd</a></td></tr>
+
+<tr><td width="80%">Nb22-LBT</td><td><a href="https://swissmodel.expasy.org/templates/6y1r">6y1r</a></td></tr>
+
+<tr><td width="80%">Orthorhombic crystal structure of a native BcsRQ complex crystallized in the presence of ADP</td><td><a href="https://swissmodel.expasy.org/templates/6yb5">6yb5</a></td></tr>
+
+<tr><td width="80%">P1a-state of wild type human mitochondrial LONP1 protease with bound substrate protein and ATPgS</td><td><a href="https://swissmodel.expasy.org/templates/7nfy">7nfy</a></td></tr>
+
+<tr><td width="80%">P1b-state of wild type human mitochondrial LONP1 protease with bound endogenous substrate protein and in presence of ATP/ADP mix</td><td><a href="https://swissmodel.expasy.org/templates/7ng4">7ng4</a></td></tr>
+
+<tr><td width="80%">P1c-state of wild type human mitochondrial LONP1 protease with bound substrate protein in presence of ATP/ADP mix</td><td><a href="https://swissmodel.expasy.org/templates/7ng5">7ng5</a></td></tr>
+
+<tr><td width="80%">PHAGE SAM LYASE IN APO STATE</td><td><a href="https://swissmodel.expasy.org/templates/6znb">6znb</a></td></tr>
+
+<tr><td width="80%">PHAGE SAM LYASE IN COMPLEX WITH S-ADENOSYL-L-HOMOCYSTEINE</td><td><a href="https://swissmodel.expasy.org/templates/6zmg">6zmg</a></td></tr>
+
+<tr><td width="80%">PHAGE SAM LYASE IN COMPLEX WITH S-METHYL-5'-THIOADENOSINE</td><td><a href="https://swissmodel.expasy.org/templates/6zm9">6zm9</a></td></tr>
+
+<tr><td width="80%">Potent SARS-CoV-2 binding and neutralization through maturation of iconic SARS-CoV-1antibodies</td><td><a href="https://swissmodel.expasy.org/templates/7kza">7kza</a>, <a href="https://swissmodel.expasy.org/templates/7kzc">7kzc</a></td></tr>
+
+<tr><td width="80%">SARS-CoV-2 S trimer with one RBD in the open state and complexed with one H014 Fab.</td><td><a href="https://swissmodel.expasy.org/templates/7cac">7cac</a></td></tr>
+
+<tr><td width="80%">SARS-CoV-2 papain-like protease (PLpro) bound to inhibitor XR8-24</td><td><a href="https://swissmodel.expasy.org/templates/7lbs">7lbs</a></td></tr>
+
+<tr><td width="80%">SARS-CoV-2 papain-like protease (PLpro) bound to inhibitor XR8-65</td><td><a href="https://swissmodel.expasy.org/templates/7los">7los</a></td></tr>
+
+<tr><td width="80%">SARS-CoV-2 papain-like protease (PLpro) bound to inhibitor XR8-69</td><td><a href="https://swissmodel.expasy.org/templates/7llz">7llz</a></td></tr>
+
+<tr><td width="80%">SARS-CoV-2 papain-like protease (PLpro) bound to inhibitor XR8-83</td><td><a href="https://swissmodel.expasy.org/templates/7llf">7llf</a></td></tr>
+
+<tr><td width="80%">SARS-CoV-2 papain-like protease (PLpro) bound to inhibitor XR8-89</td><td><a href="https://swissmodel.expasy.org/templates/7lbr">7lbr</a></td></tr>
+
+<tr><td width="80%">Schizosaccharomyces pombe RNA polymerase I (dimer)</td><td><a href="https://swissmodel.expasy.org/templates/7aod">7aod</a></td></tr>
+
+<tr><td width="80%">Schizosaccharomyces pombe RNA polymerase I (elongation complex)</td><td><a href="https://swissmodel.expasy.org/templates/7aoe">7aoe</a></td></tr>
+
+<tr><td width="80%">Schizosaccharomyces pombe RNA polymerase I (monomer)</td><td><a href="https://swissmodel.expasy.org/templates/7aoc">7aoc</a></td></tr>
+
+<tr><td width="80%">Solution structure of the N-terminal helix-hairpin-helix domain of human MUS81</td><td><a href="https://swissmodel.expasy.org/templates/6vwb">6vwb</a></td></tr>
+
+<tr><td width="80%">SopD-Rab8 complex structure</td><td><a href="https://swissmodel.expasy.org/templates/7bwt">7bwt</a></td></tr>
+
+<tr><td width="80%">Structure of AhSYMRK kinase domain mutant - K625E</td><td><a href="https://swissmodel.expasy.org/templates/6m0u">6m0u</a></td></tr>
+
+<tr><td width="80%">Structure of B1, a monoclonal VEGFR2 antibody parental of KD035</td><td><a href="https://swissmodel.expasy.org/templates/7lsb">7lsb</a></td></tr>
+
+<tr><td width="80%">Structure of Ephexin4 DH-PH-SH3</td><td><a href="https://swissmodel.expasy.org/templates/7cso">7cso</a></td></tr>
+
+<tr><td width="80%">Structure of Ephexin4 IDPSH</td><td><a href="https://swissmodel.expasy.org/templates/7csp">7csp</a></td></tr>
+
+<tr><td width="80%">Structure of Ephexin4 R676L</td><td><a href="https://swissmodel.expasy.org/templates/7csr">7csr</a></td></tr>
+
+<tr><td width="80%">Structure of KD035, a VEGFR2 monoclonal antibody</td><td><a href="https://swissmodel.expasy.org/templates/7lsi">7lsi</a></td></tr>
+
+<tr><td width="80%">Structure of SARS-CoV-2 Papain-like protease PLpro</td><td><a href="https://swissmodel.expasy.org/templates/7nfv">7nfv</a></td></tr>
+
+<tr><td width="80%">Structure of VIM-2 metallo-beta-lactamase with hydrolysed Faropenem imine product</td><td><a href="https://swissmodel.expasy.org/templates/7a5z">7a5z</a></td></tr>
+
+<tr><td width="80%">Structure of iC3b1</td><td><a href="https://swissmodel.expasy.org/templates/6yo6">6yo6</a></td></tr>
+
+<tr><td width="80%">Structure of the CBS domain of the CorC Mg2+ transporter</td><td><a href="https://swissmodel.expasy.org/templates/7cfh">7cfh</a></td></tr>
+
+<tr><td width="80%">Structure of the CBS domain of the CorC Mg2+ transporter in complex with ATP</td><td><a href="https://swissmodel.expasy.org/templates/7cfi">7cfi</a></td></tr>
+
+<tr><td width="80%">Structure of the NaCT-Citrate complex</td><td><a href="https://swissmodel.expasy.org/templates/7jsk">7jsk</a></td></tr>
+
+<tr><td width="80%">Structure of the NaCT-PF2 complex</td><td><a href="https://swissmodel.expasy.org/templates/7jsj">7jsj</a></td></tr>
+
+<tr><td width="80%">Structure of the PRY-SPRY domain of human Trim16L/Trim70</td><td><a href="https://swissmodel.expasy.org/templates/6sjh">6sjh</a></td></tr>
+
+<tr><td width="80%">Structure of the sulfate-bound form of ArrX from Chrysiogenes arsenatis</td><td><a href="https://swissmodel.expasy.org/templates/6x6b">6x6b</a></td></tr>
+
+<tr><td width="80%">Structure of the thermostabilized transmembrane domain of the CorC Mg2+ transporter in complex with Mg2+</td><td><a href="https://swissmodel.expasy.org/templates/7cff">7cff</a></td></tr>
+
+<tr><td width="80%">Structure of the transmembrane domain of the CorC Mg2+ transpoter in complex with Mg2+</td><td><a href="https://swissmodel.expasy.org/templates/7cfg">7cfg</a></td></tr>
+
+<tr><td width="80%">TDP-43 LCD amyloid fibrils</td><td><a href="https://swissmodel.expasy.org/templates/7kwz">7kwz</a></td></tr>
+
+<tr><td width="80%">Taka-amylase in complex with alpha-glucosyl epi-cyclophellitol aziridine inhibitor</td><td><a href="https://swissmodel.expasy.org/templates/6yqa">6yqa</a></td></tr>
+
+<tr><td width="80%">Takifugu rubripes VKOR-like with vitamin K1 in noncatalytic state</td><td><a href="https://swissmodel.expasy.org/templates/6wv9">6wv9</a></td></tr>
+
+<tr><td width="80%">Ternary complex of VHL/BRD4-BD1/Compound9 (4-(3,5-difluoropyridin-2-yl)-N-(11-(((S)-1-((2S,4R)-4-hydroxy-2-((4-(4-methylthiazol-5-yl)benzyl)carbamoyl)pyrrolidin-1-yl)-3,3-dimethyl-1-oxobutan-2-yl)amino)-11-oxoundecyl)-10-methyl-7-((methylsulfonyl)methyl)-11-oxo-3,4,10,11-tetrahydro-1H-1,4,10-triazadibenzo[cd,f]azulene-6-carboxamide)</td><td><a href="https://swissmodel.expasy.org/templates/7khh">7khh</a></td></tr>
+
+<tr><td width="80%">The crystal structure of the 2009/H1N1/California PA endonuclease mutant I38T in complex with SJ000986213</td><td><a href="https://swissmodel.expasy.org/templates/6vll">6vll</a></td></tr>
+
+<tr><td width="80%">Thiourocanate hydratase from Paenibacillus sp. Soil724D2 in complex with cofactor NAD+ and urocanate</td><td><a href="https://swissmodel.expasy.org/templates/7ned">7ned</a></td></tr>
+
+<tr><td width="80%">Type 1A alpha-synuclein filament seeded in vitro by filaments purified from Multiple Systems Atrophy Case 2</td><td><a href="https://swissmodel.expasy.org/templates/7nca">7nca</a></td></tr>
+
+<tr><td width="80%">Type 1B alpha-synuclein filament seeded in vitro by filaments purified from Multiple Systems Atrophy Case 1</td><td><a href="https://swissmodel.expasy.org/templates/7nch">7nch</a></td></tr>
+
+<tr><td width="80%">Type 2A alpha-synuclein filament seeded in vitro by filaments purified from Multiple Systems Atrophy Case 2</td><td><a href="https://swissmodel.expasy.org/templates/7ncg">7ncg</a></td></tr>
+
+<tr><td width="80%">Type 2AB alpha-synuclein filament seeded in vitro by filaments purified from Multiple Systems Atrophy Case 1</td><td><a href="https://swissmodel.expasy.org/templates/7ncj">7ncj</a></td></tr>
+
+<tr><td width="80%">Type 2B alpha-synuclein filament seeded in vitro by filaments purified from Multiple Systems Atrophy Case 1</td><td><a href="https://swissmodel.expasy.org/templates/7nci">7nci</a></td></tr>
+
+<tr><td width="80%">Type 3 alpha-synuclein filament seeded in vitro by filaments purified from Multiple Systems Atrophy Case 5</td><td><a href="https://swissmodel.expasy.org/templates/7nck">7nck</a></td></tr>
+
+<tr><td width="80%">Unusual structural features in the adduct of dirhodium tetraacetate with lysozyme (4)</td><td><a href="https://swissmodel.expasy.org/templates/7beb">7beb</a></td></tr>
+
+<tr><td width="80%">Unusual structural features in the adduct of dirhodium tetraacetate with lysozyme (5)</td><td><a href="https://swissmodel.expasy.org/templates/7bec">7bec</a></td></tr>
+
+<tr><td width="80%">Vaccine-elicited mouse FP-targeting neutralizing antibody vFP16.02 with S48K mutation in light chain in complex with HIV fusion peptide (residue 512-519)</td><td><a href="https://swissmodel.expasy.org/templates/6wwc">6wwc</a></td></tr>
+
+<tr><td width="80%">W363A mutant of Chitin-specific solute binding protein from Vibrio harveyi in complex with chitobiose.</td><td><a href="https://swissmodel.expasy.org/templates/6lzs">6lzs</a></td></tr>
+
+<tr><td width="80%">W513A mutant of chitin-specific solute binding protein from Vibrio harveyi co-crystalized with chitobiose.</td><td><a href="https://swissmodel.expasy.org/templates/6lzw">6lzw</a></td></tr>
+
+<tr><td width="80%">X-ray crystal structure of clavaminate synthase with vanadyl, succinate, and deoxyproclavaminic acid</td><td><a href="https://swissmodel.expasy.org/templates/6vwq">6vwq</a></td></tr>
+
+<tr><td width="80%">X-ray crystal structure of the SARS-CoV-2 main protease with Calpain I Inhibitor</td><td><a href="https://swissmodel.expasy.org/templates/7lbn">7lbn</a></td></tr>
+
+<tr><td width="80%">X-ray structure of Hen Egg White Lysozyme with dirhodium tetraacetate (1)</td><td><a href="https://swissmodel.expasy.org/templates/7bdz">7bdz</a></td></tr>
+
+<tr><td width="80%">X-ray structure of Hen Egg White Lysozyme with dirhodium tetraacetate (2)</td><td><a href="https://swissmodel.expasy.org/templates/7be0">7be0</a></td></tr>
+
+<tr><td width="80%">X-ray structure of Hen Egg White Lysozyme with dirhodium tetraacetate (3)</td><td><a href="https://swissmodel.expasy.org/templates/7be1">7be1</a></td></tr>
+
+<tr><td width="80%">X-ray structure of Hen Egg White Lysozyme with dirhodium tetraacetate (6)</td><td><a href="https://swissmodel.expasy.org/templates/7be2">7be2</a></td></tr>
+
+<tr><td width="80%">X-ray structure of clavaminate synthase with vanadyl, succinate, and deoxyguanidinoproclavaminic acid</td><td><a href="https://swissmodel.expasy.org/templates/6vwr">6vwr</a></td></tr>
+
+<tr><td width="80%">a Legionella pneumophila effector Lpg2505</td><td><a href="https://swissmodel.expasy.org/templates/7c0q">7c0q</a></td></tr>
+
+<tr><td width="80%">crystal structure of Human Methionine aminopeptidase (HsMetAP1b) in complex with AN-P2-5H-06</td><td><a href="https://swissmodel.expasy.org/templates/6lzb">6lzb</a></td></tr>
+
+<tr><td width="80%">crystal structure of Human Methionine aminopeptidase (HsMetAP1b) in complex with KV-P2-4H-05</td><td><a href="https://swissmodel.expasy.org/templates/6lzc">6lzc</a></td></tr>
+
+<tr><td width="80%">crystal structure of Methionine aminopeptidase from Pyrococcus furiosus</td><td><a href="https://swissmodel.expasy.org/templates/6m00">6m00</a></td></tr>
+
+<tr><td width="80%">human carbonic anhydrase II bound to an inhibitor modified with azidothymidine</td><td><a href="https://swissmodel.expasy.org/templates/6wka">6wka</a></td></tr>
+
+</tbody></table></div></li>
+
+
+
+
+<li>New, but not add to SMTL <i class="glyphicon glyphicon-chevron-down" style="cursor:pointer;opacity:.6" onclick="$(&#39;#newNotAddedDiv&#39;).toggle();"></i><div class="entryDiv" style="display: none;" id="newNotAddedDiv">
+<table class="table table-striped" border="0" cellspacing="1" cellpadding="1">
+
+<tbody><tr><td>6kn4, 6m0y, 6qjr, 6qjs, 6u40, 6udn, 6uef, 6v6r, 6vxg, 6wjk, 6yy4</td></tr>
+
+</tbody></table></div></li>
+
+
+<li>Replaced Entries <i class="glyphicon glyphicon-chevron-down" style="cursor:pointer;opacity:.6" onclick="$(&#39;#replacedDiv&#39;).toggle();"></i><div class="entryDiv" style="display: none;" id="replacedDiv">
+<table class="table table-striped" border="0" cellspacing="1" cellpadding="1">
+
+<tbody><tr><td width="80%">1a,20S-dihydroxyvitamin D3 VDR complex</td><td><a href="https://swissmodel.expasy.org/templates/5mx7">5mx7</a></td></tr>
+
+<tr><td width="80%">2,3-Dihydroxybenzoate Decarboxylase of Aspergillus oryzae</td><td><a href="https://swissmodel.expasy.org/templates/7a19">7a19</a>, <a href="https://swissmodel.expasy.org/templates/7a1a">7a1a</a></td></tr>
+
+<tr><td width="80%">Adducts formed after 3 weeks in the reaction of chlorido[chlorido(2,2'-((2-([2,2':6',2''-Terpyridin]-4'-yloxy)ethyl)azanediyl)bis(ethan-1-ol))platinum(II)] with HEWL</td><td><a href="https://swissmodel.expasy.org/templates/6wx5">6wx5</a></td></tr>
+
+<tr><td width="80%">Amyloid fibril morphology II (ex vivo) from murine SAA1.1 protein.</td><td><a href="https://swissmodel.expasy.org/templates/6zch">6zch</a></td></tr>
+
+<tr><td width="80%">Amyloid fibril morphology i (in vitro) from murine SAA1.1 protein</td><td><a href="https://swissmodel.expasy.org/templates/6zcf">6zcf</a></td></tr>
+
+<tr><td width="80%">Amyloid fibril morphology ii (in vitro) from murine SAA1.1 protein</td><td><a href="https://swissmodel.expasy.org/templates/6zcg">6zcg</a></td></tr>
+
+<tr><td width="80%">Artificial Metalloproteins with Dinuclear Iron Centers</td><td><a href="https://swissmodel.expasy.org/templates/6vo9">6vo9</a>, <a href="https://swissmodel.expasy.org/templates/6vob">6vob</a>, <a href="https://swissmodel.expasy.org/templates/6voz">6voz</a>, <a href="https://swissmodel.expasy.org/templates/6vp1">6vp1</a>, <a href="https://swissmodel.expasy.org/templates/6vp2">6vp2</a>, <a href="https://swissmodel.expasy.org/templates/6vp3">6vp3</a>, <a href="https://swissmodel.expasy.org/templates/7kby">7kby</a>, <a href="https://swissmodel.expasy.org/templates/7kbz">7kbz</a>, <a href="https://swissmodel.expasy.org/templates/7knl">7knl</a></td></tr>
+
+<tr><td width="80%">CRYSTAL STRUCTURE OF ACTIVATED RIBULOSE-1,5-BISPHOSPHATE CARBOXYLASE COMPLEXED WITH ITS SUBSTRATE, RIBULOSE-1,5-BISPHOSPHATE</td><td><a href="https://swissmodel.expasy.org/templates/9rub">9rub</a></td></tr>
+
+<tr><td width="80%">Carbonic Anhydrase II complexed with 4-(2-(3-(3,5-dimethylphenyl)ureido)ethylsulfonamido)benzenesulfonamide</td><td><a href="https://swissmodel.expasy.org/templates/7k6k">7k6k</a></td></tr>
+
+<tr><td width="80%">Carbonic Anhydrase II complexed with 4-(2-(3-(4-fluorophenyl)ureido)ethylsulfonamido)benzenesulfonamide</td><td><a href="https://swissmodel.expasy.org/templates/7k6l">7k6l</a></td></tr>
+
+<tr><td width="80%">Carbonic Anhydrase II complexed with 4-(2-(3-(4-methylphenyl)ureido)ethylsulfonamido)benzenesulfonamide</td><td><a href="https://swissmodel.expasy.org/templates/7k6j">7k6j</a></td></tr>
+
+<tr><td width="80%">Carbonic Anhydrase II complexed with 4-(2-(3-phenylureido)ethylsulfonamido)benzenesulfonamide</td><td><a href="https://swissmodel.expasy.org/templates/7k6i">7k6i</a></td></tr>
+
+<tr><td width="80%">Carbonic Anhydrase IX mimic complexed with 4-(2-(3-(3,5-dimethylphenyl)ureido)ethylsulfonamido)benzenesulfonamide</td><td><a href="https://swissmodel.expasy.org/templates/7k6x">7k6x</a></td></tr>
+
+<tr><td width="80%">Carbonic Anhydrase IX mimic complexed with 4-(2-(3-(4-fluorophenyl)ureido)ethylsulfonamido)benzenesulfonamide</td><td><a href="https://swissmodel.expasy.org/templates/7k6z">7k6z</a></td></tr>
+
+<tr><td width="80%">Carbonic Anhydrase IX mimic complexed with 4-(2-(3-(4-methylphenyl)ureido)ethylsulfonamido)benzenesulfonamide</td><td><a href="https://swissmodel.expasy.org/templates/7k6u">7k6u</a></td></tr>
+
+<tr><td width="80%">Carbonic Anhydrase IX mimic complexed with 4-(2-(3-phenylureido)ethylsulfonamido)benzenesulfonamide</td><td><a href="https://swissmodel.expasy.org/templates/7k6t">7k6t</a></td></tr>
+
+<tr><td width="80%">Caulobacter crescentus FljK filament</td><td><a href="https://swissmodel.expasy.org/templates/6xl0">6xl0</a></td></tr>
+
+<tr><td width="80%">Caulobacter crescentus FljK filament, straightened</td><td><a href="https://swissmodel.expasy.org/templates/6xky">6xky</a></td></tr>
+
+<tr><td width="80%">Cereblon in complex with DDB1, CC-90009, and GSPT1</td><td><a href="https://swissmodel.expasy.org/templates/6xk9">6xk9</a></td></tr>
+
+<tr><td width="80%">Closed conformation of D614G SARS-CoV-2 spike protein</td><td><a href="https://swissmodel.expasy.org/templates/7bnm">7bnm</a></td></tr>
+
+<tr><td width="80%">Complex of C-terminal domain of murine complement C3b with the hC3Nb3 nanobody</td><td><a href="https://swissmodel.expasy.org/templates/6xzu">6xzu</a></td></tr>
+
+<tr><td width="80%">Complex of rice blast (Magnaporthe oryzae) effector protein AVR-PikF with the HMA domain of OsHIPP19 from rice (Oryza sativa)</td><td><a href="https://swissmodel.expasy.org/templates/7b1i">7b1i</a></td></tr>
+
+<tr><td width="80%">Cryo-EM structure of CARD8-CARD filament</td><td><a href="https://swissmodel.expasy.org/templates/6xkj">6xkj</a></td></tr>
+
+<tr><td width="80%">Cryo-EM structure of PRC2:EZH1-AEBP2-JARID2</td><td><a href="https://swissmodel.expasy.org/templates/7kso">7kso</a></td></tr>
+
+<tr><td width="80%">Cryo-EM structure of a respiratory complex I F89A mutant</td><td><a href="https://swissmodel.expasy.org/templates/6y79">6y79</a></td></tr>
+
+<tr><td width="80%">Cryo-EM structure of human TLR3 in complex with UNC93B1</td><td><a href="https://swissmodel.expasy.org/templates/7c76">7c76</a></td></tr>
+
+<tr><td width="80%">Cryo-EM structure of human TLR7 in complex with UNC93B1</td><td><a href="https://swissmodel.expasy.org/templates/7cyn">7cyn</a></td></tr>
+
+<tr><td width="80%">Cryo-EM structure of mechanosensitive channel MscS in PC-10 nanodiscs</td><td><a href="https://swissmodel.expasy.org/templates/6vyl">6vyl</a></td></tr>
+
+<tr><td width="80%">Cryo-EM structure of mechanosensitive channel MscS in PC-18:1 nanodiscs</td><td><a href="https://swissmodel.expasy.org/templates/6vyk">6vyk</a></td></tr>
+
+<tr><td width="80%">Cryo-EM structure of mechanosensitive channel MscS in PC-18:1 nanodiscs treated with beta-cyclodextran</td><td><a href="https://swissmodel.expasy.org/templates/6vym">6vym</a></td></tr>
+
+<tr><td width="80%">Cryo-EM structure of mouse TLR3 in complex with UNC93B1</td><td><a href="https://swissmodel.expasy.org/templates/7c77">7c77</a></td></tr>
+
+<tr><td width="80%">Cryo-EM structure of the Caspase-1-CARD:ASC-CARD octamer</td><td><a href="https://swissmodel.expasy.org/templates/7keu">7keu</a></td></tr>
+
+<tr><td width="80%">Cryo-EM structure of the NLRP1-CARD filament</td><td><a href="https://swissmodel.expasy.org/templates/6xkk">6xkk</a></td></tr>
+
+<tr><td width="80%">Cryo-EM structure of the Sec complex from S. cerevisiae, Sec61 pore mutant, class with Sec62, conformation 1 (C1)</td><td><a href="https://swissmodel.expasy.org/templates/7kap">7kap</a></td></tr>
+
+<tr><td width="80%">Cryo-EM structure of the Sec complex from S. cerevisiae, Sec61 pore mutant, class with Sec62, conformation 2 (C2)</td><td><a href="https://swissmodel.expasy.org/templates/7kaq">7kaq</a></td></tr>
+
+<tr><td width="80%">Cryo-EM structure of the Sec complex from S. cerevisiae, Sec61 pore mutant, class without Sec62</td><td><a href="https://swissmodel.expasy.org/templates/7kao">7kao</a></td></tr>
+
+<tr><td width="80%">Cryo-EM structure of the Sec complex from S. cerevisiae, Sec61 pore ring and Sec63 FN3 double mutant, class with Sec62</td><td><a href="https://swissmodel.expasy.org/templates/7kau">7kau</a></td></tr>
+
+<tr><td width="80%">Cryo-EM structure of the Sec complex from S. cerevisiae, Sec61 pore ring and Sec63 FN3 double mutant, class without Sec62</td><td><a href="https://swissmodel.expasy.org/templates/7kat">7kat</a></td></tr>
+
+<tr><td width="80%">Cryo-EM structure of the Sec complex from S. cerevisiae, Sec63 FN3 mutant, class with Sec62</td><td><a href="https://swissmodel.expasy.org/templates/7kas">7kas</a></td></tr>
+
+<tr><td width="80%">Cryo-EM structure of the Sec complex from S. cerevisiae, Sec63 FN3 mutant, class without Sec62</td><td><a href="https://swissmodel.expasy.org/templates/7kar">7kar</a></td></tr>
+
+<tr><td width="80%">Cryo-EM structure of the Sec complex from S. cerevisiae, wild-type, class with Sec62, conformation 1 (C1)</td><td><a href="https://swissmodel.expasy.org/templates/7kai">7kai</a></td></tr>
+
+<tr><td width="80%">Cryo-EM structure of the Sec complex from S. cerevisiae, wild-type, class with Sec62, conformation 2 (C2)</td><td><a href="https://swissmodel.expasy.org/templates/7kaj">7kaj</a></td></tr>
+
+<tr><td width="80%">Cryo-EM structure of the Sec complex from S. cerevisiae, wild-type, class without Sec62</td><td><a href="https://swissmodel.expasy.org/templates/7kah">7kah</a></td></tr>
+
+<tr><td width="80%">Cryo-EM structure of the Sec complex from T. lanuginosus, Sec62-lacking mutant (Delta Sec62)</td><td><a href="https://swissmodel.expasy.org/templates/7kan">7kan</a></td></tr>
+
+<tr><td width="80%">Cryo-EM structure of the Sec complex from T. lanuginosus, wild-type, class with Sec62, plug-closed conformation</td><td><a href="https://swissmodel.expasy.org/templates/7kam">7kam</a></td></tr>
+
+<tr><td width="80%">Cryo-EM structure of the Sec complex from T. lanuginosus, wild-type, class with Sec62, plug-open conformation</td><td><a href="https://swissmodel.expasy.org/templates/7kal">7kal</a></td></tr>
+
+<tr><td width="80%">Cryo-EM structure of the Sec complex from T. lanuginosus, wild-type, class without Sec62</td><td><a href="https://swissmodel.expasy.org/templates/7kak">7kak</a></td></tr>
+
+<tr><td width="80%">Cryo-EM structure of the Sec complex from yeast, Sec63 FN3 and residues 210-216 mutated</td><td><a href="https://swissmodel.expasy.org/templates/7kb5">7kb5</a></td></tr>
+
+<tr><td width="80%">Cryo-EM structure of the dimeric SPT-ORMDL3 complex</td><td><a href="https://swissmodel.expasy.org/templates/6m4n">6m4n</a></td></tr>
+
+<tr><td width="80%">Cryo-EM structure of the human CAK bound to ICEC0942 (PHENIX-OPLS3e)</td><td><a href="https://swissmodel.expasy.org/templates/7b5q">7b5q</a></td></tr>
+
+<tr><td width="80%">Cryo-EM structure of the human CAK bound to ICEC0942 at 2.5 Angstroms resolution</td><td><a href="https://swissmodel.expasy.org/templates/7b5o">7b5o</a></td></tr>
+
+<tr><td width="80%">Cryo-EM structure of the monomeric SPT-ORMDL3 complex</td><td><a href="https://swissmodel.expasy.org/templates/6m4o">6m4o</a></td></tr>
+
+<tr><td width="80%">Cryo-EM structure of the substrate-bound SPT-ORMDL3 complex</td><td><a href="https://swissmodel.expasy.org/templates/7cqi">7cqi</a>, <a href="https://swissmodel.expasy.org/templates/7cqk">7cqk</a></td></tr>
+
+<tr><td width="80%">Crystal Structure of Bifidobacterium longum Multiple Inositol Polyphosphate Phosphatase Apo Form</td><td><a href="https://swissmodel.expasy.org/templates/6rxd">6rxd</a></td></tr>
+
+<tr><td width="80%">Crystal Structure of Bifidobacterium longum Multiple Inositol Polyphosphate Phosphatase Complex with Inositol Hexasulfate</td><td><a href="https://swissmodel.expasy.org/templates/6rxe">6rxe</a></td></tr>
+
+<tr><td width="80%">Crystal Structure of Bifidobacterium longum Multiple Inositol Polyphosphate Phosphatase Complex with Phosphate</td><td><a href="https://swissmodel.expasy.org/templates/6rxg">6rxg</a></td></tr>
+
+<tr><td width="80%">Crystal Structure of Bifidobacterium longum Multiple Inositol Polyphosphate Phosphatase Phosphohistidine Intermediate</td><td><a href="https://swissmodel.expasy.org/templates/6rxf">6rxf</a></td></tr>
+
+<tr><td width="80%">Crystal Structure of Human REV-ERBbeta Ligand Binding Domain Co-Bound to Heme and NCoR ID1 Peptide</td><td><a href="https://swissmodel.expasy.org/templates/6wmq">6wmq</a></td></tr>
+
+<tr><td width="80%">Crystal Structure of Human REV-ERBbeta Ligand Binding Domain Co-Bound to Heme and NCoR ID2 Peptide</td><td><a href="https://swissmodel.expasy.org/templates/6wms">6wms</a></td></tr>
+
+<tr><td width="80%">Crystal Structure of Human Serine Racemase</td><td><a href="https://swissmodel.expasy.org/templates/5x2l">5x2l</a></td></tr>
+
+<tr><td width="80%">Crystal Structure of NSP15 Endoribonuclease from SARS CoV-2 in the Complex with 3'-uridinemonophosphate</td><td><a href="https://swissmodel.expasy.org/templates/6x4i">6x4i</a></td></tr>
+
+<tr><td width="80%">Crystal Structure of NSP15 Endoribonuclease from SARS CoV-2 in the Complex with Uridine-2',3'-Vanadate</td><td><a href="https://swissmodel.expasy.org/templates/7k1l">7k1l</a></td></tr>
+
+<tr><td width="80%">Crystal Structure of NSP15 Endoribonuclease from SARS CoV-2 in the Complex with Uridine-5'-Monophosphate</td><td><a href="https://swissmodel.expasy.org/templates/6wlc">6wlc</a></td></tr>
+
+<tr><td width="80%">Crystal Structure of NSP15 Endoribonuclease from SARS CoV-2 in the Complex with potential repurposing drug Tipiracil</td><td><a href="https://swissmodel.expasy.org/templates/6wxc">6wxc</a></td></tr>
+
+<tr><td width="80%">Crystal Structure of NSP15 Endoribonuclease from SARS CoV-2 in the Complex with the Product Nucleotide GpU.</td><td><a href="https://swissmodel.expasy.org/templates/6x1b">6x1b</a></td></tr>
+
+<tr><td width="80%">Crystal Structure of Vascular Endothelial Growth Factor (VEGF8-109) with HH4, an alpha/beta-Peptide with Irregular Secondary Structure</td><td><a href="https://swissmodel.expasy.org/templates/6d3o">6d3o</a></td></tr>
+
+<tr><td width="80%">Crystal Structure of a Non-hemolytic Pneumolysin from Streptococcus pneumoniae strain ST306</td><td><a href="https://swissmodel.expasy.org/templates/6jmp">6jmp</a></td></tr>
+
+<tr><td width="80%">Crystal Structure of catalase HPII from Escherichia coli (serendipitously crystallized)</td><td><a href="https://swissmodel.expasy.org/templates/6ztv">6ztv</a>, <a href="https://swissmodel.expasy.org/templates/6ztw">6ztw</a>, <a href="https://swissmodel.expasy.org/templates/6ztx">6ztx</a></td></tr>
+
+<tr><td width="80%">Crystal Structure of human ME2 R67A mutant</td><td><a href="https://swissmodel.expasy.org/templates/7bsl">7bsl</a></td></tr>
+
+<tr><td width="80%">Crystal Structure of soluble epoxide Hydrolase</td><td><a href="https://swissmodel.expasy.org/templates/3i1y">3i1y</a>, <a href="https://swissmodel.expasy.org/templates/3i28">3i28</a>, <a href="https://swissmodel.expasy.org/templates/3koo">3koo</a></td></tr>
+
+<tr><td width="80%">Crystal structure of B. subtilis glucose-1-phosphate uridylyltransferase YngB</td><td><a href="https://swissmodel.expasy.org/templates/7b1r">7b1r</a></td></tr>
+
+<tr><td width="80%">Crystal structure of BRPF2 PWWP domain in complex with DNA</td><td><a href="https://swissmodel.expasy.org/templates/7lh9">7lh9</a></td></tr>
+
+<tr><td width="80%">Crystal structure of CNFy from Yersinia pseudotuberculosis - N-terminal fragment comprising residues 1-704</td><td><a href="https://swissmodel.expasy.org/templates/6yhl">6yhl</a></td></tr>
+
+<tr><td width="80%">Crystal structure of D62A mutant of Thermotoga maritima TmPEP1050 aminopeptidase</td><td><a href="https://swissmodel.expasy.org/templates/5l6z">5l6z</a></td></tr>
+
+<tr><td width="80%">Crystal structure of GluN2A agonist binding domain with 4-butyl-(S)-CCG-IV</td><td><a href="https://swissmodel.expasy.org/templates/6odl">6odl</a></td></tr>
+
+<tr><td width="80%">Crystal structure of H60A H307A mutant of Thermotoga maritima TmPEP1050 aminopeptidase</td><td><a href="https://swissmodel.expasy.org/templates/5ne9">5ne9</a></td></tr>
+
+<tr><td width="80%">Crystal structure of OXA-163 K73A in complex with imipenem</td><td><a href="https://swissmodel.expasy.org/templates/7khz">7khz</a></td></tr>
+
+<tr><td width="80%">Crystal structure of OXA-163 K73A in complex with meropenem</td><td><a href="https://swissmodel.expasy.org/templates/7khy">7khy</a></td></tr>
+
+<tr><td width="80%">Crystal structure of OXA-48 K73A in complex with imipenem</td><td><a href="https://swissmodel.expasy.org/templates/7kh9">7kh9</a></td></tr>
+
+<tr><td width="80%">Crystal structure of OXA-48 K73A in complex with meropenem</td><td><a href="https://swissmodel.expasy.org/templates/7khq">7khq</a></td></tr>
+
+<tr><td width="80%">Crystal structure of S. pombe Mei2 RRM3 domain</td><td><a href="https://swissmodel.expasy.org/templates/6yyl">6yyl</a></td></tr>
+
+<tr><td width="80%">Crystal structure of SARS CoV2 main protease in complex with inhibitor Boceprevir</td><td><a href="https://swissmodel.expasy.org/templates/6zru">6zru</a></td></tr>
+
+<tr><td width="80%">Crystal structure of SARS CoV2 main protease in complex with inhibitor Telaprevir</td><td><a href="https://swissmodel.expasy.org/templates/6zrt">6zrt</a></td></tr>
+
+<tr><td width="80%">Crystal structure of SARS-CoV-2 RBD-targeting antibody COV107-23 HC + COVD21-C8 LC</td><td><a href="https://swissmodel.expasy.org/templates/7lk9">7lk9</a></td></tr>
+
+<tr><td width="80%">Crystal structure of SARS-CoV-2 nucleocapsid protein N-terminal RNA binding domain</td><td><a href="https://swissmodel.expasy.org/templates/6m3m">6m3m</a></td></tr>
+
+<tr><td width="80%">Crystal structure of SARS-CoV-2 receptor binding domain complexed with nanobodies VHH E and U</td><td><a href="https://swissmodel.expasy.org/templates/7kn5">7kn5</a></td></tr>
+
+<tr><td width="80%">Crystal structure of SARS-CoV-2 receptor binding domain complexed with nanobody VHH V and antibody Fab CC12.3</td><td><a href="https://swissmodel.expasy.org/templates/7kn6">7kn6</a></td></tr>
+
+<tr><td width="80%">Crystal structure of SARS-CoV-2 receptor binding domain complexed with nanobody VHH W and antibody Fab CC12.3</td><td><a href="https://swissmodel.expasy.org/templates/7kn7">7kn7</a></td></tr>
+
+<tr><td width="80%">Crystal structure of SARS-Cov-2 main protease with narlaprevir</td><td><a href="https://swissmodel.expasy.org/templates/7d1o">7d1o</a></td></tr>
+
+<tr><td width="80%">Crystal structure of SucA from Vibrio vulnificus</td><td><a href="https://swissmodel.expasy.org/templates/6km9">6km9</a></td></tr>
+
+<tr><td width="80%">Crystal structure of SucA with glycolaldehyde-1-13C from Vibrio vulnificus</td><td><a href="https://swissmodel.expasy.org/templates/6kma">6kma</a></td></tr>
+
+<tr><td width="80%">Crystal structure of apo-state neurotensin receptor 1</td><td><a href="https://swissmodel.expasy.org/templates/6z66">6z66</a></td></tr>
+
+<tr><td width="80%">Crystal structure of dimeric chlorite dismutase variant Q74E (CCld Q74E) from Cyanothece sp. PCC7425</td><td><a href="https://swissmodel.expasy.org/templates/7asb">7asb</a></td></tr>
+
+<tr><td width="80%">Crystal structure of dimeric chlorite dismutase variant Q74V (CCld Q74V) from Cyanothece sp. PCC7425</td><td><a href="https://swissmodel.expasy.org/templates/7ati">7ati</a></td></tr>
+
+<tr><td width="80%">Crystal structure of domains 4-5 of CNFy from Yersinia pseudotuberculosis</td><td><a href="https://swissmodel.expasy.org/templates/6yhn">6yhn</a></td></tr>
+
+<tr><td width="80%">Crystal structure of full-length CNFy (C866S) from Yersinia pseudotuberculosis</td><td><a href="https://swissmodel.expasy.org/templates/6yhk">6yhk</a></td></tr>
+
+<tr><td width="80%">Crystal structure of glycoside hydrolase family 11 beta-xylanase from Streptomyces olivaceoviridis E-86</td><td><a href="https://swissmodel.expasy.org/templates/7dfm">7dfm</a></td></tr>
+
+<tr><td width="80%">Crystal structure of glycoside hydrolase family 11 beta-xylanase from Streptomyces olivaceoviridis E-86 in complex with 4-O-methyl-alpha-D-glucuronopyranosyl xylotetraose</td><td><a href="https://swissmodel.expasy.org/templates/7dfo">7dfo</a></td></tr>
+
+<tr><td width="80%">Crystal structure of glycoside hydrolase family 11 beta-xylanase from Streptomyces olivaceoviridis E-86 in complex with alpha-L-arabinofuranosyl xylotetraose</td><td><a href="https://swissmodel.expasy.org/templates/7dfn">7dfn</a></td></tr>
+
+<tr><td width="80%">Crystal structure of human ME2 R484W</td><td><a href="https://swissmodel.expasy.org/templates/7bsj">7bsj</a></td></tr>
+
+<tr><td width="80%">Crystal structure of human ME2 R67Q mutant</td><td><a href="https://swissmodel.expasy.org/templates/7bsk">7bsk</a></td></tr>
+
+<tr><td width="80%">Crystal structure of human bifunctional epoxide hydroxylase 2 complexed with A4</td><td><a href="https://swissmodel.expasy.org/templates/4c4y">4c4y</a></td></tr>
+
+<tr><td width="80%">Crystal structure of human bifunctional epoxide hydroxylase 2 complexed with A8</td><td><a href="https://swissmodel.expasy.org/templates/4c4z">4c4z</a></td></tr>
+
+<tr><td width="80%">Crystal structure of human bifunctional epoxide hydroxylase 2 complexed with C9</td><td><a href="https://swissmodel.expasy.org/templates/4c4x">4c4x</a></td></tr>
+
+<tr><td width="80%">Crystal structure of hydrolase domain of human soluble epoxide hydrolase complexed with a benzoxazole inhibitor</td><td><a href="https://swissmodel.expasy.org/templates/3pdc">3pdc</a></td></tr>
+
+<tr><td width="80%">Crystal structure of indoleamine 2,3-dioxygenase 1 (IDO1) in complex with ferric heme and MMG-0363</td><td><a href="https://swissmodel.expasy.org/templates/7ah4">7ah4</a></td></tr>
+
+<tr><td width="80%">Crystal structure of indoleamine 2,3-dioxygenase 1 (IDO1) in complex with ferric heme and MMG-0706</td><td><a href="https://swissmodel.expasy.org/templates/7ah5">7ah5</a></td></tr>
+
+<tr><td width="80%">Crystal structure of indoleamine 2,3-dioxygenase 1 (IDO1) in complex with ferric heme and MMG-0752</td><td><a href="https://swissmodel.expasy.org/templates/7ah6">7ah6</a></td></tr>
+
+<tr><td width="80%">Crystal structure of the C-terminal domain of CNFy from Yersinia pseudotuberculosis</td><td><a href="https://swissmodel.expasy.org/templates/6yhm">6yhm</a></td></tr>
+
+<tr><td width="80%">Crystal structure of the N-terminal tandem RRM domains of RBM45</td><td><a href="https://swissmodel.expasy.org/templates/7csx">7csx</a></td></tr>
+
+<tr><td width="80%">Crystal structure of the N-terminal tandem RRM domains of RBM45 in complex with single-stranded DNA</td><td><a href="https://swissmodel.expasy.org/templates/7csz">7csz</a></td></tr>
+
+<tr><td width="80%">Crystal structure of the neurotensin receptor 1 (NTSR1-H4bmx) in complex with NTS8-13</td><td><a href="https://swissmodel.expasy.org/templates/6z4v">6z4v</a></td></tr>
+
+<tr><td width="80%">Crystal structure of the neurotensin receptor 1 (NTSR1-H4bmx) in complex with the small molecule inverse agonist SR48692</td><td><a href="https://swissmodel.expasy.org/templates/6z4s">6z4s</a></td></tr>
+
+<tr><td width="80%">Crystal structure of the neurotensin receptor 1 in complex with the peptide full agonist NTS8-13</td><td><a href="https://swissmodel.expasy.org/templates/6yvr">6yvr</a></td></tr>
+
+<tr><td width="80%">Crystal structure of the neurotensin receptor 1 in complex with the small molecule inverse agonist SR48692</td><td><a href="https://swissmodel.expasy.org/templates/6zin">6zin</a></td></tr>
+
+<tr><td width="80%">Crystal structure of the neurotensin receptor 1 in complex with the small-molecule full agonist SRI-9829</td><td><a href="https://swissmodel.expasy.org/templates/6z8n">6z8n</a></td></tr>
+
+<tr><td width="80%">Crystal structure of the neurotensin receptor 1 in complex with the small-molecule inverse agonist SR142948A</td><td><a href="https://swissmodel.expasy.org/templates/6z4q">6z4q</a></td></tr>
+
+<tr><td width="80%">Crystal structure of the neurotensin receptor 1 in complex with the small-molecule partial agonist RTI-3a</td><td><a href="https://swissmodel.expasy.org/templates/6za8">6za8</a></td></tr>
+
+<tr><td width="80%">Crystal structure of yak lactoperoxidase at 1.55 A resolution.</td><td><a href="https://swissmodel.expasy.org/templates/7de5">7de5</a></td></tr>
+
+<tr><td width="80%">Crystallographic structure of glyceraldehyde-3-phosphate dehydrogenase from Schistosoma mansoni</td><td><a href="https://swissmodel.expasy.org/templates/7jh0">7jh0</a></td></tr>
+
+<tr><td width="80%">Ethylene forming enzyme (EFE) D191E variant in complex with Fe(II), L-arginine, and 2OG</td><td><a href="https://swissmodel.expasy.org/templates/6vp5">6vp5</a></td></tr>
+
+<tr><td width="80%">Ethylene forming enzyme (EFE) in complex with Fe(II), L-arginine, and 2OG</td><td><a href="https://swissmodel.expasy.org/templates/6vp4">6vp4</a></td></tr>
+
+<tr><td width="80%">GH146 beta-L-arabinofuranosidase bound to covalent inhibitor</td><td><a href="https://swissmodel.expasy.org/templates/6yqh">6yqh</a></td></tr>
+
+<tr><td width="80%">HIF prolyl hydroxylase 2 (PHD2/ EGLN1) in complex with a Spiro[4.5]decanone inhibitor (JPHM-2-167)</td><td><a href="https://swissmodel.expasy.org/templates/6qgv">6qgv</a></td></tr>
+
+<tr><td width="80%">Human Butyrylcholinesterase in complex with 2-(N-hydroxyimino)-N-[(1R)-3-{4-[(2-methyl-1H-imidazol-1-yl)methyl]-1H-1,2,3-triazol-1-yl}-1- phenylpropyl]acetamide</td><td><a href="https://swissmodel.expasy.org/templates/6t9p">6t9p</a></td></tr>
+
+<tr><td width="80%">Human CstF-64 RRM mutant - D50A</td><td><a href="https://swissmodel.expasy.org/templates/6tze">6tze</a></td></tr>
+
+<tr><td width="80%">Human DNA polymerase beta dGDP product complex with Mn2+</td><td><a href="https://swissmodel.expasy.org/templates/7k97">7k97</a></td></tr>
+
+<tr><td width="80%">Human DNA polymerase beta ternary complex with templating cytosine and incoming deoxyguanosine diphosphate</td><td><a href="https://swissmodel.expasy.org/templates/7k96">7k96</a></td></tr>
+
+<tr><td width="80%">Human soluble epoxide hydrolase in complex with a synthetic inhibitor</td><td><a href="https://swissmodel.expasy.org/templates/3ans">3ans</a>, <a href="https://swissmodel.expasy.org/templates/3ant">3ant</a></td></tr>
+
+<tr><td width="80%">Insights into a novel NlpC/P60 Endopeptidase from Photobacterium damselae subsp. piscicida</td><td><a href="https://swissmodel.expasy.org/templates/6sqx">6sqx</a></td></tr>
+
+<tr><td width="80%">JAK2 JH1 in complex with BL2-057</td><td><a href="https://swissmodel.expasy.org/templates/6vs3">6vs3</a></td></tr>
+
+<tr><td width="80%">JAK2 JH1 in complex with BL2-084</td><td><a href="https://swissmodel.expasy.org/templates/6vnb">6vnb</a></td></tr>
+
+<tr><td width="80%">JAK2 JH1 in complex with BL2-096</td><td><a href="https://swissmodel.expasy.org/templates/6vnc">6vnc</a></td></tr>
+
+<tr><td width="80%">JAK2 JH1 in complex with BL2-110</td><td><a href="https://swissmodel.expasy.org/templates/6vsn">6vsn</a></td></tr>
+
+<tr><td width="80%">JAK2 JH1 in complex with Fedratinib</td><td><a href="https://swissmodel.expasy.org/templates/6vne">6vne</a></td></tr>
+
+<tr><td width="80%">JAK2 JH1 in complex with MA9-086</td><td><a href="https://swissmodel.expasy.org/templates/6vnf">6vnf</a></td></tr>
+
+<tr><td width="80%">JAK2 JH1 in complex with PN2-118</td><td><a href="https://swissmodel.expasy.org/templates/6vng">6vng</a></td></tr>
+
+<tr><td width="80%">JAK2 JH1 in complex with PN2-123</td><td><a href="https://swissmodel.expasy.org/templates/6vnh">6vnh</a></td></tr>
+
+<tr><td width="80%">JAK2 JH1 in complex with PN3-115</td><td><a href="https://swissmodel.expasy.org/templates/6vni">6vni</a></td></tr>
+
+<tr><td width="80%">JAK2 JH1 in complex with PN4-014</td><td><a href="https://swissmodel.expasy.org/templates/6vnj">6vnj</a></td></tr>
+
+<tr><td width="80%">JAK2 JH1 in complex with PN4-073</td><td><a href="https://swissmodel.expasy.org/templates/6vnk">6vnk</a></td></tr>
+
+<tr><td width="80%">JAK2 JH1 in complex with SG3-179</td><td><a href="https://swissmodel.expasy.org/templates/6vnl">6vnl</a></td></tr>
+
+<tr><td width="80%">JAK2 JH1 in complex with SY5-103</td><td><a href="https://swissmodel.expasy.org/templates/6vnm">6vnm</a></td></tr>
+
+<tr><td width="80%">JAK2 JH1 in complex with baricitinib</td><td><a href="https://swissmodel.expasy.org/templates/6vn8">6vn8</a></td></tr>
+
+<tr><td width="80%">JAK2 JH1 in complex with ruxolitinib</td><td><a href="https://swissmodel.expasy.org/templates/6vgl">6vgl</a></td></tr>
+
+<tr><td width="80%">LTA4 hydrolase in complex with compound LYS006</td><td><a href="https://swissmodel.expasy.org/templates/7auz">7auz</a></td></tr>
+
+<tr><td width="80%">LTA4 hydrolase in complex with compound R(13)</td><td><a href="https://swissmodel.expasy.org/templates/7av0">7av0</a></td></tr>
+
+<tr><td width="80%">LTA4 hydrolase in complex with fragment1</td><td><a href="https://swissmodel.expasy.org/templates/7av2">7av2</a></td></tr>
+
+<tr><td width="80%">LTA4 hydrolase in complex with fragment2</td><td><a href="https://swissmodel.expasy.org/templates/7av1">7av1</a></td></tr>
+
+<tr><td width="80%">Last common ancestor of HMPPK and PLK/HMPPK vitamin kinases</td><td><a href="https://swissmodel.expasy.org/templates/7l07">7l07</a></td></tr>
+
+<tr><td width="80%">Monoclinic structure of human protein kinase CK2 catalytic subunit in complex with a heparin oligo saccharide</td><td><a href="https://swissmodel.expasy.org/templates/7b8h">7b8h</a></td></tr>
+
+<tr><td width="80%">Nsp7-Nsp8-Nsp12 SARS-CoV2 RNA-dependent RNA polymerase in complex with template:primer dsRNA and favipiravir-RTP</td><td><a href="https://swissmodel.expasy.org/templates/7aap">7aap</a></td></tr>
+
+<tr><td width="80%">Nucleosome from a dimeric PRC2 bound to a nucleosome</td><td><a href="https://swissmodel.expasy.org/templates/7ktq">7ktq</a></td></tr>
+
+<tr><td width="80%">Open conformation of D614G SARS-CoV-2 spike with 1 Erect RBD</td><td><a href="https://swissmodel.expasy.org/templates/7bnn">7bnn</a></td></tr>
+
+<tr><td width="80%">Open conformation of D614G SARS-CoV-2 spike with 2 Erect RBDs</td><td><a href="https://swissmodel.expasy.org/templates/7bno">7bno</a></td></tr>
+
+<tr><td width="80%">PII-like protein CutA from Nostoc sp. PCC 7120 in apo form</td><td><a href="https://swissmodel.expasy.org/templates/6t76">6t76</a></td></tr>
+
+<tr><td width="80%">PII-like protein CutA from Nostoc sp. PCC7120 in complex with MES</td><td><a href="https://swissmodel.expasy.org/templates/6t7e">6t7e</a></td></tr>
+
+<tr><td width="80%">PRC2:EZH1_A from a dimeric PRC2 bound to a nucleosome</td><td><a href="https://swissmodel.expasy.org/templates/7ksr">7ksr</a></td></tr>
+
+<tr><td width="80%">PRC2:EZH1_B from a dimeric PRC2 bound to a nucleosome</td><td><a href="https://swissmodel.expasy.org/templates/7ktp">7ktp</a></td></tr>
+
+<tr><td width="80%">PanDDA analysis group deposition -- Crystal Structure of COVID-19 main protease in complex with Z1367324110</td><td><a href="https://swissmodel.expasy.org/templates/5r81">5r81</a></td></tr>
+
+<tr><td width="80%">PanDDA analysis group deposition -- Crystal Structure of COVID-19 main protease in complex with Z219104216</td><td><a href="https://swissmodel.expasy.org/templates/5r82">5r82</a></td></tr>
+
+<tr><td width="80%">PanDDA analysis group deposition -- Crystal Structure of COVID-19 main protease in complex with Z31792168</td><td><a href="https://swissmodel.expasy.org/templates/5r84">5r84</a></td></tr>
+
+<tr><td width="80%">PanDDA analysis group deposition -- Crystal Structure of COVID-19 main protease in complex with Z45617795</td><td><a href="https://swissmodel.expasy.org/templates/5r7y">5r7y</a></td></tr>
+
+<tr><td width="80%">PanDDA analysis group deposition -- Crystal Structure of SARS-CoV-2 main protease in complex with NCL-00023830</td><td><a href="https://swissmodel.expasy.org/templates/5rf1">5rf1</a></td></tr>
+
+<tr><td width="80%">PanDDA analysis group deposition -- Crystal Structure of SARS-CoV-2 main protease in complex with PCM-0102121</td><td><a href="https://swissmodel.expasy.org/templates/5rfu">5rfu</a></td></tr>
+
+<tr><td width="80%">PanDDA analysis group deposition -- Crystal Structure of SARS-CoV-2 main protease in complex with PCM-0102169</td><td><a href="https://swissmodel.expasy.org/templates/5rfr">5rfr</a></td></tr>
+
+<tr><td width="80%">PanDDA analysis group deposition -- Crystal Structure of SARS-CoV-2 main protease in complex with PCM-0102179</td><td><a href="https://swissmodel.expasy.org/templates/5rfq">5rfq</a></td></tr>
+
+<tr><td width="80%">PanDDA analysis group deposition -- Crystal Structure of SARS-CoV-2 main protease in complex with PCM-0102190</td><td><a href="https://swissmodel.expasy.org/templates/5rfp">5rfp</a></td></tr>
+
+<tr><td width="80%">PanDDA analysis group deposition -- Crystal Structure of SARS-CoV-2 main protease in complex with PCM-0102201</td><td><a href="https://swissmodel.expasy.org/templates/5rep">5rep</a></td></tr>
+
+<tr><td width="80%">PanDDA analysis group deposition -- Crystal Structure of SARS-CoV-2 main protease in complex with PCM-0102241</td><td><a href="https://swissmodel.expasy.org/templates/5rej">5rej</a></td></tr>
+
+<tr><td width="80%">PanDDA analysis group deposition -- Crystal Structure of SARS-CoV-2 main protease in complex with PCM-0102243</td><td><a href="https://swissmodel.expasy.org/templates/5rfw">5rfw</a></td></tr>
+
+<tr><td width="80%">PanDDA analysis group deposition -- Crystal Structure of SARS-CoV-2 main protease in complex with PCM-0102254</td><td><a href="https://swissmodel.expasy.org/templates/5rfx">5rfx</a></td></tr>
+
+<tr><td width="80%">PanDDA analysis group deposition -- Crystal Structure of SARS-CoV-2 main protease in complex with PCM-0102269</td><td><a href="https://swissmodel.expasy.org/templates/5ret">5ret</a></td></tr>
+
+<tr><td width="80%">PanDDA analysis group deposition -- Crystal Structure of SARS-CoV-2 main protease in complex with PCM-0102274</td><td><a href="https://swissmodel.expasy.org/templates/5rfz">5rfz</a></td></tr>
+
+<tr><td width="80%">PanDDA analysis group deposition -- Crystal Structure of SARS-CoV-2 main protease in complex with PCM-0102275</td><td><a href="https://swissmodel.expasy.org/templates/5rew">5rew</a></td></tr>
+
+<tr><td width="80%">PanDDA analysis group deposition -- Crystal Structure of SARS-CoV-2 main protease in complex with PCM-0102277</td><td><a href="https://swissmodel.expasy.org/templates/5rfh">5rfh</a></td></tr>
+
+<tr><td width="80%">PanDDA analysis group deposition -- Crystal Structure of SARS-CoV-2 main protease in complex with PCM-0102281</td><td><a href="https://swissmodel.expasy.org/templates/5res">5res</a></td></tr>
+
+<tr><td width="80%">PanDDA analysis group deposition -- Crystal Structure of SARS-CoV-2 main protease in complex with PCM-0102287</td><td><a href="https://swissmodel.expasy.org/templates/5rex">5rex</a></td></tr>
+
+<tr><td width="80%">PanDDA analysis group deposition -- Crystal Structure of SARS-CoV-2 main protease in complex with PCM-0102306</td><td><a href="https://swissmodel.expasy.org/templates/5rfv">5rfv</a></td></tr>
+
+<tr><td width="80%">PanDDA analysis group deposition -- Crystal Structure of SARS-CoV-2 main protease in complex with PCM-0102327</td><td><a href="https://swissmodel.expasy.org/templates/5rek">5rek</a></td></tr>
+
+<tr><td width="80%">PanDDA analysis group deposition -- Crystal Structure of SARS-CoV-2 main protease in complex with PCM-0102340</td><td><a href="https://swissmodel.expasy.org/templates/5rel">5rel</a></td></tr>
+
+<tr><td width="80%">PanDDA analysis group deposition -- Crystal Structure of SARS-CoV-2 main protease in complex with PCM-0102353</td><td><a href="https://swissmodel.expasy.org/templates/5rfi">5rfi</a></td></tr>
+
+<tr><td width="80%">PanDDA analysis group deposition -- Crystal Structure of SARS-CoV-2 main protease in complex with PCM-0102372</td><td><a href="https://swissmodel.expasy.org/templates/5rfg">5rfg</a></td></tr>
+
+<tr><td width="80%">PanDDA analysis group deposition -- Crystal Structure of SARS-CoV-2 main protease in complex with PCM-0102389</td><td><a href="https://swissmodel.expasy.org/templates/5rfl">5rfl</a></td></tr>
+
+<tr><td width="80%">PanDDA analysis group deposition -- Crystal Structure of SARS-CoV-2 main protease in complex with PCM-0102395</td><td><a href="https://swissmodel.expasy.org/templates/5reu">5reu</a></td></tr>
+
+<tr><td width="80%">PanDDA analysis group deposition -- Crystal Structure of SARS-CoV-2 main protease in complex with PCM-0102425</td><td><a href="https://swissmodel.expasy.org/templates/5ren">5ren</a></td></tr>
+
+<tr><td width="80%">PanDDA analysis group deposition -- Crystal Structure of SARS-CoV-2 main protease in complex with PCM-0102432</td><td><a href="https://swissmodel.expasy.org/templates/5rft">5rft</a></td></tr>
+
+<tr><td width="80%">PanDDA analysis group deposition -- Crystal Structure of SARS-CoV-2 main protease in complex with PCM-0102535</td><td><a href="https://swissmodel.expasy.org/templates/5rg0">5rg0</a></td></tr>
+
+<tr><td width="80%">PanDDA analysis group deposition -- Crystal Structure of SARS-CoV-2 main protease in complex with PCM-0102539</td><td><a href="https://swissmodel.expasy.org/templates/5rfm">5rfm</a></td></tr>
+
+<tr><td width="80%">PanDDA analysis group deposition -- Crystal Structure of SARS-CoV-2 main protease in complex with PCM-0102575</td><td><a href="https://swissmodel.expasy.org/templates/5rfk">5rfk</a></td></tr>
+
+<tr><td width="80%">PanDDA analysis group deposition -- Crystal Structure of SARS-CoV-2 main protease in complex with PCM-0102578</td><td><a href="https://swissmodel.expasy.org/templates/5reo">5reo</a></td></tr>
+
+<tr><td width="80%">PanDDA analysis group deposition -- Crystal Structure of SARS-CoV-2 main protease in complex with PCM-0102615</td><td><a href="https://swissmodel.expasy.org/templates/5rer">5rer</a></td></tr>
+
+<tr><td width="80%">PanDDA analysis group deposition -- Crystal Structure of SARS-CoV-2 main protease in complex with PCM-0102704</td><td><a href="https://swissmodel.expasy.org/templates/5rff">5rff</a></td></tr>
+
+<tr><td width="80%">PanDDA analysis group deposition -- Crystal Structure of SARS-CoV-2 main protease in complex with PCM-0102739</td><td><a href="https://swissmodel.expasy.org/templates/5rfs">5rfs</a></td></tr>
+
+<tr><td width="80%">PanDDA analysis group deposition -- Crystal Structure of SARS-CoV-2 main protease in complex with PCM-0102868</td><td><a href="https://swissmodel.expasy.org/templates/5rfn">5rfn</a></td></tr>
+
+<tr><td width="80%">PanDDA analysis group deposition -- Crystal Structure of SARS-CoV-2 main protease in complex with PCM-0102911</td><td><a href="https://swissmodel.expasy.org/templates/5rey">5rey</a></td></tr>
+
+<tr><td width="80%">PanDDA analysis group deposition -- Crystal Structure of SARS-CoV-2 main protease in complex with PCM-0102972</td><td><a href="https://swissmodel.expasy.org/templates/5rfo">5rfo</a></td></tr>
+
+<tr><td width="80%">PanDDA analysis group deposition -- Crystal Structure of SARS-CoV-2 main protease in complex with PCM-0102974</td><td><a href="https://swissmodel.expasy.org/templates/5rfy">5rfy</a></td></tr>
+
+<tr><td width="80%">PanDDA analysis group deposition -- Crystal Structure of SARS-CoV-2 main protease in complex with PCM-0103016</td><td><a href="https://swissmodel.expasy.org/templates/5rem">5rem</a></td></tr>
+
+<tr><td width="80%">PanDDA analysis group deposition -- Crystal Structure of SARS-CoV-2 main protease in complex with PCM-0103067</td><td><a href="https://swissmodel.expasy.org/templates/5rfj">5rfj</a></td></tr>
+
+<tr><td width="80%">PanDDA analysis group deposition -- Crystal Structure of SARS-CoV-2 main protease in complex with PCM-0103072</td><td><a href="https://swissmodel.expasy.org/templates/5rev">5rev</a></td></tr>
+
+<tr><td width="80%">PanDDA analysis group deposition -- Crystal Structure of SARS-CoV-2 main protease in complex with POB0073</td><td><a href="https://swissmodel.expasy.org/templates/5rf0">5rf0</a></td></tr>
+
+<tr><td width="80%">PanDDA analysis group deposition -- Crystal Structure of SARS-CoV-2 main protease in complex with POB0129</td><td><a href="https://swissmodel.expasy.org/templates/5rez">5rez</a></td></tr>
+
+<tr><td width="80%">PanDDA analysis group deposition -- Crystal Structure of SARS-CoV-2 main protease in complex with Z111507846</td><td><a href="https://swissmodel.expasy.org/templates/5reh">5reh</a></td></tr>
+
+<tr><td width="80%">PanDDA analysis group deposition -- Crystal Structure of SARS-CoV-2 main protease in complex with Z1129283193</td><td><a href="https://swissmodel.expasy.org/templates/5re4">5re4</a></td></tr>
+
+<tr><td width="80%">PanDDA analysis group deposition -- Crystal Structure of SARS-CoV-2 main protease in complex with Z1220452176</td><td><a href="https://swissmodel.expasy.org/templates/5r7z">5r7z</a></td></tr>
+
+<tr><td width="80%">PanDDA analysis group deposition -- Crystal Structure of SARS-CoV-2 main protease in complex with Z126932614</td><td><a href="https://swissmodel.expasy.org/templates/5rfd">5rfd</a></td></tr>
+
+<tr><td width="80%">PanDDA analysis group deposition -- Crystal Structure of SARS-CoV-2 main protease in complex with Z1271660837</td><td><a href="https://swissmodel.expasy.org/templates/5rfb">5rfb</a></td></tr>
+
+<tr><td width="80%">PanDDA analysis group deposition -- Crystal Structure of SARS-CoV-2 main protease in complex with Z1348371854</td><td><a href="https://swissmodel.expasy.org/templates/5rf6">5rf6</a></td></tr>
+
+<tr><td width="80%">PanDDA analysis group deposition -- Crystal Structure of SARS-CoV-2 main protease in complex with Z1545313172</td><td><a href="https://swissmodel.expasy.org/templates/5reg">5reg</a></td></tr>
+
+<tr><td width="80%">PanDDA analysis group deposition -- Crystal Structure of SARS-CoV-2 main protease in complex with Z1587220559</td><td><a href="https://swissmodel.expasy.org/templates/5rec">5rec</a></td></tr>
+
+<tr><td width="80%">PanDDA analysis group deposition -- Crystal Structure of SARS-CoV-2 main protease in complex with Z1741969146</td><td><a href="https://swissmodel.expasy.org/templates/5rf2">5rf2</a></td></tr>
+
+<tr><td width="80%">PanDDA analysis group deposition -- Crystal Structure of SARS-CoV-2 main protease in complex with Z1741970824</td><td><a href="https://swissmodel.expasy.org/templates/5rf3">5rf3</a></td></tr>
+
+<tr><td width="80%">PanDDA analysis group deposition -- Crystal Structure of SARS-CoV-2 main protease in complex with Z1741982125</td><td><a href="https://swissmodel.expasy.org/templates/5rf4">5rf4</a></td></tr>
+
+<tr><td width="80%">PanDDA analysis group deposition -- Crystal Structure of SARS-CoV-2 main protease in complex with Z18197050</td><td><a href="https://swissmodel.expasy.org/templates/5r80">5r80</a></td></tr>
+
+<tr><td width="80%">PanDDA analysis group deposition -- Crystal Structure of SARS-CoV-2 main protease in complex with Z217038356</td><td><a href="https://swissmodel.expasy.org/templates/5rf9">5rf9</a></td></tr>
+
+<tr><td width="80%">PanDDA analysis group deposition -- Crystal Structure of SARS-CoV-2 main protease in complex with Z2217052426</td><td><a href="https://swissmodel.expasy.org/templates/5ree">5ree</a></td></tr>
+
+<tr><td width="80%">PanDDA analysis group deposition -- Crystal Structure of SARS-CoV-2 main protease in complex with Z24758179</td><td><a href="https://swissmodel.expasy.org/templates/5ref">5ref</a></td></tr>
+
+<tr><td width="80%">PanDDA analysis group deposition -- Crystal Structure of SARS-CoV-2 main protease in complex with Z2643472210</td><td><a href="https://swissmodel.expasy.org/templates/5rfa">5rfa</a></td></tr>
+
+<tr><td width="80%">PanDDA analysis group deposition -- Crystal Structure of SARS-CoV-2 main protease in complex with Z271004858</td><td><a href="https://swissmodel.expasy.org/templates/5rf8">5rf8</a></td></tr>
+
+<tr><td width="80%">PanDDA analysis group deposition -- Crystal Structure of SARS-CoV-2 main protease in complex with Z2737076969</td><td><a href="https://swissmodel.expasy.org/templates/5re8">5re8</a></td></tr>
+
+<tr><td width="80%">PanDDA analysis group deposition -- Crystal Structure of SARS-CoV-2 main protease in complex with Z2856434836</td><td><a href="https://swissmodel.expasy.org/templates/5re9">5re9</a></td></tr>
+
+<tr><td width="80%">PanDDA analysis group deposition -- Crystal Structure of SARS-CoV-2 main protease in complex with Z2856434856</td><td><a href="https://swissmodel.expasy.org/templates/5rei">5rei</a></td></tr>
+
+<tr><td width="80%">PanDDA analysis group deposition -- Crystal Structure of SARS-CoV-2 main protease in complex with Z2856434865</td><td><a href="https://swissmodel.expasy.org/templates/5red">5red</a></td></tr>
+
+<tr><td width="80%">PanDDA analysis group deposition -- Crystal Structure of SARS-CoV-2 main protease in complex with Z2856434899</td><td><a href="https://swissmodel.expasy.org/templates/5reb">5reb</a></td></tr>
+
+<tr><td width="80%">PanDDA analysis group deposition -- Crystal Structure of SARS-CoV-2 main protease in complex with Z30932204</td><td><a href="https://swissmodel.expasy.org/templates/5re7">5re7</a></td></tr>
+
+<tr><td width="80%">PanDDA analysis group deposition -- Crystal Structure of SARS-CoV-2 main protease in complex with Z31432226</td><td><a href="https://swissmodel.expasy.org/templates/5rea">5rea</a></td></tr>
+
+<tr><td width="80%">PanDDA analysis group deposition -- Crystal Structure of SARS-CoV-2 main protease in complex with Z316425948_minor</td><td><a href="https://swissmodel.expasy.org/templates/5rf7">5rf7</a></td></tr>
+
+<tr><td width="80%">PanDDA analysis group deposition -- Crystal Structure of SARS-CoV-2 main protease in complex with Z3241250482</td><td><a href="https://swissmodel.expasy.org/templates/5rf5">5rf5</a></td></tr>
+
+<tr><td width="80%">PanDDA analysis group deposition -- Crystal Structure of SARS-CoV-2 main protease in complex with Z33545544</td><td><a href="https://swissmodel.expasy.org/templates/5re5">5re5</a></td></tr>
+
+<tr><td width="80%">PanDDA analysis group deposition -- Crystal Structure of SARS-CoV-2 main protease in complex with Z44592329</td><td><a href="https://swissmodel.expasy.org/templates/5r83">5r83</a></td></tr>
+
+<tr><td width="80%">PanDDA analysis group deposition -- Crystal Structure of SARS-CoV-2 main protease in complex with Z509756472</td><td><a href="https://swissmodel.expasy.org/templates/5rfe">5rfe</a></td></tr>
+
+<tr><td width="80%">PanDDA analysis group deposition -- Crystal Structure of SARS-CoV-2 main protease in complex with Z54571979</td><td><a href="https://swissmodel.expasy.org/templates/5re6">5re6</a></td></tr>
+
+<tr><td width="80%">PanDDA analysis group deposition -- Crystal Structure of SARS-CoV-2 main protease in complex with Z979145504</td><td><a href="https://swissmodel.expasy.org/templates/5rfc">5rfc</a></td></tr>
+
+<tr><td width="80%">PanDDA analysis group deposition SARS-CoV-2 main protease fragment screen -- Crystal Structure of SARS-CoV-2 main protease in complex with Cov_HetLib030 (Mpro-x2097)</td><td><a href="https://swissmodel.expasy.org/templates/5rhb">5rhb</a></td></tr>
+
+<tr><td width="80%">PanDDA analysis group deposition SARS-CoV-2 main protease fragment screen -- Crystal Structure of SARS-CoV-2 main protease in complex with Cov_HetLib053 (Mpro-x2119)</td><td><a href="https://swissmodel.expasy.org/templates/5rhc">5rhc</a></td></tr>
+
+<tr><td width="80%">PanDDA analysis group deposition SARS-CoV-2 main protease fragment screen -- Crystal Structure of SARS-CoV-2 main protease in complex with NCL-00024905</td><td><a href="https://swissmodel.expasy.org/templates/5rg1">5rg1</a></td></tr>
+
+<tr><td width="80%">PanDDA analysis group deposition SARS-CoV-2 main protease fragment screen -- Crystal Structure of SARS-CoV-2 main protease in complex with NCL-00025058</td><td><a href="https://swissmodel.expasy.org/templates/5rg2">5rg2</a></td></tr>
+
+<tr><td width="80%">PanDDA analysis group deposition SARS-CoV-2 main protease fragment screen -- Crystal Structure of SARS-CoV-2 main protease in complex with NCL-00025412</td><td><a href="https://swissmodel.expasy.org/templates/5rg3">5rg3</a></td></tr>
+
+<tr><td width="80%">PanDDA analysis group deposition SARS-CoV-2 main protease fragment screen -- Crystal Structure of SARS-CoV-2 main protease in complex with PCM-0102142 (Mpro-x0708)</td><td><a href="https://swissmodel.expasy.org/templates/5rgm">5rgm</a></td></tr>
+
+<tr><td width="80%">PanDDA analysis group deposition SARS-CoV-2 main protease fragment screen -- Crystal Structure of SARS-CoV-2 main protease in complex with PCM-0102248 (Mpro-x0736)</td><td><a href="https://swissmodel.expasy.org/templates/5rgo">5rgo</a></td></tr>
+
+<tr><td width="80%">PanDDA analysis group deposition SARS-CoV-2 main protease fragment screen -- Crystal Structure of SARS-CoV-2 main protease in complex with PCM-0102628 (Mpro-x0771)</td><td><a href="https://swissmodel.expasy.org/templates/5rgp">5rgp</a></td></tr>
+
+<tr><td width="80%">PanDDA analysis group deposition SARS-CoV-2 main protease fragment screen -- Crystal Structure of SARS-CoV-2 main protease in complex with PCM-0102759 (Mpro-x0731)</td><td><a href="https://swissmodel.expasy.org/templates/5rgn">5rgn</a></td></tr>
+
+<tr><td width="80%">PanDDA analysis group deposition SARS-CoV-2 main protease fragment screen -- Crystal Structure of SARS-CoV-2 main protease in complex with PCM-0102962 (Mpro-x0705)</td><td><a href="https://swissmodel.expasy.org/templates/5rgl">5rgl</a></td></tr>
+
+<tr><td width="80%">PanDDA analysis group deposition SARS-CoV-2 main protease fragment screen -- Crystal Structure of SARS-CoV-2 main protease in complex with PG-COV-34 (Mpro-x2754)</td><td><a href="https://swissmodel.expasy.org/templates/5rhf">5rhf</a></td></tr>
+
+<tr><td width="80%">PanDDA analysis group deposition SARS-CoV-2 main protease fragment screen -- Crystal Structure of SARS-CoV-2 main protease in complex with PG-COV-42 (Mpro-x2052)</td><td><a href="https://swissmodel.expasy.org/templates/5rhe">5rhe</a></td></tr>
+
+<tr><td width="80%">PanDDA analysis group deposition SARS-CoV-2 main protease fragment screen -- Crystal Structure of SARS-CoV-2 main protease in complex with SF013 (Mpro-x2193)</td><td><a href="https://swissmodel.expasy.org/templates/5rhd">5rhd</a></td></tr>
+
+<tr><td width="80%">PanDDA analysis group deposition SARS-CoV-2 main protease fragment screen -- Crystal Structure of SARS-CoV-2 main protease in complex with Z1259086950 (Mpro-x1163)</td><td><a href="https://swissmodel.expasy.org/templates/5rgs">5rgs</a></td></tr>
+
+<tr><td width="80%">PanDDA analysis group deposition SARS-CoV-2 main protease fragment screen -- Crystal Structure of SARS-CoV-2 main protease in complex with Z1310876699 (Mpro-x0426)</td><td><a href="https://swissmodel.expasy.org/templates/5rgk">5rgk</a></td></tr>
+
+<tr><td width="80%">PanDDA analysis group deposition SARS-CoV-2 main protease fragment screen -- Crystal Structure of SARS-CoV-2 main protease in complex with Z1401276297 (Mpro-x0425)</td><td><a href="https://swissmodel.expasy.org/templates/5rgj">5rgj</a></td></tr>
+
+<tr><td width="80%">PanDDA analysis group deposition SARS-CoV-2 main protease fragment screen -- Crystal Structure of SARS-CoV-2 main protease in complex with Z1619978933 (Mpro-x0395)</td><td><a href="https://swissmodel.expasy.org/templates/5rgh">5rgh</a></td></tr>
+
+<tr><td width="80%">PanDDA analysis group deposition SARS-CoV-2 main protease fragment screen -- Crystal Structure of SARS-CoV-2 main protease in complex with Z1849009686 (Mpro-x1086)</td><td><a href="https://swissmodel.expasy.org/templates/5rgq">5rgq</a></td></tr>
+
+<tr><td width="80%">PanDDA analysis group deposition SARS-CoV-2 main protease fragment screen -- Crystal Structure of SARS-CoV-2 main protease in complex with Z2856434890 (Mpro-x0165)</td><td><a href="https://swissmodel.expasy.org/templates/5rgg">5rgg</a></td></tr>
+
+<tr><td width="80%">PanDDA analysis group deposition SARS-CoV-2 main protease fragment screen -- Crystal Structure of SARS-CoV-2 main protease in complex with Z328695024 (Mpro-x1101)</td><td><a href="https://swissmodel.expasy.org/templates/5rgr">5rgr</a></td></tr>
+
+<tr><td width="80%">PanDDA analysis group deposition SARS-CoV-2 main protease fragment screen -- Crystal Structure of SARS-CoV-2 main protease in complex with Z369936976 (Mpro-x0397)</td><td><a href="https://swissmodel.expasy.org/templates/5rgi">5rgi</a></td></tr>
+
+<tr><td width="80%">Peptidyl tryptophan dihydroxylase QhpG essential for tryptophylquinone cofactor biogenesis</td><td><a href="https://swissmodel.expasy.org/templates/7ctq">7ctq</a></td></tr>
+
+<tr><td width="80%">PfaC Keto synthase-Chain length factor</td><td><a href="https://swissmodel.expasy.org/templates/6riw">6riw</a></td></tr>
+
+<tr><td width="80%">Photorhabdus asymbiotica lectin PHL in complex with 3-O-methyl-D-glucose</td><td><a href="https://swissmodel.expasy.org/templates/6rgu">6rgu</a></td></tr>
+
+<tr><td width="80%">Photorhabdus asymbiotica lectin PHL in complex with D-glucose</td><td><a href="https://swissmodel.expasy.org/templates/6rgj">6rgj</a></td></tr>
+
+<tr><td width="80%">Photorhabdus asymbiotica lectin PHL in complex with L-rhamnose</td><td><a href="https://swissmodel.expasy.org/templates/6rgr">6rgr</a></td></tr>
+
+<tr><td width="80%">Photorhabdus asymbiotica lectin PHL in complex with O-methylated PGL-1-derived disaccharide</td><td><a href="https://swissmodel.expasy.org/templates/6rgw">6rgw</a></td></tr>
+
+<tr><td width="80%">Photorhabdus laumondii lectin PLL2 in complex with 3-O-methyl-D-glucose</td><td><a href="https://swissmodel.expasy.org/templates/6rg2">6rg2</a></td></tr>
+
+<tr><td width="80%">Photorhabdus laumondii lectin PLL2 in complex with D-glucose</td><td><a href="https://swissmodel.expasy.org/templates/6rfz">6rfz</a></td></tr>
+
+<tr><td width="80%">Photorhabdus laumondii lectin PLL2 in complex with L-rhamnose</td><td><a href="https://swissmodel.expasy.org/templates/6rg1">6rg1</a></td></tr>
+
+<tr><td width="80%">Photorhabdus laumondii lectin PLL2 in complex with O-methylated PGL-1-derived disaccharide</td><td><a href="https://swissmodel.expasy.org/templates/6rgg">6rgg</a></td></tr>
+
+<tr><td width="80%">Pig R615C RyR1 EGTA (all classes, open)</td><td><a href="https://swissmodel.expasy.org/templates/6x34">6x34</a></td></tr>
+
+<tr><td width="80%">Pig R615C RyR1 in complex with CaM, EGTA (class 1, open)</td><td><a href="https://swissmodel.expasy.org/templates/6x35">6x35</a></td></tr>
+
+<tr><td width="80%">Pig R615C RyR1 in complex with CaM, EGTA (class 3, closed)</td><td><a href="https://swissmodel.expasy.org/templates/6x36">6x36</a></td></tr>
+
+<tr><td width="80%">Pig Ryanodine Receptor (WT) in 5mM EGTA condition</td><td><a href="https://swissmodel.expasy.org/templates/6w1n">6w1n</a></td></tr>
+
+<tr><td width="80%">Plasmodium falciparum protein Pf12p</td><td><a href="https://swissmodel.expasy.org/templates/7kj7">7kj7</a></td></tr>
+
+<tr><td width="80%">Plasmodium falciparum protein Pf12p bound to nanobody B9</td><td><a href="https://swissmodel.expasy.org/templates/7kjh">7kjh</a></td></tr>
+
+<tr><td width="80%">Plasmodium falciparum protein Pf12p bound to nanobody D9</td><td><a href="https://swissmodel.expasy.org/templates/7kji">7kji</a></td></tr>
+
+<tr><td width="80%">Potent Vitamin D Receptor Agonist</td><td><a href="https://swissmodel.expasy.org/templates/5e7v">5e7v</a></td></tr>
+
+<tr><td width="80%">Pyruvate Kinase M2 Mutant-K433Q</td><td><a href="https://swissmodel.expasy.org/templates/6wp3">6wp3</a></td></tr>
+
+<tr><td width="80%">Pyruvate Kinase M2 mutant-S37D</td><td><a href="https://swissmodel.expasy.org/templates/6wp5">6wp5</a></td></tr>
+
+<tr><td width="80%">Pyruvate Kinase M2 mutant-S37E</td><td><a href="https://swissmodel.expasy.org/templates/6wp4">6wp4</a></td></tr>
+
+<tr><td width="80%">Pyruvate Kinase M2 mutant-S37E K433E</td><td><a href="https://swissmodel.expasy.org/templates/6wp6">6wp6</a></td></tr>
+
+<tr><td width="80%">SARS-CoV-2 Spike Glycoprotein with one ACE2 Bound</td><td><a href="https://swissmodel.expasy.org/templates/7kj2">7kj2</a></td></tr>
+
+<tr><td width="80%">SARS-CoV-2 Spike Glycoprotein with three ACE2 Bound</td><td><a href="https://swissmodel.expasy.org/templates/7kj4">7kj4</a></td></tr>
+
+<tr><td width="80%">SARS-CoV-2 Spike Glycoprotein with two ACE2 Bound</td><td><a href="https://swissmodel.expasy.org/templates/7kj3">7kj3</a></td></tr>
+
+<tr><td width="80%">SARS-CoV-2 Spike Glycoprotein, prefusion with one RBD up conformation</td><td><a href="https://swissmodel.expasy.org/templates/7kj5">7kj5</a></td></tr>
+
+<tr><td width="80%">SARS-CoV-spike RBD bound to two neutralising nanobodies</td><td><a href="https://swissmodel.expasy.org/templates/7b17">7b17</a></td></tr>
+
+<tr><td width="80%">Soluble Epoxide Hydrolase complexed with a carboxamide inhibitor</td><td><a href="https://swissmodel.expasy.org/templates/4jnc">4jnc</a></td></tr>
+
+<tr><td width="80%">Soluble Epoxide Hydrolase in complex with pyrazole antagonist</td><td><a href="https://swissmodel.expasy.org/templates/3otq">3otq</a></td></tr>
+
+<tr><td width="80%">Soluble epoxide hydrolase in complex with 1-(4-((4-(tert-butyl)morpholin-2-yl)methoxy)phenyl)-3-cyclohexylurea</td><td><a href="https://swissmodel.expasy.org/templates/6hgx">6hgx</a></td></tr>
+
+<tr><td width="80%">Soluble epoxide hydrolase in complex with 2-(4-fluorophenyl)-N-(4-phenoxybenzyl)ethanamine</td><td><a href="https://swissmodel.expasy.org/templates/6hgw">6hgw</a></td></tr>
+
+<tr><td width="80%">Soluble epoxide hydrolase in complex with 3-((R)-3-(1-hydroxyureido)but-1-yn-1-yl)-N-((S)-3-phenyl-3-(4-trifluoromethoxy)phenyl)propyl)benzamide</td><td><a href="https://swissmodel.expasy.org/templates/6yl4">6yl4</a></td></tr>
+
+<tr><td width="80%">Soluble epoxide hydrolase in complex with LK864</td><td><a href="https://swissmodel.expasy.org/templates/6fr2">6fr2</a></td></tr>
+
+<tr><td width="80%">Soluble epoxide hydrolase in complex with talinolol</td><td><a href="https://swissmodel.expasy.org/templates/6hgv">6hgv</a></td></tr>
+
+<tr><td width="80%">Solution state NMR structures of the RNA recognition motif (RRM) domain of human CstF-64</td><td><a href="https://swissmodel.expasy.org/templates/6q2i">6q2i</a></td></tr>
+
+<tr><td width="80%">Structural analysis and biological activities of BXL0124, a Gemini analog of Vitamin D</td><td><a href="https://swissmodel.expasy.org/templates/5lga">5lga</a></td></tr>
+
+<tr><td width="80%">Structural basis for control of antibiotic production by bacterial hormones</td><td><a href="https://swissmodel.expasy.org/templates/6srn">6srn</a></td></tr>
+
+<tr><td width="80%">Structural comparison of cellular retinoic acid binding protein I and II in the presence and absence of natural and synthetic ligands</td><td><a href="https://swissmodel.expasy.org/templates/7a9y">7a9y</a>, <a href="https://swissmodel.expasy.org/templates/7a9z">7a9z</a>, <a href="https://swissmodel.expasy.org/templates/7aa0">7aa0</a></td></tr>
+
+<tr><td width="80%">Structural comparison of cellular retinoic acid binding protiens I and II in the presence and absence of natural and synthetic ligands</td><td><a href="https://swissmodel.expasy.org/templates/7aa1">7aa1</a></td></tr>
+
+<tr><td width="80%">Structure of ArrX Y138A mutant protein bound to sulfate from Chrysiogenes arsenatis</td><td><a href="https://swissmodel.expasy.org/templates/6x8w">6x8w</a></td></tr>
+
+<tr><td width="80%">Structure of Blood Coagulation Factor VIII in Complex with an Anti-C1 Domain Pathogenic Antibody Inhibitor</td><td><a href="https://swissmodel.expasy.org/templates/7k66">7k66</a></td></tr>
+
+<tr><td width="80%">Structure of Coronavirus Spike from Smuggled Guangdong Pangolin</td><td><a href="https://swissmodel.expasy.org/templates/7bbh">7bbh</a></td></tr>
+
+<tr><td width="80%">Structure of L-lysine oxidase precursor</td><td><a href="https://swissmodel.expasy.org/templates/7d4c">7d4c</a></td></tr>
+
+<tr><td width="80%">Structure of L-lysine oxidase precursor in complex with L-lysine (1.0 M)</td><td><a href="https://swissmodel.expasy.org/templates/7d4e">7d4e</a></td></tr>
+
+<tr><td width="80%">Structure of L-lysine oxidase precursor in complex with L-lysine (1.24M)</td><td><a href="https://swissmodel.expasy.org/templates/7d4d">7d4d</a></td></tr>
+
+<tr><td width="80%">Structure of RNase A-K7H/R10H in complex with 3'-CMP</td><td><a href="https://swissmodel.expasy.org/templates/5et4">5et4</a></td></tr>
+
+<tr><td width="80%">Structure of S. pombe Mei2 RRM3 domain bound to RNA</td><td><a href="https://swissmodel.expasy.org/templates/6yym">6yym</a></td></tr>
+
+<tr><td width="80%">Structure of chloride soak form of ArrX from Chrysiogenes arsenatis</td><td><a href="https://swissmodel.expasy.org/templates/7l22">7l22</a></td></tr>
+
+<tr><td width="80%">Structure of pHis Fab (SC1-1) in complex with pHis mimetic peptide</td><td><a href="https://swissmodel.expasy.org/templates/6x1s">6x1s</a></td></tr>
+
+<tr><td width="80%">Structure of pHis Fab (SC39-4) in complex with pHis mimetic peptide</td><td><a href="https://swissmodel.expasy.org/templates/6x1u">6x1u</a></td></tr>
+
+<tr><td width="80%">Structure of pHis Fab (SC44-8) in complex with pHis mimetic peptide</td><td><a href="https://swissmodel.expasy.org/templates/6x1v">6x1v</a></td></tr>
+
+<tr><td width="80%">Structure of pHis Fab (SC50-3) in complex with pHis mimetic peptide</td><td><a href="https://swissmodel.expasy.org/templates/6x1t">6x1t</a></td></tr>
+
+<tr><td width="80%">Structure of pHis Fab (SC56-2) in complex with pHis mimetic peptide</td><td><a href="https://swissmodel.expasy.org/templates/6x1w">6x1w</a></td></tr>
+
+<tr><td width="80%">Structure of the Cydia pomonella Granulovirus kinase, PK-1</td><td><a href="https://swissmodel.expasy.org/templates/6vvg">6vvg</a></td></tr>
+
+<tr><td width="80%">Structure of the acetate-bound form of ArrX from Chrysiogenes arsenatis</td><td><a href="https://swissmodel.expasy.org/templates/6xab">6xab</a></td></tr>
+
+<tr><td width="80%">Structure of the arsenate-bound form of ArrX from Chrysiogenes arsenatis</td><td><a href="https://swissmodel.expasy.org/templates/6xl2">6xl2</a></td></tr>
+
+<tr><td width="80%">Structure of the formate-bound form of ArrX from Chrysiogenes arsenatis</td><td><a href="https://swissmodel.expasy.org/templates/6xad">6xad</a></td></tr>
+
+<tr><td width="80%">Structure of the malonate-bound form of ArrX from Chrysiogenes arsenatis</td><td><a href="https://swissmodel.expasy.org/templates/6x9g">6x9g</a></td></tr>
+
+<tr><td width="80%">Structure-activity relationship study of vitamin D analogs with oxolane group in their side chain</td><td><a href="https://swissmodel.expasy.org/templates/5nky">5nky</a></td></tr>
+
+<tr><td width="80%">Taka-amylase</td><td><a href="https://swissmodel.expasy.org/templates/6yq7">6yq7</a></td></tr>
+
+<tr><td width="80%">Taka-amylase in complex with alpha-glucosyl epi-cyclophellitol cyclosulfate inhibitor</td><td><a href="https://swissmodel.expasy.org/templates/6yqb">6yqb</a></td></tr>
+
+<tr><td width="80%">Taka-amylase in complex with alpha-glucosyl epi-cyclophellitol epoxide inhibitor</td><td><a href="https://swissmodel.expasy.org/templates/6yq9">6yq9</a>, <a href="https://swissmodel.expasy.org/templates/6yqc">6yqc</a></td></tr>
+
+<tr><td width="80%">Ternary complex crystal structure of secondary alcohol dehydrogenases from the Thermoanaerobacter ethanolicus mutants C295 and I86A provides better understanding of catalytic mechanism</td><td><a href="https://swissmodel.expasy.org/templates/7jns">7jns</a></td></tr>
+
+<tr><td width="80%">Tetragonal structure of human protein kinase CK2 catalytic subunit in complex with a heparin oligo saccharide</td><td><a href="https://swissmodel.expasy.org/templates/7b8i">7b8i</a></td></tr>
+
+<tr><td width="80%">The NAD+-bound form of human NSDHL</td><td><a href="https://swissmodel.expasy.org/templates/6jkh">6jkh</a></td></tr>
+
+<tr><td width="80%">The NAD+-free form of human NSDHL</td><td><a href="https://swissmodel.expasy.org/templates/6jkg">6jkg</a></td></tr>
+
+<tr><td width="80%">The crystal structure of kanamycin B dioxygenase (KanJ) from Streptomyces kanamyceticus complex with nickel, sulfate and chloride</td><td><a href="https://swissmodel.expasy.org/templates/6s0r">6s0r</a></td></tr>
+
+<tr><td width="80%">The crystal structure of kanamycin B dioxygenase (KanJ) from Streptomyces kanamyceticus in complex with nickel and 2-oxoglutarate</td><td><a href="https://swissmodel.expasy.org/templates/6s0u">6s0u</a></td></tr>
+
+<tr><td width="80%">The crystal structure of kanamycin B dioxygenase (KanJ) from Streptomyces kanamyceticus in complex with nickel and kanamycin B sulfate</td><td><a href="https://swissmodel.expasy.org/templates/6s0w">6s0w</a></td></tr>
+
+<tr><td width="80%">The crystal structure of kanamycin B dioxygenase (KanJ) from Streptomyces kanamyceticus in complex with nickel, neamine and sulfate</td><td><a href="https://swissmodel.expasy.org/templates/6s0v">6s0v</a></td></tr>
+
+<tr><td width="80%">The crystal structure of kanamycin B dioxygenase (KanJ) from Streptomyces kanamyceticus in complex with nickel, ribostamycin B and 2-oxoglutarate</td><td><a href="https://swissmodel.expasy.org/templates/6s0s">6s0s</a></td></tr>
+
+<tr><td width="80%">The crystal structure of kanamycin B dioxygenase (KanJ) from Streptomyces kanamyceticus in complex with nickel, sulfate, soaked with iodide</td><td><a href="https://swissmodel.expasy.org/templates/6s0t">6s0t</a></td></tr>
+
+<tr><td width="80%">The nucleosome structure after H2A-H2B exchange</td><td><a href="https://swissmodel.expasy.org/templates/6v2k">6v2k</a></td></tr>
+
+<tr><td width="80%">The structure of the actin filament uncapping complex mediated by twinfilin</td><td><a href="https://swissmodel.expasy.org/templates/7ccc">7ccc</a></td></tr>
+
+<tr><td width="80%">Trypanosoma brucei mitochondrial ribosome large subunit assembly intermediate</td><td><a href="https://swissmodel.expasy.org/templates/7aoi">7aoi</a></td></tr>
+
+<tr><td width="80%">Ubiquitin ligation to F-box protein substrates by SCF-RBR E3-E3 super-assembly: CUL1-RBX1-SKP1-SKP2-CKSHS1-p27~Ub~ARIH1. Transition State 2</td><td><a href="https://swissmodel.expasy.org/templates/7b5m">7b5m</a></td></tr>
+
+<tr><td width="80%">VDR complex</td><td><a href="https://swissmodel.expasy.org/templates/5ow7">5ow7</a></td></tr>
+
+<tr><td width="80%">VDR-ZK168281 complex</td><td><a href="https://swissmodel.expasy.org/templates/6t2m">6t2m</a></td></tr>
+
+<tr><td width="80%">Vitamin D nuclear receptor complex 1</td><td><a href="https://swissmodel.expasy.org/templates/6fod">6fod</a></td></tr>
+
+<tr><td width="80%">Vitamin D nuclear receptor complex 2</td><td><a href="https://swissmodel.expasy.org/templates/6fo9">6fo9</a></td></tr>
+
+<tr><td width="80%">Vitamin D nuclear receptor complex 3</td><td><a href="https://swissmodel.expasy.org/templates/6fo7">6fo7</a></td></tr>
+
+<tr><td width="80%">Vitamin D nuclear receptor complex 4</td><td><a href="https://swissmodel.expasy.org/templates/6fo8">6fo8</a></td></tr>
+
+<tr><td width="80%">Vitamin D receptor complex</td><td><a href="https://swissmodel.expasy.org/templates/5ow9">5ow9</a>, <a href="https://swissmodel.expasy.org/templates/5owd">5owd</a></td></tr>
+
+<tr><td width="80%">Vitamin D receptor complex 5</td><td><a href="https://swissmodel.expasy.org/templates/6fob">6fob</a></td></tr>
+
+<tr><td width="80%">Wt pig RyR1 in complex with apoCaM, EGTA condition (class 1 and 2, closed)</td><td><a href="https://swissmodel.expasy.org/templates/6x32">6x32</a></td></tr>
+
+<tr><td width="80%">Wt pig RyR1 in complex with apoCaM, EGTA condition (class 3, open)</td><td><a href="https://swissmodel.expasy.org/templates/6x33">6x33</a></td></tr>
+
+<tr><td width="80%">X-ray structure of mutated arabinofuranosidase</td><td><a href="https://swissmodel.expasy.org/templates/6zt6">6zt6</a>, <a href="https://swissmodel.expasy.org/templates/6zt7">6zt7</a>, <a href="https://swissmodel.expasy.org/templates/6zt8">6zt8</a>, <a href="https://swissmodel.expasy.org/templates/6zt9">6zt9</a>, <a href="https://swissmodel.expasy.org/templates/6zta">6zta</a></td></tr>
+
+<tr><td width="80%">apo Structure of Leucyl aminopeptidase from Trypanosoma cruzi</td><td><a href="https://swissmodel.expasy.org/templates/5ntf">5ntf</a></td></tr>
+
+<tr><td width="80%">bovine ATP synthase dimer state1:state1</td><td><a href="https://swissmodel.expasy.org/templates/7ajb">7ajb</a></td></tr>
+
+<tr><td width="80%">bovine ATP synthase dimer state1:state2</td><td><a href="https://swissmodel.expasy.org/templates/7ajc">7ajc</a></td></tr>
+
+<tr><td width="80%">bovine ATP synthase dimer state1:state3</td><td><a href="https://swissmodel.expasy.org/templates/7ajd">7ajd</a></td></tr>
+
+<tr><td width="80%">bovine ATP synthase dimer state2:state1</td><td><a href="https://swissmodel.expasy.org/templates/7aje">7aje</a></td></tr>
+
+<tr><td width="80%">bovine ATP synthase dimer state2:state2</td><td><a href="https://swissmodel.expasy.org/templates/7ajf">7ajf</a></td></tr>
+
+<tr><td width="80%">bovine ATP synthase dimer state2:state3</td><td><a href="https://swissmodel.expasy.org/templates/7ajg">7ajg</a></td></tr>
+
+<tr><td width="80%">bovine ATP synthase dimer state3:state1</td><td><a href="https://swissmodel.expasy.org/templates/7ajh">7ajh</a></td></tr>
+
+<tr><td width="80%">bovine ATP synthase dimer state3:state2</td><td><a href="https://swissmodel.expasy.org/templates/7aji">7aji</a></td></tr>
+
+<tr><td width="80%">bovine ATP synthase dimer state3:state3</td><td><a href="https://swissmodel.expasy.org/templates/7ajj">7ajj</a></td></tr>
+
+<tr><td width="80%">cryo-EM structure of human RNA polymerase III in apo state</td><td><a href="https://swissmodel.expasy.org/templates/7d59">7d59</a></td></tr>
+
+<tr><td width="80%">cryo-EM structure of human RNA polymerase III in elongating state</td><td><a href="https://swissmodel.expasy.org/templates/7d58">7d58</a></td></tr>
+
+<tr><td width="80%">human sEH Phosphatase in complex with 3-4-3,4-dichlorophenyl-5-phenyl-1,3-oxazol-2-yl-benzoic-acid</td><td><a href="https://swissmodel.expasy.org/templates/5mwa">5mwa</a></td></tr>
+
+<tr><td width="80%">in meso full-length rat KMO in complex with a pyrazoyl benzoic acid inhibitor</td><td><a href="https://swissmodel.expasy.org/templates/6lkd">6lkd</a></td></tr>
+
+<tr><td width="80%">in meso full-length rat KMO in complex with an inhibitor identified via DNA-encoded chemical library screening</td><td><a href="https://swissmodel.expasy.org/templates/6lke">6lke</a></td></tr>
+
+<tr><td width="80%">ligand complex structure of soluble epoxide hydrolase</td><td><a href="https://swissmodel.expasy.org/templates/5ai4">5ai4</a>, <a href="https://swissmodel.expasy.org/templates/5ak4">5ak4</a>, <a href="https://swissmodel.expasy.org/templates/5aln">5aln</a>, <a href="https://swissmodel.expasy.org/templates/5alo">5alo</a>, <a href="https://swissmodel.expasy.org/templates/5alp">5alp</a>, <a href="https://swissmodel.expasy.org/templates/5alq">5alq</a>, <a href="https://swissmodel.expasy.org/templates/5alr">5alr</a>, <a href="https://swissmodel.expasy.org/templates/5alt">5alt</a>, <a href="https://swissmodel.expasy.org/templates/5alu">5alu</a>, <a href="https://swissmodel.expasy.org/templates/5alv">5alv</a>, <a href="https://swissmodel.expasy.org/templates/5alw">5alw</a>, <a href="https://swissmodel.expasy.org/templates/5alx">5alx</a>, <a href="https://swissmodel.expasy.org/templates/5aly">5aly</a>, <a href="https://swissmodel.expasy.org/templates/5alz">5alz</a>, <a href="https://swissmodel.expasy.org/templates/5am0">5am0</a>, <a href="https://swissmodel.expasy.org/templates/5am1">5am1</a>, <a href="https://swissmodel.expasy.org/templates/5am4">5am4</a>, <a href="https://swissmodel.expasy.org/templates/5am5">5am5</a></td></tr>
+
+</tbody></table></div></li>
+
+</ul>
+</div></div><div id="loginForm" style="width:600px;display:none;padding-top:12px; text-align:center;"></div><footer class="footer hidden-print"><div id="sib_footer"><ul class="list-inline" style="margin-bottom:0px; padding-bottom:4px;padding-top:4px;"><li><a href="https://www.sib.swiss/">Swiss Institute of Bioinformatics</a></li><li><a href="https://www.biozentrum.unibas.ch/research/researchgroups/overview/unit/schwede/">Schwede Group</a></li><li><a href="mailto:mouseover@for.address" class="swissmodelContactRef">Contact Us</a></li><li><a href="https://swissmodel.expasy.org/docs/terms_of_use">Terms of use</a></li><li class="pull-right"><a id="sib_footer_gototop" onclick="window.scrollTo(0,0);"><i class="glyphicon glyphicon-arrow-up"></i> Back to the Top</a></li></ul><div class="clearfix"></div></div></footer><script src="../static/js/jquery-3.4.1.min.js"></script><script src="../static/js/jquery-ui.min.js"></script><script src="../static/js/bootstrap-3.3.7.min.js"></script><script src="../static/js/jquery.fancybox.pack.js"></script><script language="javascript">
+$(document).ready(
+	function()
+	{
+		fetchUpdate('2021-02-24');
+	});
+
+function fetchUpdate(d)
+{
+	$('#updateDiv').html('<img src="/static/images/loadingAnimation.gif" align="absmiddle">...loading data for '+d+'...');
+	$('#updateDiv').load('update/'+d,
+		function()
+		{
+			$('#updateDiv i').on('click', function()
+				{
+					if($(this).hasClass('glyphicon-chevron-down'))
+						$(this).removeClass('glyphicon-chevron-down')
+								.addClass('glyphicon-chevron-up');
+					else
+						$(this).removeClass('glyphicon-chevron-up')
+								.addClass('glyphicon-chevron-down');
+				});
+		}
+	);
+}
+</script><script>
+    $('a.smng-help').append('<icon class="glyphicon glyphicon-question-sign"></i>');
+    $(document).on('click','a.smng-help',function()
+    { 
+        window.open($(this).attr('href'),
+            'Help',
+            'width=920,height=600,left=20,top=100,directories=no,menubar=yes,toolbar=yes,'
+                +'status=no,scrollbars=yes,resizable=no');
+        return false;
+    });
+
+     $('a.swissmodelContactRef')
+        .on('mouseover',function()
+            {
+                $(this).attr('href',["ch", ".", "nibas", "l@u",
+             "mode", "-swiss",
+              ":help", "to", "ail", "m"].reverse().join(''));
+                $(this).off('mouseover');
+            });
+
+     function showLogin()
+     {
+        $('#loginForm')
+            .load('/login', { 'csrfmiddlewaretoken':'0KjZBPvZQRlF0aqtF63KVJCXyPhfFJmwna90iX32Ei7ax3XVxVKmhxEOa1Sn9aXm' },
+                function()
+                {
+                    $("<a href='#loginForm'/>'").fancybox().trigger('click');  
+                    $('#id_username').focus();
+                });
+        
+     } 
+     function createAccount()
+     {
+        $('#loginForm')
+            .load('/create_account',
+                function()
+                {
+                    $("<a href='#loginForm'/>'").fancybox().trigger('click'); 
+                    $('#id_username').focus();  
+                });
+     }
+     
+</script>
+</body></html>

@@ -1,0 +1,262 @@
+/* Overriding of JQuery UI rules*/
+.ui-dialog{font-size: 80%;}
+
+.ui-accordion{font-size: 75%;}
+/**/
+
+/*Results table style*/
+table#ref-tab{
+	text-align: center;
+	margin-left: 250px;
+	margin-top: 40px;
+}
+
+table#res-tab{
+	width:100%;
+	text-align: center;
+	margin-top: 20px;
+}
+
+span.res-avail{
+	font-weight: normal;
+	visibility: hidden;
+}
+
+div#static-page{
+	padding: 10px;
+	font-size: 80%;
+}
+
+td.res-tab-td{
+	padding: 10px;
+	background-color: #EEEEEE;
+}
+
+th.res-tab-th{
+	background-color: #DDD;
+	border: 1px solid #FFF;
+	padding: 10px;
+	vertical-align: top;
+}
+
+/**/
+/*General CSS*/
+a, img {
+    border:none;
+}
+
+ul.for_text {
+    list-style-type: circle;
+    list-style-position:inside;
+    padding-left: 10px;
+}
+
+div.work-name{
+	margin: 1em;
+	color: black;
+	clear: both;
+	font-weight: bold;
+	font-size: 110%;
+}
+
+div.intro{
+	width: 600px;
+	line-height: 20px;
+	border: 1px solid #AAA;
+	background-color: #DADADA;
+	padding: 5px;
+	margin-bottom:20px;
+	text-align: left;
+	font-size: 110%;
+}
+
+div.imp-inf{
+	background-color: #DADADA;
+	border: 1px solid #AAA;
+	padding: 10px;
+	margin: 10px 23px;
+	text-align: left;
+	font-size: 90%;
+}
+
+div.log-el{
+	padding: 2px 2px 3px 2px;
+	margin: 2px 0px 2px 0px;
+}
+div.molck-opt-el{
+  padding: 4px 0px 6px 0px;
+  font-size: 90%;
+}
+
+
+/* Form styles */
+
+form {  /* set width in form, not fieldset (still takes up more room w/ fieldset width */
+  margin: 0;
+  padding: 0;
+
+}
+
+form fieldset {
+  border: none;	
+  /*padding: 10px;         padding in fieldset support spotty in IE */
+}
+
+
+form label {
+        display: block;  /* block float the labels to left column, set a width */
+        float: left;
+        width: 130px;
+        padding: 0;
+        margin: 5px 5px 0; /* set top margin same as form input - textarea etc. elements */
+        text-align: right;
+}
+
+label.error {
+	display: block;
+	float: none; 
+	color: red;
+	width: auto;
+	text-align: left;
+	vertical-align:top;
+	margin: 5px 0 2px 87px; /* instructions/comments left margin set to align w/ right column inputs */
+    padding: 5px 3px 0px;
+    font-size: 88%;
+}
+
+
+select.error, textarea.error, input.error {
+    border: 1px solid #FF0000;
+}
+
+
+form input#reset {
+        margin-left:20em; /* set margin-left back to zero on reset button (set above) */
+}
+
+textarea { overflow: auto; }
+
+form small {
+        display: block;
+        margin: 0 0 5px 87px; /* instructions/comments left margin set to align w/ right column inputs */
+        padding: 5px 3px 10px;
+        font-size: 78%;
+}
+
+form .required{font-weight:bold;} /* uses class instead of div, more efficient */
+
+form br {
+        clear:left; /* setting clear on inputs didn't work consistently, so brs added for degrade */
+}
+
+
+legend {
+  padding: 0.2em 0.5em;
+  border:none;
+  font-size:110%;
+  text-align:left;
+  }
+
+h1 {
+	margin 0;
+}
+
+
+
+
+#header {
+	background: #AAA;
+	font-weight: bold;
+	padding:5px 10px;
+}
+
+#main {
+	padding:10px;
+  text-align: left;
+  background-color: #EEE;  
+}
+
+#sidebar {
+	float: right;
+	width: 260px;
+	padding:10px;
+    text-align: left;
+    height: inherit;
+    background-color: #EEE;
+    
+}
+
+#footer {
+	background: #AAA;
+	clear: both;
+	padding:5px 80px;
+	font-size: 8pt;
+}
+
+
+#input-form{
+	padding: 10px;
+}
+
+
+#breadcrumb {
+	padding:5px 10px;
+	background: #EEE;
+	border-bottom: 1px solid #AAA;
+	font-size: 80%;
+}
+
+#breadcrumb ul {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+
+#breadcrumb li {
+	display:inline;
+	margin:0;
+	padding:15px;
+}
+
+a#molck-opt-sep {
+	text-decoration: underline;
+	color: #00E;
+	cursor: pointer;
+}
+
+div.section-sep {
+	background-color: #cacaca;
+	padding: 5px;
+	margin: 10px;
+}
+
+div.subsection{
+	margin: 1em;
+}
+
+div.sidebar-el{
+	padding: 10px 0px 5px 0px;
+	font-size: 90%;
+}
+
+li.sidebar-el {
+	margin-top:5px;
+	font-size: 80%;
+}
+
+span.warning {
+	color: #ff3333;
+}
+
+#sub-button{
+	margin-top:1em;
+}
+
+input.molck-opt-form {
+	margin-left: 90px;
+}
+
+.error-log{
+	color: #FF0000;
+	font-weight: bold;
+}

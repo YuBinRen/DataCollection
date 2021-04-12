@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<!-- saved from url=(0041)https://swissmodel.expasy.org/comparison/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><!-- Global site tag (gtag.js) - Google Analytics --><script type="text/javascript" async="" src="../static/js/analytics.js"></script><script async="" src="../static/js/js"></script><script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-8667194-2');
+    </script><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="ROBOTS" content="ALL"><title>Structure Comparison</title><meta name="description" content="SWISS-MODEL is a fully automated protein structure homology-modelling server. The purpose of this server is to make protein modelling accessible to all life science researchers worldwide."><link rel="stylesheet" type="text/css" href="../static/css/bootstrap-3.3.7.min.css" media="screen,print"><link rel="stylesheet" type="text/css" href="../static/css/bootstrap-theme-3.3.7.min.css" media="screen,print"><link rel="stylesheet" type="text/css" href="../static/css/master.css" media="all"><link rel="stylesheet" type="text/css" href="../static/css/jquery.fancybox.css"><link rel="stylesheet" type="text/css" href="../static/css/jquery-ui.min.css"><link rel="shortcut icon" href="https://swissmodel.expasy.org/static/images/favicon.png" type="image/png"><link rel="apple-touch-icon" href="https://swissmodel.expasy.org/static/images/apple-touch-57.png"><link rel="apple-touch-icon" sizes="72x72" href="https://swissmodel.expasy.org/static/images/apple-touch-72.png"><link rel="apple-touch-icon" sizes="114x114" href="https://swissmodel.expasy.org/static/images/apple-touch-114.png"><style>
+#left-panel{
+  padding:0px 4px 0px 0px;
+}
+.superposeBtn {
+  color: #999;
+}
+.superposeOnThis {
+  color: #111 !important;
+}
+.superposeOnThisSeq {
+  font-weight:900;
+  border-top:1px solid #111;
+  border-bottom:1px solid #111;
+}
+[id^=range_] svg{ 
+  top:3.2px !important; 
+}
+.error{
+  color:#D71C1C;
+  font-weight:bold;
+  padding:12px;
+}
+.noborder > thead > tr > th, .noborder > tbody > tr > td {
+    border:0px;
+    padding:2px;
+}
+.rowHighlight td {
+  animation-name: fadeOut;
+  animation-duration: 3s;
+  animation-timing-function: ease-in; 
+}
+@-webkit-keyframes fadeOut {
+  0%     {background-color:rgba(100,200,200,.6);}
+  100.0% {background-color:transparent;}
+}
+@keyframes fadeOut {
+  0%     {background-color:rgba(100,200,200,.6);}
+  100.0% {background-color:transparent;}
+}
+
+.invalidTarget td{
+  opacity:0.4;
+}
+
+.rowFade td {
+  background-color: rgba(200,200,200,.6);
+}
+.loader {
+    border: 8px solid #EEE; /* Light grey */
+    border-top: 8px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+#modelSelection table{
+  margin-bottom:8px;
+}
+#modelSelection table td{
+  vertical-align:middle;
+}
+#modelSelection p{
+  margin-bottom:0px;
+}
+#varianceHeatmap {
+  margin:4px;
+  cursor:crosshair;
+  border:1px solid #ccc; 
+}
+h4 {
+  font-family: Verdana;
+  font-size: 16px;
+  margin:0px 0px 4px 0px;
+}
+h4 .glyphicon{
+  top:-1px;
+}
+#consistencyTitle, #varianceTitle{
+  display:none;
+  padding-top:32px;
+}
+#consistencyTitle i, #varianceTitle i {
+  font-size:14px;
+  color: #999;
+}
+.popover-content {
+    padding: 9px 12px;
+}
+.checkbox-inline {
+  vertical-align: baseline;
+}
+.checkbox-inline input {
+  margin-top: 2px;
+}
+#molprobityTable > tbody > tr {
+  display:none;
+}
+#molprobityTable span:hover{
+  text-decoration: underline; 
+  cursor: pointer  
+}
+#molprobityTable, #allFeaturesTable {
+  margin-bottom:0px;
+}
+.feature-button{
+    width:110px;
+    padding:4px 4px;
+}
+#allFeatures {
+  max-width:450px;
+}
+#allFeatures td{
+  font-size:.8em;
+}
+</style></head><body><nav class="navbar navbar-default"><div class="container-fluid"><div class="navbar-header"><button aria-controls="navbar" aria-expanded="false" data-target=".collapseThis" data-toggle="collapse" class="navbar-toggle collapsed" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="hidden-xs hidden-sm navbar-brand" style="margin-left:0px;padding:8px 4px 0px 0px;" title="SIB Swiss Institute of Bioinformatics" href="https://www.sib.swiss/" target="_blank"><img src="../static/img/sib_logo_small.png" alt="SIB logo" style="max-height:50px"></a><a class="hidden-xs hidden-sm navbar-brand" style="margin-left:0px; padding:8px 0px 0px 4px;" title="Biozentrum | University of Basel | The Center for Molecular Life Sciences" href="http://www.biozentrum.unibas.ch/" target="_blank"><img src="../static/img/biozentrum_en.png" alt="Biozentrum logo" style="max-height:36px"></a><a class="hidden-xs hidden-sm navbar-brand" href="https://swissmodel.expasy.org/" style="margin-left:0px;padding-left:0px;padding-right:0px;font-size:28px;">SWISS-MODEL</a><a id="navbar-brand" class="hidden-md hidden-lg navbar-brand" href="https://swissmodel.expasy.org/" style="margin-left:0px;font-size:20px;">SWISS-MODEL</a></div><div id="navbar" class="collapseThis navbar-collapse collapse"><!-- Collect the nav links, forms, and other content for toggling --><ul class="nav navbar-nav navbar-right"><li class="dropdown "><a href="https://swissmodel.expasy.org/interactive" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Modelling</a><ul class="dropdown-menu" role="menu"><li><a class="text-left" href="https://swissmodel.expasy.org/interactive">myWorkspace</a></li><li><a class="text-left" href="https://swissmodel.expasy.org/interactive#alignment">Alignment Mode</a></li><li><a class="text-left" href="https://swissmodel.expasy.org/interactive#structure">User Template Mode</a></li><li><a class="text-left" href="https://swissmodel.expasy.org/interactive#deepview">DeepView Project Mode</a></li><li class="divider"></li><li><a class="text-left" href="https://swissmodel.expasy.org/templates/">Template Library</a></li></ul></li><li id="smrLink" class="dropdown "><a href="https://swissmodel.expasy.org/repository" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Repository</a><ul class="dropdown-menu" role="menu"><li><a href="https://swissmodel.expasy.org/repository">SWISS-MODEL Repository</a></li><li><a href="https://swissmodel.expasy.org/repository/user_annotation_upload">Annotation Projects</a></li></ul></li><li class="dropdown active"><a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Tools</a><ul class="dropdown-menu" role="menu"><li><a href="https://swissmodel.expasy.org/qmean/" tabindex="-1">QMEAN</a></li><li><a href="https://swissmodel.expasy.org/lddt" tabindex="-1">lDDT</a></li><li><a href="https://swissmodel.expasy.org/assess">Structure Assessment</a></li><li><a href="https://swissmodel.expasy.org/comparison/">Structure Comparison</a></li></ul></li><li class="dropdown "><a href="https://swissmodel.expasy.org/comparison/#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Documentation</a><ul class="dropdown-menu" role="menu"><li><a href="https://swissmodel.expasy.org/docs/help" tabindex="-1">SWISS-MODEL</a></li><li><a href="https://swissmodel.expasy.org/docs/examples" tabindex="-1">Examples</a></li><li><a href="https://swissmodel.expasy.org/docs/tutorial" tabindex="-1">Video Tutorial</a></li><li><a href="https://swissmodel.expasy.org/docs/blog" tabindex="-1">New Features</a></li><li role="separator" class="divider"></li><li><a href="https://swissmodel.expasy.org/docs/repository_help" tabindex="-1">SWISS-MODEL Repository</a></li><li role="separator" class="divider"></li><li><a href="https://swissmodel.expasy.org/qmean/help" tabindex="-1">QMEAN</a></li><li><a href="https://swissmodel.expasy.org/lddt/help/" tabindex="-1">lDDT</a></li><li><a href="https://swissmodel.expasy.org/assess/help">Structure Assessment</a></li><li><a href="https://swissmodel.expasy.org/comparison/help">Structure Comparison</a></li><li role="separator" class="divider"></li><li><a href="https://swissmodel.expasy.org/course" tabindex="-1">Protein Structure Course</a></li><li role="separator" class="divider"></li><li><a href="https://swissmodel.expasy.org/docs/references" tabindex="-1">References</a></li></ul></li><li><a onclick="showLogin();">Log in</a></li><li><a onclick="createAccount();">Create Account</a></li></ul></div></div><!-- /container-fluid --></nav><div id="tools"><div id="alignmentOptions" style="display:none;"><form class="alignmentOptions form form-inline"><div id="exportOptions" style="padding-bottom:8px"><b>Export Alignment</b><br><button type="button" class="btn btn-sm btn-default" onclick="$(&#39;#alignTbl&#39;+$(&#39;#currentAlignmentIndex&#39;).val()).alignment(&#39;exportAlignment&#39;, {&#39;format&#39;:&#39;FASTA&#39;});">FASTA format</button><button type="button" class="btn btn-sm btn-default" onclick="$(&#39;#alignTbl&#39;+$(&#39;#currentAlignmentIndex&#39;).val()).alignment(&#39;exportAlignment&#39;, {&#39;format&#39;:&#39;ClustalW&#39;});">Clustal Format</button><button type="button" class="btn btn-sm btn-default" onclick="$(&#39;.alTbl&#39;).first().alignment(&#39;html2image&#39;)">PNG Image</button></div><div><div id="colourOptions" style="padding-top:8px"><b>Colour Scheme </b><a class="smng-help" href="https://swissmodel.expasy.org/docs/help#colour_schemes"></a><div id="fadeMismatches"><label class="inline checkbox"><input type="checkbox" id="targetMatch_cb" onclick="$(&#39;.alignTbl&#39;).alignment(&#39;targetMismatch&#39;,{match:this.checked})" checked="checked">Fade Mismatches</label></div><label><input type="radio" name="csRadioGroup" id="clustalButton" value="clustal">Clustal</label><label><input type="radio" name="csRadioGroup" id="hydrophobicButton" value="hydrophobic">Hydrophobic</label><label><input type="radio" name="csRadioGroup" id="sizeButton" value="size">Size</label><label><input type="radio" name="csRadioGroup" id="chargedButton" value="charged">Charged</label><label><input type="radio" name="csRadioGroup" id="polarButton" value="polar">Polar</label><label><input type="radio" name="csRadioGroup" id="prolineButton" value="proline">Proline</label><label><input type="radio" name="csRadioGroup" id="serThrButton" value="serThr">Ser/Thr</label><label><input type="radio" name="csRadioGroup" id="cysButton" value="cysteine">Cysteine</label><label><input type="radio" name="csRadioGroup" id="aliphaticButton" value="aliphatic">Aliphatic</label><label><input type="radio" name="csRadioGroup" id="aromaticButton" value="aromatic">Aromatic</label><label><input type="radio" name="csRadioGroup" id="bfactorButton" value="bfactor">Bfactor</label><label><input type="radio" name="csRadioGroup" id="bfactorRangeButton" value="bfactor_range">Bfactor Range</label><label><input type="radio" name="csRadioGroup" id="qmean_localButton" value="qmean_local" checked="checked">QMEAN</label><label><input type="radio" name="csRadioGroup" id="indelsButton" value="indels">Indels</label><label><input type="radio" name="csRadioGroup" id="chainButton" value="chain">Chain</label><label><input type="radio" name="csRadioGroup" id="uniqueChainButton" value="uniqueChain">Unique Chain</label><label><input type="radio" name="csRadioGroup" id="rainbowButton" value="rainbow" checked="checked">Rainbow</label><label title="Consistency with Ensemble"><input type="radio" name="csRadioGroup" id="consistencyButton" value="consistency">Consistency</label><label title="Consistency with Ensemble (Min-Max)" style="width:150px"><input type="radio" name="csRadioGroup" id="consistencyRangeButton" value="consistencyRange">Consistency (Relative)</label><br style="clear:both"><label><input type="radio" name="csRadioGroup" id="noColourButton" value="none">No Colour</label></div><table><tbody><tr><td><div style="margin-right:16px">Background</div></td><td><div style="height:16px; width:16px; border:1px solid #777;cursor:pointer;background-color:black" onclick="$(&#39;#bgColSlider&#39;).slider(&#39;value&#39;,0);"></div></td><td width="220px"><div id="bgColSlider" style="margin:8px"></div></td><td><div style="height:16px; width:16px; border:1px solid #777;cursor:pointer;background-color:white" onclick="$(&#39;#bgColSlider&#39;).slider(&#39;value&#39;,255);"></div></td></tr></tbody></table></div><div id="viewerSelect" style="padding-top:8px"><b>3D Viewer</b><br><label><input type="radio" name="3dRG" value="NGL" checked="checked">NGL</label><label><input type="radio" name="3dRG" value="PV">PV</label></div></form><div id="formattedAlignment" style="width:610px;height:470px;" class="fancy_box_swap"><label class="checkbox-inline"><select style="height:28px;width:150px;" class="form-control" name="alignmentFormatSelect" id="alignmentFormatSelect" onchange="$(&#39;.alignTbl&#39;).first().alignment(&#39;changeExportFormat&#39;)"><option value="FASTA" selected="selected">FASTA</option><option value="Multi FASTA">Multi FASTA</option><option value="ClustalW">ClustalW</option></select></label><button type="button" class="btn btn-sm btn-default" onclick="$(&#39;.alignTbl&#39;).first().alignment(&#39;html2image&#39;)">PNG</button><div align="center"><textarea name="formattedAlignmentTextarea" id="formattedAlignmentTextarea" style="margin-top:8px;font-family:&#39;Courier New&#39;, Courier, monospace; font-size:12px;width:100%;height:400px"></textarea></div></div></div><input type="hidden" id="currentAlignmentIndex" value=""></div><div id="main-content" style="padding-left:32px; margin-right:32px"><div class="row"><div id="left-panel" class="col-sm-4 col-lg-3"><div style="display:none"><div id="allFeatures" style="overflow:auto;"><div id="nofeatures">
+          No sequence features or MolProbity results for these structures
+        </div><div id="molprobityContainer" style="overflow:auto;max-height:30vh; margin-bottom:4px;"><h4 id="molprobityTitle">MolProbity Outliers</h4><table id="molprobityTable" class="table table-condensed"><tbody><tr><td><label class="checkbox-inline"><input class="mpCatCB checkbox" type="checkbox">Clashes
+                  </label></td><td id="outliers_clashes"></td></tr><tr><td><label class="checkbox-inline"><input class="mpCatCB checkbox" type="checkbox">Ramachandran
+                  </label></td><td id="outliers_ramachandran"></td></tr><tr><td><label class="checkbox-inline"><input class="mpCatCB checkbox" type="checkbox">Rotamers
+                  </label></td><td id="outliers_rotamers"></td></tr><tr><td><label class="checkbox-inline"><input class="mpCatCB checkbox" type="checkbox">C-Beta
+                  </label></td><td id="outliers_cbeta"></td></tr><tr><td><label class="checkbox-inline"><input class="mpCatCB checkbox" type="checkbox">Bad Bonds
+                  </label></td><td id="outliers_bond_lengths"></td></tr><tr><td><label class="checkbox-inline"><input class="mpCatCB checkbox" type="checkbox">Bad Angles
+                  </label></td><td id="outliers_bond_angles"></td></tr><tr><td><label class="checkbox-inline"><input class="mpCatCB checkbox" type="checkbox">Cis Non-Proline
+                  </label></td><td id="outliers_omega_cis_nonpro"></td></tr><tr><td><label class="checkbox-inline"><input class="mpCatCB checkbox" type="checkbox">Cis Prolines
+                  </label></td><td id="outliers_omega_cis_pro"></td></tr><tr><td><label class="checkbox-inline"><input class="mpCatCB checkbox" type="checkbox">Twisted Non-Proline
+                  </label></td><td id="outliers_omega_twisted_nonpro"></td></tr><tr><td><label class="checkbox-inline"><input class="mpCatCB checkbox" type="checkbox">Twisted Prolines
+                  </label></td><td id="outliers_omega_twisted_pro"></td></tr></tbody></table></div><div id="sequenceFeaturesContainer"><div style="overflow:auto; max-height:30vh;"><h4>Sequence Features</h4><div class="text-center" id="featureSelector" style="margin:8px 0 8px 0"></div><table id="allFeaturesTable" class="table table-condensed"><tbody></tbody></table></div></div></div></div><div id="nothingToSeeHere" style="padding:16px;"><p>No structures selected!</p><p>Compare your structures of choice from any SWISS-structure homology modelling
+      project with models/experimental structures in SWISS-MODEL Repository, or indeed compare structures
+      from your QMEAN projects and Structure Assessment uploads.</p><p>Find and click the "compare icon" (<span style="font-size:12px;"><label title="Add to Comparison List"><i style="color:#999; padding-right:4px" class="glyphicon glyphicon-align-center"></i><input type="checkbox" disabled="disabled"></label></span>)
+        beside your structures to compare them on this page.</p><p>For more information, see the <a href="https://swissmodel.expasy.org/comparison/help">Structure Comparison Help</a> page.</p><p>Try this <a href="javascript:showExample(&#39;calmodulin&#39;);">example with Calmodulin.</a></p><div id="exampleError" class="error"></div><p></p></div><div id="multipleTargets" style="display:none"><small><i>In this version of Structure Comparison, structures can only be compared if they share the same target sequence.</i></small><br>Please select the target sequence to align to:
+      <div id="targetSelect"></div><div id="targetMerge"><button id="undoButton" type="button" style="display:none" class="btn btn-xs btn-default" onclick="undo();">Undo</button><table id="targetMergeTable" class="table table-condensed"><tbody></tbody></table></div></div><div style="overflow:auto; max-height:400px;"><div id="modelSelection"></div></div><div class="text-right"><button id="clearComparisonBtn" style="display:none" type="button" class="btn btn-xs btn-default" onclick="removeModel(null);">Remove All</button></div><div style="margin-top:16px;" class="text-center"><button id="superposeBtn" type="button" disabled="disabled" class="btn btn-lg btn-primary" onclick="superpose();" style="display:none">Superpose</button><div id="superposeError" class="error"></div></div><div class="text-center"><h4 id="consistencyTitle"><a class="smng-help" href="https://swissmodel.expasy.org/comparison/help#consistency"></a>
+        Consistency with Ensemble <a href="https://swissmodel.expasy.org/comparison/" onclick="getVariance(&#39;consistency&#39;);return false;" class="button"><i class="glyphicon glyphicon glyphicon-download-alt"></i></a></h4><div id="consistency" style="height:250px;"></div></div><div class="text-center"><h4 id="varianceTitle"><a class="smng-help" href="https://swissmodel.expasy.org/comparison/help#variance"></a>
+        Ensemble Variance <a href="https://swissmodel.expasy.org/comparison/" onclick="getVariance(&#39;variance&#39;);return false;"><i class="glyphicon glyphicon glyphicon-download-alt"></i></a></h4><div id="varianceMap"></div><div id="varianceStatus" style="min-height:24px"></div></div></div><div id="right-panel" class="col-sm-8 col-lg-9" style="padding-right:0px"><div id="viewerWrapper" style="border: 1px solid #DDD; border-radius: 10px; padding:7px; margin-bottom:4px; height:300px; width:100%; position:relative"><div style="position:absolute; right:10px; top:10px; z-index:100;"><div id="pv_status" class="notNGL"></div><div id="ngl_status" class="notPV"></div></div><div id="viewerSettings" style="position:absolute; bottom:10px; right:10px; z-index: 10;"><div class="dropup pull-left"><a id="options_" class="btn btn-sm btn-default"><i class="glyphicon glyphicon-cog"></i></a><a id="features_" class="btn btn-sm btn-default" style="visibility: visible;" data-original-title="" title="">
+            Features
+          </a><button class="btn btn-sm btn-default" data-toggle="dropdown"><span style="margin-right:4px" id="repBtnLbl">Cartoon</span><b class="caret"></b></button><ul role="menu" class="dropdown-menu" style="min-width:10px"><li><a href="https://swissmodel.expasy.org/comparison/#" onclick="changeRep(&#39;cartoon&#39;);return false;">Cartoon</a></li><li><a href="https://swissmodel.expasy.org/comparison/#" onclick="changeRep(&#39;tube&#39;);return false;">Tube</a></li><li><a href="https://swissmodel.expasy.org/comparison/#" onclick="changeRep(&#39;trace&#39;);return false;">Trace</a></li><li><a href="https://swissmodel.expasy.org/comparison/#" onclick="changeRep(&#39;lines&#39;);return false;">Lines</a></li><li class="notPV"><a href="https://swissmodel.expasy.org/comparison/#" onclick="changeRep(&#39;ballAndStick&#39;);return false;">Ball+Stick</a></li><li class="notPV"><a href="https://swissmodel.expasy.org/comparison/#" onclick="changeRep(&#39;licorice&#39;);return false;">Licorice</a></li><li class="notPV"><a href="https://swissmodel.expasy.org/comparison/#" onclick="changeRep(&#39;hyperball&#39;);return false;">Hyperball</a></li><li class="notPV"><a href="https://swissmodel.expasy.org/comparison/#" onclick="changeRep(&#39;rope&#39;);return false;">Rope</a></li><li class="notPV"><a href="https://swissmodel.expasy.org/comparison/#" onclick="changeRep(&#39;surface&#39;);return false;">Surface</a></li><li class="notPV"><a href="https://swissmodel.expasy.org/comparison/#" onclick="changeRep(&#39;spacefill&#39;);return false;">Spacefill</a></li><li role="separator" class="notNGL divider"></li><li class="notNGL"><a href="https://swissmodel.expasy.org/comparison/#" onclick="changeRep(&#39;outline&#39;);return false;">Outline</a></li><li class="notNGL"><a href="https://swissmodel.expasy.org/comparison/#" onclick="changeRep(&#39;fog&#39;);return false;">Fog</a></li></ul></div><div class="dropup pull-left notPV"><button class="btn btn-sm btn-default" title="Take Snapshot of 3D Molecule" data-toggle="dropdown"><span class="glyphicon glyphicon-camera" style="margin-right:4px"></span><b class="caret"></b></button><ul role="menu" class="dropdown-menu" style="min-width:10px"><h6 class="dropdown-header">Background</h6><li><label style="padding-left: 20px; padding-right: 20px; white-space: nowrap; font-weight: normal;" onclick="event.stopPropagation();" title="Export snapshot with a transparent background"><input type="checkbox" id="snapshot_bg_transparent_checkbox" checked="checked">&nbsp;Transparent</label></li><h6 class="dropdown-header">Resolution</h6><li><a href="https://swissmodel.expasy.org/comparison/#" onclick="takeSnapshot(&#39;.png&#39;, 1);return false;">Low</a></li><li><a href="https://swissmodel.expasy.org/comparison/#" onclick="takeSnapshot(&#39;.png&#39;, 2);return false;">Medium</a></li><li><a href="https://swissmodel.expasy.org/comparison/#" onclick="takeSnapshot(&#39;.png&#39;, 4);return false;">High</a></li><li><a href="https://swissmodel.expasy.org/comparison/#" onclick="takeSnapshot(&#39;.png&#39;, 10);return false;">Extreme</a></li></ul></div><button class="btn btn-sm btn-default notNGL" title="Take Snapshot of 3D Molecule" onclick="takeSnapshot(&#39;.png&#39;);return false;"><i class="glyphicon glyphicon-camera"></i></button><button class="btn btn-sm btn-default spinButton" title="Start rotation" onclick="spin(true);$(&#39;.spinButton&#39;).toggle();"><i class="glyphicon glyphicon-play"></i></button><button class="btn btn-sm btn-default spinButton" style="display:none" title="Stop rotation" onclick="spin(false);$(&#39;.spinButton&#39;).toggle();"><i class="glyphicon glyphicon-pause"></i></button><button class="btn btn-sm btn-default" title="Reset" onclick="resetStructure();"><i class="glyphicon glyphicon-refresh"></i></button></div><div id="pv" style="display:none;width:100%;height:100%;position:relative;"></div><div id="ngl" style="display:none;width:100%;height:100%;position:relative;"></div></div><!-- end viewerWrapper --><div id="alignNowrap" class="align-nowrap" style="overflow:auto;max-height:130px;"><table cellpadding="0" cellspacing="0" class="alignTblContainer"><tbody><tr><td valign="top"><div class="hidden-print"><a id="options_Compare" class="glyphicon glyphicon-cog" style="color:#333;opacity:.7;margin-right:2px"></a></div></td><td valign="top"><table class="alignNameTbl" id="alignNameTblCompare" border="0" cellspacing="0" cellpadding="0"></table></td><td valign="top"><table class="alignTbl" id="alignTblCompare" border="0" cellspacing="0" cellpadding="0"></table><div id="alignTblCompare_features" style="z-index:-1; position: absolute;"></div></td></tr></tbody></table><div id="offscreen_selection" style="position:absolute; top:-5000px;"></div></div></div></div><form id="exportForm" method="POST" target="_blank"><input id="exportModels" name="models" type="hidden"><input type="hidden" name="csrfmiddlewaretoken" value="ITswvlaNR8gDvV74p6aUV5p33m0TmABV5jixctIQFz282OEwhVRwhTrUFyB1Q1cL"></form></div><div id="loginForm" style="width:600px;display:none;padding-top:12px; text-align:center;"></div><footer class="footer hidden-print"><div id="sib_footer"><ul class="list-inline" style="margin-bottom:0px; padding-bottom:4px;padding-top:4px;"><li><a href="https://www.sib.swiss/">Swiss Institute of Bioinformatics</a></li><li><a href="https://www.biozentrum.unibas.ch/research/researchgroups/overview/unit/schwede/">Schwede Group</a></li><li><a href="mailto:mouseover@for.address" class="swissmodelContactRef">Contact Us</a></li><li><a href="https://swissmodel.expasy.org/docs/terms_of_use">Terms of use</a></li><li class="pull-right"><a id="sib_footer_gototop" onclick="window.scrollTo(0,0);"><i class="glyphicon glyphicon-arrow-up"></i> Back to the Top</a></li></ul><div class="clearfix"></div></div></footer><script src="../static/js/jquery-3.4.1.min.js"></script><script src="../static/js/jquery-ui.min.js"></script><script src="../static/js/bootstrap-3.3.7.min.js"></script><script src="../static/js/jquery.fancybox.pack.js"></script><script index.html="" src="../static/js/jquery.color-2.1.2.min.js"></script><script index.html="" src="../static/js/comparison.min.js"></script><script index.html="" src="../static/js/bio-pv.min.js"></script><script index.html="" src="../static/js/ngl.js"></script></body></html>

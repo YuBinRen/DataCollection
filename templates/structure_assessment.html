@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<!-- saved from url=(0036)https://swissmodel.expasy.org/assess -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><!-- Global site tag (gtag.js) - Google Analytics --><script type="text/javascript" async="" src="../static/js/analytics.js"></script><script async="" src="../static/js/js"></script><script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-8667194-2');
+    </script><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="ROBOTS" content="ALL"><title>Structure Assessment</title><meta name="description" content="The Structure Assessment page of SWISS-MODEL aims to provide more detailed structural information about homology models, with alternative displays and by running additional software tools. "><link rel="stylesheet" type="text/css" href="../static/css/bootstrap-3.3.7.min.css" media="screen,print"><link rel="stylesheet" type="text/css" href="../static/css/bootstrap-theme-3.3.7.min.css" media="screen,print"><link rel="stylesheet" type="text/css" href="../static/css/master.css" media="all"><link rel="stylesheet" type="text/css" href="../static/css/jquery.fancybox.css"><link rel="stylesheet" type="text/css" href="../static/css/jquery-ui.min.css"><link rel="shortcut icon" href="https://swissmodel.expasy.org/static/images/favicon.png" type="image/png"><link rel="apple-touch-icon" href="https://swissmodel.expasy.org/static/images/apple-touch-57.png"><link rel="apple-touch-icon" sizes="72x72" href="https://swissmodel.expasy.org/static/images/apple-touch-72.png"><link rel="apple-touch-icon" sizes="114x114" href="https://swissmodel.expasy.org/static/images/apple-touch-114.png"><link rel="stylesheet" href="../static/css/jquery.fileupload-ui.css"><style>form .table > tbody > tr > td,
+form .table > tbody > tr > th {
+    border-top: none;
+    vertical-align: middle;
+}
+.errorlist{ margin-left:8px; }</style></head><body><nav class="navbar navbar-default"><div class="container-fluid"><div class="navbar-header"><button aria-controls="navbar" aria-expanded="false" data-target=".collapseThis" data-toggle="collapse" class="navbar-toggle collapsed" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="hidden-xs hidden-sm navbar-brand" style="margin-left:0px;padding:8px 4px 0px 0px;" title="SIB Swiss Institute of Bioinformatics" href="https://www.sib.swiss/" target="_blank"><img src="../static/img/sib_logo_small.png" alt="SIB logo" style="max-height:50px"></a><a class="hidden-xs hidden-sm navbar-brand" style="margin-left:0px; padding:8px 0px 0px 4px;" title="Biozentrum | University of Basel | The Center for Molecular Life Sciences" href="http://www.biozentrum.unibas.ch/" target="_blank"><img src="../static/img/biozentrum_en.png" alt="Biozentrum logo" style="max-height:36px"></a><a class="hidden-xs hidden-sm navbar-brand" href="https://swissmodel.expasy.org/" style="margin-left:0px;padding-left:0px;padding-right:0px;font-size:28px;">SWISS-MODEL</a><a id="navbar-brand" class="hidden-md hidden-lg navbar-brand" href="https://swissmodel.expasy.org/" style="margin-left:0px;font-size:20px;">SWISS-MODEL</a></div><div id="navbar" class="collapseThis navbar-collapse collapse"><!-- Collect the nav links, forms, and other content for toggling --><ul class="nav navbar-nav navbar-right"><li class="dropdown "><a href="https://swissmodel.expasy.org/interactive" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Modelling</a><ul class="dropdown-menu" role="menu"><li><a class="text-left" href="https://swissmodel.expasy.org/interactive">myWorkspace</a></li><li><a class="text-left" href="https://swissmodel.expasy.org/interactive#alignment">Alignment Mode</a></li><li><a class="text-left" href="https://swissmodel.expasy.org/interactive#structure">User Template Mode</a></li><li><a class="text-left" href="https://swissmodel.expasy.org/interactive#deepview">DeepView Project Mode</a></li><li class="divider"></li><li><a class="text-left" href="https://swissmodel.expasy.org/templates/">Template Library</a></li></ul></li><li id="smrLink" class="dropdown "><a href="https://swissmodel.expasy.org/repository" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Repository</a><ul class="dropdown-menu" role="menu"><li><a href="https://swissmodel.expasy.org/repository">SWISS-MODEL Repository</a></li><li><a href="https://swissmodel.expasy.org/repository/user_annotation_upload">Annotation Projects</a></li></ul></li><li class="dropdown active"><a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Tools</a><ul class="dropdown-menu" role="menu"><li><a href="https://swissmodel.expasy.org/qmean/" tabindex="-1">QMEAN</a></li><li><a href="https://swissmodel.expasy.org/lddt" tabindex="-1">lDDT</a></li><li><a href="https://swissmodel.expasy.org/assess">Structure Assessment</a></li><li><a href="https://swissmodel.expasy.org/comparison/">Structure Comparison</a></li></ul></li><li class="dropdown "><a href="https://swissmodel.expasy.org/assess#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Documentation</a><ul class="dropdown-menu" role="menu"><li><a href="https://swissmodel.expasy.org/docs/help" tabindex="-1">SWISS-MODEL</a></li><li><a href="https://swissmodel.expasy.org/docs/examples" tabindex="-1">Examples</a></li><li><a href="https://swissmodel.expasy.org/docs/tutorial" tabindex="-1">Video Tutorial</a></li><li><a href="https://swissmodel.expasy.org/docs/blog" tabindex="-1">New Features</a></li><li role="separator" class="divider"></li><li><a href="https://swissmodel.expasy.org/docs/repository_help" tabindex="-1">SWISS-MODEL Repository</a></li><li role="separator" class="divider"></li><li><a href="https://swissmodel.expasy.org/qmean/help" tabindex="-1">QMEAN</a></li><li><a href="https://swissmodel.expasy.org/lddt/help/" tabindex="-1">lDDT</a></li><li><a href="https://swissmodel.expasy.org/assess/help">Structure Assessment</a></li><li><a href="https://swissmodel.expasy.org/comparison/help">Structure Comparison</a></li><li role="separator" class="divider"></li><li><a href="https://swissmodel.expasy.org/course" tabindex="-1">Protein Structure Course</a></li><li role="separator" class="divider"></li><li><a href="https://swissmodel.expasy.org/docs/references" tabindex="-1">References</a></li></ul></li><li><a onclick="showLogin();">Log in</a></li><li><a onclick="createAccount();">Create Account</a></li></ul></div></div><!-- /container-fluid --></nav><div id="tools"></div><div id="main-content" style="padding-left:32px; margin-right:32px"><div class="well tools-well"><h1><a href="https://swissmodel.expasy.org/assess">Structure Assessment</a></h1><div class="btn-group pull-right"><a href="https://swissmodel.expasy.org/assess#" class="btn dropdown-toggle" data-toggle="dropdown" title="Examples" aria-expanded="false">
+      Examples  <span class="caret"></span></a><ul class="dropdown-menu pull-right"><li class="text-center"><a href="https://swissmodel.expasy.org/assess/example/01">Hemoglobin</a></li><li class="text-center"><a href="https://swissmodel.expasy.org/assess/example/02">CAMEO Target</a></li></ul></div><a class="btn pull-right" href="https://swissmodel.expasy.org/assess/help">Help</a></div><div style="background-color:#FFF; border:1px solid #DDD; border-radius: 10px; padding:12px 24px 12px 24px;"><h4 class="text-center">Start a new Structure Assessment Project</h4><form id="uploadForm" enctype="multipart/form-data" method="post" autocomplete="off"><input type="hidden" name="csrfmiddlewaretoken" value="k8VSF1NwllpWvIP0ZLtkwL1a6mBVuMflHyLTm9lz9Mbr2BmsRAaWSz31Iyc3YdQb"><div class="row"><div class="col-sm-3"><label>Structure File:</label></div><div class="col-sm-9"><div class="text-center" id="fileDropZone" style="padding:16px; margin:2px; border:1px dashed #AAA"><span class="btn btn-success fileinput-button"><i class="glyphicon glyphicon-plus" style="opacity:0.6"></i><span>Upload Coordinate File...</span><input id="coords" type="file" name="coords" accept=".pdb,.cif,.pdb.gz,.cif.gz"></span><div id="fileUploadProgress" style="margin-left:16px;display:none"><img src="../static/img/loadingBar.gif"></div><div id="validationDiv" style="margin-top:8px"></div></div></div></div><div class="row" style="margin-top:4px;"><div class="col-sm-3"><label>Project Title (Optional):</label></div><div class="col-sm-9"><input type="text" name="title" placeholder="Untitled Project" class="form-control" maxlength="256" id="id_title"></div></div><div class="row" style="margin-top: 4px"><div class="col-sm-3"><label>Email (Optional):</label></div><div class="col-sm-9"><input type="email" name="email" placeholder="Optional" class="form-control" id="id_email"></div></div><div class="row"><div class="col-sm-offset-3 col-sm-9 text-center" style="padding-left:0px;"><button style="margin:12px" id="submitButton" type="submit" class="btn btn-primary btn-lg" disabled="disabled" onclick="$(this).prop(&#39;disabled&#39;,true);submit();">Start Assessment</button><button id="resetButton" style="margin-left:10px;" type="button" class="btn btn-sm btn-default" onclick="resetForm()" disabled="disabled"><i class="glyphicon glyphicon-refresh"></i> Reset</button></div></div><input type="hidden" id="file_id" name="file_id"></form></div><!-- Modal --><div id="delProjectDiv" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button><h3>Delete "<span id="delProjectDivLabel"></span>"</h3></div><div class="modal-body"><p>Are you sure you want to delete this project?</p></div><div class="modal-footer"><button class="btn btn-default" data-dismiss="modal" aria-hidden="true">Close</button><button class="btn btn-danger" id="confirmDeleteButton">Delete Project</button></div></div></div></div></div><div id="loginForm" style="width:600px;display:none;padding-top:12px; text-align:center;"></div><footer class="footer hidden-print"><div id="sib_footer"><ul class="list-inline" style="margin-bottom:0px; padding-bottom:4px;padding-top:4px;"><li><a href="https://www.sib.swiss/">Swiss Institute of Bioinformatics</a></li><li><a href="https://www.biozentrum.unibas.ch/research/researchgroups/overview/unit/schwede/">Schwede Group</a></li><li><a href="mailto:mouseover@for.address" class="swissmodelContactRef">Contact Us</a></li><li><a href="https://swissmodel.expasy.org/docs/terms_of_use">Terms of use</a></li><li class="pull-right"><a id="sib_footer_gototop" onclick="window.scrollTo(0,0);"><i class="glyphicon glyphicon-arrow-up"></i> Back to the Top</a></li></ul><div class="clearfix"></div></div></footer><script src="../static/js/jquery-3.4.1.min.js"></script><script src="../static/js/jquery-ui.min.js"></script><script src="../static/js/bootstrap-3.3.7.min.js"></script><script src="../static/js/jquery.fancybox.pack.js"></script><script index.html="" src="../static/js/jquery.iframe-transport.js"></script><script index.html="" src="../static/js/jquery.fileupload.min.js"></script><script>
+function csrfSafeMethod(method) {
+    // these HTTP methods do not require CSRF protection
+    return (/^(GET|HEAD|OPTIONS|TRACE)$/.test(method));
+}
+$.ajaxSetup({
+    crossDomain: false,
+    beforeSend: function(xhr, settings) {
+        if (!csrfSafeMethod(settings.type)) 
+            xhr.setRequestHeader("X-CSRFToken", "k8VSF1NwllpWvIP0ZLtkwL1a6mBVuMflHyLTm9lz9Mbr2BmsRAaWSz31Iyc3YdQb");
+    }
+});
+
+
+var validateUrl=['date_structure','/asses','s/vali'];
+
+
+$(document).ready( 
+    function () 
+    {
+      $('#coords').fileupload({
+          url: validateUrl[1]+validateUrl[2]+validateUrl[0],
+          dataType: 'json',
+          dropZone: $('#fileDropZone'),
+          //replaceFileInput:false,
+          sequentialUploads: true,
+          maxFileSize: 20,
+      }).on('fileuploadadd', function (e, data) 
+      {
+        $('#uploadError').remove();
+        $('#submitButton').prop('disabled','disabled');
+      	$('#fileUploadProgress').css('display','inline');
+        $('#validationDiv').empty();
+
+      }).on('fileuploaddone', function (e, data) 
+      {
+        $('#fileUploadProgress').hide();
+        var errors = '';
+        var validIds = $('#file_id').val().split(',');
+        if(validIds[0]=="")
+          validIds = [];
+        var maxup=50;
+
+        for(var i=0; i<data.result.files.length; i++)
+        {
+          var file = data.result.files[i];
+          if(file.error && file.error.length>0)
+          {
+            errors+='<span class="errorlist">'
+              +(file.error.indexOf('CA-only')==-1?file.original_name+' - ':'')
+              +file.error
+              +'</span>';
+          }
+          else if(validIds.length<maxup)
+          {
+             validIds.push(file.file_name);
+             $('#coords').closest('span').after('<span class="badge fileUploadMessage" style="margin-left:24px;padding:5px 8px;background-color:#080; color:white">'
+               +'<i>' + file.original_name + '</i>&#10003;'
+                            +(file.preprocess && file.preprocess.residuesRemoved>0 ?
+                                  ' <i class="glyphicon glyphicon-warning-sign"/> '
+                                   + file.preprocess.residuesRemoved+' residues removed. '
+                                   +'<a style="color:white" href="/qmean/help#help_project_data_processing" target="_blank">'
+                                   +' QMEAN will not be calculated! <i class="glyphicon glyphicon-info-sign"/></a>'
+                                   :'')
+                +'</span>');
+          }
+          else
+          {
+            errors+='<span class="errorlist">Maximum upload '+maxup+' structures</span>';
+          }
+        }
+        if(validIds.length>0)
+        {
+          $('#file_id').val(validIds.join());
+          if($('#id_title').val().length==0)
+          {
+            $('#id_title').val('Structure Assessment of '+data.files[0].name);
+          } 
+          $('#submitButton').prop('disabled',null);
+          $('#resetButton').prop('disabled','');
+        }
+        
+        if(errors.length>0)
+        {
+          $('#validationDiv').html(errors);
+        }
+
+      }).on('fileuploadfail', function (e, data) 
+          { 
+              $('#fileUploadProgress').hide();
+              $('#validationDiv').html('Unknown file upload error, please try again.');
+          });
+
+    $('button[id^=del]').click(
+      function()
+      {
+        confirmDeleteProject($(this).attr('id').substring(4));
+      });
+    $('#delProjectDiv').on('shown.bs.modal', function (e) {
+      $('#confirmDeleteButton').focus();
+    });
+  });
+
+  function resetForm()
+  {
+    $('#resetButton').prop('disabled','disabled');
+    $('#submitButton').prop('disabled','disabled');
+    $('#validationDiv').empty();
+    $('.fileUploadMessage').remove();
+    $('#file_id').val('');
+  }
+
+  function confirmDeleteProject(id)
+  {
+
+
+    $('#delProjectDivLabel').text($('#del_'+id).attr('title'));
+    $('#delProjectDiv').modal('show');   
+    $('#confirmDeleteButton')
+      .off('click')
+      .on('click',function()
+        {
+            $('#del_'+id).prop('disabled','disabled');
+            $('#delProjectDiv').modal('hide');  
+            
+            //This obfuscation is just to stop bots from following the link
+            
+            var url = ['xx/delete','/asses','s/xxxx'];
+            $.post( (url[1]+url[2]+url[0]).replace('xxxxxx',id),
+                { 
+                  csrfmiddlewaretoken:'k8VSF1NwllpWvIP0ZLtkwL1a6mBVuMflHyLTm9lz9Mbr2BmsRAaWSz31Iyc3YdQb' 
+                },
+                function(d,s)
+                {            
+                  if(s=='success' && d.deleted)
+                      $('#prj_details_'+id).remove();
+                });       
+        });
+  }
+
+
+</script><script>
+    $('a.smng-help').append('<icon class="glyphicon glyphicon-question-sign"></i>');
+    $(document).on('click','a.smng-help',function()
+    { 
+        window.open($(this).attr('href'),
+            'Help',
+            'width=920,height=600,left=20,top=100,directories=no,menubar=yes,toolbar=yes,'
+                +'status=no,scrollbars=yes,resizable=no');
+        return false;
+    });
+
+     $('a.swissmodelContactRef')
+        .on('mouseover',function()
+            {
+                $(this).attr('href',["ch", ".", "nibas", "l@u",
+             "mode", "-swiss",
+              ":help", "to", "ail", "m"].reverse().join(''));
+                $(this).off('mouseover');
+            });
+
+     function showLogin()
+     {
+        $('#loginForm')
+            .load('/login', { 'csrfmiddlewaretoken':'k8VSF1NwllpWvIP0ZLtkwL1a6mBVuMflHyLTm9lz9Mbr2BmsRAaWSz31Iyc3YdQb' },
+                function()
+                {
+                    $("<a href='#loginForm'/>'").fancybox().trigger('click');  
+                    $('#id_username').focus();
+                });
+        
+     } 
+     function createAccount()
+     {
+        $('#loginForm')
+            .load('/create_account',
+                function()
+                {
+                    $("<a href='#loginForm'/>'").fancybox().trigger('click'); 
+                    $('#id_username').focus();  
+                });
+     }
+     
+</script>
+</body></html>
